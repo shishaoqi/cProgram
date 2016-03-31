@@ -4,7 +4,7 @@
  * This file implements the set abstraction fefined in set.h.
  */
 #include <stdio.h>
-#include <stdarg.h>
+#include <string.h>
 #include "genlib.h"
 #include "bst.h" 
 #include "iterator2.h"
@@ -39,6 +39,7 @@ static void DeleteERef(setADT set, void *ep);
 static bool TestERef(setADT set, void *ep);
 static iteratorADT NewSetIterator(void *collection);
 static void AddElementToIterator(void *np, void *clientData);
+static void display(void *np, void *clientData);
 
 /* Exported entries */
 setADT NewIntSet(void)
@@ -60,8 +61,33 @@ static setADT NewSet(setClassT class, cmpFnT cmpFn)
 	set->class = class;
 	set->cmpFn = cmpFn;
 	set->nElements = 0;
+    /*if(set->cmpFn == StringCmpFn){
+        set->bst = NewBST(MAXSTRING, cmpFn, InitSetNodeFn);
+    }else{
+        set->bst = NewBST(sizeof(setElementT), cmpFn, InitSetNodeFn);
+    }*/
 	set->bst = NewBST(sizeof(setElementT), cmpFn, InitSetNodeFn);
 	return (set);
+}
+
+/**
+ * NewBST() callback function
+ * @param np         [description]
+ * @param kp         [description]
+ * @param clientData [description]
+ */
+static void InitSetNodeFn(void *np, void *kp, void *clientData)
+{
+    setADT set = (setADT) clientData;
+    bstADT bst = (bstADT) set->bst;
+    int elementSize = bst->userSize;
+
+    switch(set->class){
+        case IntSet: *((int *)np) = *((int *)kp);   break;
+        //case PtrSet: *((void**)np) = *((void**)kp); break;
+        case PtrSet: memcpy(np, kp, elementSize); break;
+    }
+    set->nElements++;
 }
 
 /*
@@ -92,24 +118,27 @@ static iteratorADT NewSetIterator(void *collection)
         }
 	}
 	iterator = NewIteratorList(elementSize, UnsortedFn);
-	MapBST(AddElementToIterator, set->bst, InOrder, iterator);
+	MapBST(display, set->bst, InOrder, iterator);
+
 	return iterator;
+}
+
+/**
+ * test function
+ * @param np         [description]
+ * @param clientData [description]
+ */
+static void display(void *np, void *clientData)
+{
+    string str;
+
+    str = (string)np;
+    printf("%s\n", str);
 }
 
 static void AddElementToIterator(void *np, void *clientData)
 {   
     AddToIteratorList( (iteratorADT)clientData, np);
-}
-
-static void InitSetNodeFn(void *np, void *kp, void *clientData)
-{
-    setADT set = (setADT) clientData;
-
-    switch(set->class){
-        case IntSet: *((int *)np) = *((int *)kp);   break;
-        case PtrSet: *((void**)np) = *((void**)kp); break;
-    }
-    set->nElements++;
 }
 
 void FreeSet(setADT set)
