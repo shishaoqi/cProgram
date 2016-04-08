@@ -1,0 +1,373 @@
+BSTData	bst.c	/^static bstDataT *BSTData(bstADT bst, treeT t)$/;"	f	file:
+BSTLeftChild	bst.c	/^void *BSTLeftChild(bstADT bst, void *np)$/;"	f
+BSTRightChild	bst.c	/^void *BSTRightChild(bstADT bst, void *np)$/;"	f
+BSTRoot	bst.c	/^void *BSTRoot(bstADT bst)$/;"	f
+DeleteBSTNode	bst.c	/^bool DeleteBSTNode(bstADT bst, void *kp)$/;"	f
+FindBSTNode	bst.c	/^void *FindBSTNode(bstADT bst, void *kp)$/;"	f
+FixLeftImbalance	bst.c	/^static void FixLeftImbalance(bstADT bst, treeT *tptr)$/;"	f	file:
+FixRightImbalance	bst.c	/^static void FixRightImbalance(bstADT bst, treeT *tptr)$/;"	f	file:
+FreeBST	bst.c	/^void FreeBST(bstADT bst, nodeFnT freeNodeFn)$/;"	f
+InsertBSTNode	bst.c	/^int InsertBSTNode(bstADT bst, void *kp, void *clientData)$/;"	f
+MapBST	bst.c	/^void MapBST(nodeFnT fn, bstADT bst, OrderT order, void *clientData)$/;"	f
+NewBST	bst.c	/^bstADT NewBST(int size, cmpFnT cmpFn, nodeInitFnT nodeInitFn)$/;"	f
+R	bst.c	/^  int R;$/;"	m	struct:deleteE	file:
+RecDeleteNode	bst.c	/^static deleteT RecDeleteNode(bstADT bst, treeT *tptr, void *kp, deleteT delta)$/;"	f	file:
+RecFindNode	bst.c	/^static treeT RecFindNode(bstADT bst, treeT t, void *kp)$/;"	f	file:
+RecInsertNode	bst.c	/^static int RecInsertNode(bstADT bst, treeT *tptr, void *kp, void *clientData)$/;"	f	file:
+RecMapBST	bst.c	/^static void RecMapBST(nodeFnT fn, bstADT bst, treeT t,$/;"	f	file:
+RotateLeft	bst.c	/^static void RotateLeft(bstADT bst, treeT *tptr)$/;"	f	file:
+RotateRight	bst.c	/^static void RotateRight(bstADT bst, treeT *tptr)$/;"	f	file:
+bf	bst.c	/^  int bf;$/;"	m	struct:__anon5	file:
+bstCDT	bst.c	/^struct bstCDT {$/;"	s	file:
+bstDataT	bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon5	file:
+cmpFn	bst.c	/^  cmpFnT cmpFn;$/;"	m	struct:bstCDT	file:
+del	bst.c	/^static deleteT del(bstADT bst, treeT *tptr, treeT *ch, deleteT delta)$/;"	f	file:
+deleteE	bst.c	/^struct deleteE{$/;"	s	file:
+left	bst.c	/^  treeT left, right;$/;"	m	struct:__anon5	file:
+nodeInitFn	bst.c	/^  nodeInitFnT nodeInitFn;$/;"	m	struct:bstCDT	file:
+right	bst.c	/^  treeT left, right;$/;"	m	struct:__anon5	file:
+root	bst.c	/^  treeT root;$/;"	m	struct:bstCDT	file:
+target	bst.c	/^  void *target;$/;"	m	struct:deleteE	file:
+totalSize	bst.c	/^  int userSize, totalSize;$/;"	m	struct:bstCDT	file:
+treeT	bst.c	/^typedef void *treeT;$/;"	t	file:
+userSize	bst.c	/^  int userSize, totalSize;$/;"	m	struct:bstCDT	file:
+InOrder	bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon1
+OrderT	bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	t	typeref:enum:__anon1
+PostOrder	bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon1
+PreOrder	bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon1
+_bst_h	bst.h	10;"	d
+bstADT	bst.h	/^typedef struct bstCDT *bstADT;$/;"	t	typeref:struct:bstCDT
+deleteT	bst.h	/^typedef struct deleteE *deleteT;$/;"	t	typeref:struct:deleteE
+nodeFnT	bst.h	/^typedef void (*nodeFnT) (void *np, void *clientData);$/;"	t
+nodeInitFnT	bst.h	/^typedef void (*nodeInitFnT) (void *np, void *kp, void *clientData);$/;"	t
+BSTData	bst_save.c	/^static bstDataT *BSTData(bstADT bst, treeT t)$/;"	f	file:
+BSTLeftChild	bst_save.c	/^void *BSTLeftChild(bstADT bst, void *np)$/;"	f
+BSTRightChild	bst_save.c	/^void *BSTRightChild(bstADT bst, void *np)$/;"	f
+BSTRoot	bst_save.c	/^void *BSTRoot(bstADT bst)$/;"	f
+DeleteBSTNode	bst_save.c	/^bool DeleteBSTNode(bstADT bst, void *kp)$/;"	f
+Delete_FixLeftImbalance	bst_save.c	/^static int Delete_FixLeftImbalance(bstADT bst, treeT *tptr)$/;"	f	file:
+Delete_FixRightImbalance	bst_save.c	/^static int Delete_FixRightImbalance(bstADT bst, treeT *tptr)$/;"	f	file:
+FindBSTNode	bst_save.c	/^void *FindBSTNode(bstADT bst, void *kp)$/;"	f
+FixLeftImbalance	bst_save.c	/^static void FixLeftImbalance(bstADT bst, treeT *tptr)$/;"	f	file:
+FixRightImbalance	bst_save.c	/^static void FixRightImbalance(bstADT bst, treeT *tptr)$/;"	f	file:
+FreeBST	bst_save.c	/^void FreeBST(bstADT bst, nodeFnT freeNodeFn)$/;"	f
+InsertBSTNode	bst_save.c	/^int InsertBSTNode(bstADT bst, void *kp, void *clientData)$/;"	f
+MapBST	bst_save.c	/^void MapBST(nodeFnT fn, bstADT bst, OrderT order, void *clientData)$/;"	f
+NewBST	bst_save.c	/^bstADT NewBST(int size, cmpFnT cmpFn, nodeInitFnT nodeInitFn)$/;"	f
+R	bst_save.c	/^  int R;$/;"	m	struct:deleteE	file:
+RecDeleteNode	bst_save.c	/^static deleteT RecDeleteNode(bstADT bst, treeT *tptr, void *kp, deleteT delta)$/;"	f	file:
+RecFindNode	bst_save.c	/^static treeT RecFindNode(bstADT bst, treeT t, void *kp)$/;"	f	file:
+RecInsertNode	bst_save.c	/^static int RecInsertNode(bstADT bst, treeT *tptr, void *kp, void *clientData)$/;"	f	file:
+RecMapBST	bst_save.c	/^static void RecMapBST(nodeFnT fn, bstADT bst, treeT t,$/;"	f	file:
+RotateLeft	bst_save.c	/^static void RotateLeft(bstADT bst, treeT *tptr)$/;"	f	file:
+RotateRight	bst_save.c	/^static void RotateRight(bstADT bst, treeT *tptr)$/;"	f	file:
+bf	bst_save.c	/^  int bf;$/;"	m	struct:__anon3	file:
+bstCDT	bst_save.c	/^struct bstCDT {$/;"	s	file:
+bstDataT	bst_save.c	/^} bstDataT;$/;"	t	typeref:struct:__anon3	file:
+cmpFn	bst_save.c	/^  cmpFnT cmpFn;$/;"	m	struct:bstCDT	file:
+deleteE	bst_save.c	/^struct deleteE{$/;"	s	file:
+left	bst_save.c	/^  treeT left, right;$/;"	m	struct:__anon3	file:
+nodeInitFn	bst_save.c	/^  nodeInitFnT nodeInitFn;$/;"	m	struct:bstCDT	file:
+right	bst_save.c	/^  treeT left, right;$/;"	m	struct:__anon3	file:
+root	bst_save.c	/^  treeT root;$/;"	m	struct:bstCDT	file:
+target	bst_save.c	/^  void *target;$/;"	m	struct:deleteE	file:
+totalSize	bst_save.c	/^  int userSize, totalSize;$/;"	m	struct:bstCDT	file:
+treeT	bst_save.c	/^typedef void *treeT;$/;"	t	file:
+tree_height	bst_save.c	/^static int tree_height(bstADT bst, treeT root, int height)$/;"	f	file:
+userSize	bst_save.c	/^  int userSize, totalSize;$/;"	m	struct:bstCDT	file:
+CharCmpFn	cmpfn.c	/^int CharCmpFn(const void *p1, const void *p2)$/;"	f
+CharExchFn	cmpfn.c	/^void CharExchFn(void *p1, void *p2)$/;"	f
+DoubleCmpFn	cmpfn.c	/^int DoubleCmpFn(const void *p1, const void *p2)$/;"	f
+DoubleExchFn	cmpfn.c	/^void DoubleExchFn(void *p1, void *p2)$/;"	f
+FloatCmpFn	cmpfn.c	/^int FloatCmpFn(const void *p1, const void *p2)$/;"	f
+FloatExchFn	cmpfn.c	/^void FloatExchFn(void *p1, void *p2)$/;"	f
+IntCmpFn	cmpfn.c	/^int IntCmpFn(const void *p1, const void *p2)$/;"	f
+IntExchFn	cmpfn.c	/^void IntExchFn(void *p1, void *p2)$/;"	f
+LongCmpFn	cmpfn.c	/^int LongCmpFn(const void *p1, const void *p2)$/;"	f
+LongExchFn	cmpfn.c	/^void LongExchFn(void *p1, void *p2)$/;"	f
+LonglongCmpFn	cmpfn.c	/^int LonglongCmpFn(const void *p1, const void *p2)$/;"	f
+ShortCmpFn	cmpfn.c	/^int ShortCmpFn(const void *p1, const void *p2)$/;"	f
+ShortExchFn	cmpfn.c	/^void ShortExchFn(void *p1, void *p2)$/;"	f
+StringCmpFn	cmpfn.c	/^int StringCmpFn(const void *p1, const void *p2)$/;"	f
+StringCmpFn2	cmpfn.c	/^int StringCmpFn2(const void *p1, const void *p2)$/;"	f
+StringExchFn	cmpfn.c	/^void StringExchFn(void *p1, void *p2)$/;"	f
+UnsignedExchFn	cmpfn.c	/^void UnsignedExchFn(void *p1, void *p2)$/;"	f
+UnsignedIntCmpFn	cmpfn.c	/^int UnsignedIntCmpFn(const void *p1, const void *p2)$/;"	f
+UnsignedLongCmpFn	cmpfn.c	/^int UnsignedLongCmpFn(const void *p1, const void *p2)$/;"	f
+UnsignedLongExchFn	cmpfn.c	/^void UnsignedLongExchFn(void *p1, void *p2)$/;"	f
+UnsignedLonglongCmpFn	cmpfn.c	/^int UnsignedLonglongCmpFn(const void *p1, const void *p2)$/;"	f
+UnsignedShortCmpFn	cmpfn.c	/^int UnsignedShortCmpFn(const void *p1, const void *p2)$/;"	f
+UnsignedShortExchFn	cmpfn.c	/^void UnsignedShortExchFn(void *p1, void *p2)$/;"	f
+Str	cmpfn.h	/^struct Str{$/;"	s
+StringBox	cmpfn.h	/^typedef struct Str *StringBox;$/;"	t	typeref:struct:Str
+_cmpfn_h	cmpfn.h	9;"	d
+cmpFnT	cmpfn.h	/^typedef int (*cmpFnT) (const void *p1, const void *p2);$/;"	t
+exchFnT	cmpfn.h	/^typedef void (*exchFnT) (void *p1, void *p2);$/;"	t
+s	cmpfn.h	/^  string s;$/;"	m	struct:Str
+Error	genlib.c	/^void Error(string msg, ...)$/;"	f
+ErrorExitStatus	genlib.c	23;"	d	file:
+FreeBlock	genlib.c	/^void FreeBlock(void *ptr)$/;"	f
+GetBlock	genlib.c	/^void *GetBlock(size_t nbytes)$/;"	f
+undefined_object	genlib.c	/^char undefined_object[] = "UNDEFINED";$/;"	v
+FALSE	genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	e	enum:__anon8
+FALSE	genlib.h	58;"	d
+New	genlib.h	153;"	d
+NewArray	genlib.h	163;"	d
+TRUE	genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	e	enum:__anon8
+TRUE	genlib.h	59;"	d
+UNDEFINED	genlib.h	102;"	d
+_genlib_h	genlib.h	28;"	d
+bool	genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	t	typeref:enum:__anon8
+bool	genlib.h	/^   typedef int bool;$/;"	t
+bool	genlib.h	54;"	d
+repeat	genlib.h	204;"	d
+stream	genlib.h	/^typedef FILE *stream;$/;"	t
+string	genlib.h	/^typedef char *string;$/;"	t
+FreeIterator	iterator1.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
+InsertKey	iterator1.c	/^static void InsertKey(string key, void *value, void *clientData)$/;"	f	file:
+NewIterator	iterator1.c	/^iteratorADT NewIterator(symtabADT table)$/;"	f
+StepIterator	iterator1.c	/^bool StepIterator(iteratorADT iterator, string *pKey)$/;"	f
+cellT	iterator1.c	/^typedef struct cellT{$/;"	s	file:
+cellT	iterator1.c	/^} cellT;$/;"	t	typeref:struct:cellT	file:
+iteratorCDT	iterator1.c	/^struct iteratorCDT{$/;"	s	file:
+key	iterator1.c	/^	string key;$/;"	m	struct:cellT	file:
+link	iterator1.c	/^	struct cellT *link;$/;"	m	struct:cellT	typeref:struct:cellT::cellT	file:
+start	iterator1.c	/^	cellT *start;$/;"	m	struct:iteratorCDT	file:
+_iterator1_h	iterator1.h	11;"	d
+iteratorADT	iterator1.h	/^typedef struct iteratorCDT *iteratorADT;$/;"	t	typeref:struct:iteratorCDT
+AddToIteratorList	iterator2.c	/^void AddToIteratorList(iteratorADT iterator, void *ep)$/;"	f
+EnableIteration	iterator2.c	/^void EnableIteration(void *collection, newIteratorFnT newFn)$/;"	f
+FreeIterator	iterator2.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
+IteratorPassword	iterator2.c	23;"	d	file:
+NewIterator	iterator2.c	/^iteratorADT NewIterator(void *collection)$/;"	f
+NewIteratorList	iterator2.c	/^iteratorADT NewIteratorList(int size, cmpFnT cmpFn)$/;"	f
+StepIterator	iterator2.c	/^bool StepIterator(iteratorADT iterator, void **ep)$/;"	f
+cellT	iterator2.c	/^typedef struct cellT{$/;"	s	file:
+cellT	iterator2.c	/^}cellT;$/;"	t	typeref:struct:cellT	file:
+cmpFn	iterator2.c	/^	cmpFnT cmpFn;$/;"	m	struct:iteratorCDT	file:
+elementSize	iterator2.c	/^	int elementSize;$/;"	m	struct:iteratorCDT	file:
+head	iterator2.c	/^	cellT *head, *tail;$/;"	m	struct:iteratorCDT	file:
+iteratorCDT	iterator2.c	/^struct iteratorCDT{$/;"	s	file:
+link	iterator2.c	/^  struct cellT *link;$/;"	m	struct:cellT	typeref:struct:cellT::cellT	file:
+tail	iterator2.c	/^	cellT *head, *tail;$/;"	m	struct:iteratorCDT	file:
+_iterator2_h	iterator2.h	11;"	d
+iteratorADT	iterator2.h	/^typedef struct iteratorCDT *iteratorADT;$/;"	t	typeref:struct:iteratorCDT
+UnsortedFn	itertype.h	18;"	d
+_itertype_h	itertype.h	10;"	d
+iteratorHeaderT	itertype.h	/^}iteratorHeaderT;$/;"	t	typeref:struct:__anon7
+newFn	itertype.h	/^	newIteratorFnT newFn;$/;"	m	struct:__anon7
+newIteratorFnT	itertype.h	/^typedef iteratorADT (*newIteratorFnT) (void *collection);$/;"	t
+password	itertype.h	/^	unsigned long password;$/;"	m	struct:__anon7
+Dequeue	queue.c	/^queueElementT Dequeue(queueADT queue){$/;"	f
+Enqueue	queue.c	/^void Enqueue(queueADT queue, queueElementT element)$/;"	f
+FreeQueue	queue.c	/^void FreeQueue(queueADT queue){$/;"	f
+GetQueueElement	queue.c	/^queueElementT GetQueueElement(queueADT queue, int index){$/;"	f
+MaxQueueSize	queue.c	18;"	d	file:
+NewQueue	queue.c	/^queueADT NewQueue(void){$/;"	f
+QueueArraySize	queue.c	19;"	d	file:
+QueueIsEmpty	queue.c	/^bool QueueIsEmpty (queueADT queue)$/;"	f
+QueueIsFull	queue.c	/^bool QueueIsFull(queueADT queue){$/;"	f
+QueueLength	queue.c	/^int QueueLength (queueADT queue){$/;"	f
+elements	queue.c	/^	queueElementT elements[QueueArraySize];$/;"	m	struct:queueCDT	file:
+head	queue.c	/^	int head;$/;"	m	struct:queueCDT	file:
+queueCDT	queue.c	/^struct queueCDT{$/;"	s	file:
+tail	queue.c	/^	int tail;$/;"	m	struct:queueCDT	file:
+_queue_h	queue.h	11;"	d
+queueADT	queue.h	/^typedef struct queueCDT *queueADT;$/;"	t	typeref:struct:queueCDT
+queueElementT	queue.h	/^typedef void *queueElementT;$/;"	t
+Dequeue	queuelist.c	/^queueElementT Dequeue(queueADT queue){$/;"	f
+Enqueue	queuelist.c	/^void Enqueue(queueADT queue, queueElementT element){$/;"	f
+FreeQueue	queuelist.c	/^void FreeQueue(queueADT queue){$/;"	f
+GetQueueElement	queuelist.c	/^queueElementT GetQueueElement(queueADT queue, int index)$/;"	f
+NewQueue	queuelist.c	/^queueADT NewQueue(void){$/;"	f
+QueueIsEmpty	queuelist.c	/^bool QueueIsEmpty(queueADT queue){$/;"	f
+QueueIsFull	queuelist.c	/^bool QueueIsFull(queueADT queue){$/;"	f
+QueueLength	queuelist.c	/^int QueueLength(queueADT queue)$/;"	f
+cellT	queuelist.c	/^typedef struct cellT{$/;"	s	file:
+cellT	queuelist.c	/^} cellT;$/;"	t	typeref:struct:cellT	file:
+head	queuelist.c	/^	cellT *head;$/;"	m	struct:queueCDT	file:
+link	queuelist.c	/^	struct cellT *link;$/;"	m	struct:cellT	typeref:struct:cellT::cellT	file:
+queueCDT	queuelist.c	/^struct queueCDT{$/;"	s	file:
+tail	queuelist.c	/^	cellT *tail;$/;"	m	struct:queueCDT	file:
+value	queuelist.c	/^	queueElementT value;$/;"	m	struct:cellT	file:
+_queuelist_h	queuelist.h	11;"	d
+queueADT	queuelist.h	/^typedef struct queueCDT *queueADT;$/;"	t	typeref:struct:queueCDT
+queueElementT	queuelist.h	/^typedef char queueElementT;$/;"	t
+RandomChance	random.c	/^bool RandomChance(double p)$/;"	f
+RandomInteger	random.c	/^int RandomInteger(int low, int high)$/;"	f
+RandomReal	random.c	/^double RandomReal(double low, double high)$/;"	f
+Randomize	random.c	/^void Randomize(void)$/;"	f
+RAND_MAX	random.h	26;"	d
+_random_h	random.h	11;"	d
+NewRefBool	ref.c	/^void *NewRefBool(bool value)$/;"	f
+NewRefChar	ref.c	/^void *NewRefChar(char value)$/;"	f
+NewRefDouble	ref.c	/^void *NewRefDouble(double value)$/;"	f
+NewRefFloat	ref.c	/^void *NewRefFloat(float value)$/;"	f
+NewRefInt	ref.c	/^void *NewRefInt(int value)$/;"	f
+NewRefLong	ref.c	/^void *NewRefLong(long value)$/;"	f
+NewRefShort	ref.c	/^void *NewRefShort(short value)$/;"	f
+NewRefUnsignedChar	ref.c	/^void *NewRefUnsignedChar(unsigned char value)$/;"	f
+NewRefUnsignedLong	ref.c	/^void *NewRefUnsignedLong(unsigned long value)$/;"	f
+NewRefUnsignedShort	ref.c	/^void *NewRefUnsignedShort(unsigned short value)$/;"	f
+RefToBool	ref.c	/^bool RefToBool(void *ref) $/;"	f
+RefToChar	ref.c	/^char RefToChar(void *ref)$/;"	f
+RefToDouble	ref.c	/^double RefToDouble(void *ref)$/;"	f
+RefToFloat	ref.c	/^float RefToFloat(void *ref)$/;"	f
+RefToInt	ref.c	/^int RefToInt(void *ref)$/;"	f
+RefToLong	ref.c	/^long RefToLong(void *ref)$/;"	f
+RefToShort	ref.c	/^short RefToShort(void *ref)$/;"	f
+RefToUnsigned	ref.c	/^unsigned RefToUnsigned(void *ref)$/;"	f
+RefToUnsignedChar	ref.c	/^unsigned char RefToUnsignedChar(void *ref)$/;"	f
+RefToUnsignedLong	ref.c	/^unsigned long RefToUnsignedLong(void *ref)$/;"	f
+RefToUnsignedShort	ref.c	/^unsigned short RefToUnsignedShort(void *ref)$/;"	f
+_ref_h	ref.h	8;"	d
+Freescanner	scanadt.c	/^void Freescanner(scannerADT scanner)$/;"	f
+GetScannerSpaceOption	scanadt.c	/^spaceOptionT GetScannerSpaceOption(scannerADT scanner)$/;"	f
+MoreTokensExist	scanadt.c	/^bool MoreTokensExist(scannerADT scanner)$/;"	f
+NewScanner	scanadt.c	/^scannerADT NewScanner(void)$/;"	f
+ReadToken	scanadt.c	/^string ReadToken(scannerADT scanner)$/;"	f
+SaveToken	scanadt.c	/^void SaveToken(scannerADT scanner, string token)$/;"	f
+ScanToEndOfIdentifier	scanadt.c	/^static int ScanToEndOfIdentifier(scannerADT scanner)$/;"	f	file:
+SetScannerSpaceOption	scanadt.c	/^void SetScannerSpaceOption(scannerADT scanner, spaceOptionT option)$/;"	f
+SetScannerString	scanadt.c	/^void SetScannerString(scannerADT scanner, string str)$/;"	f
+SkipSpaces	scanadt.c	/^static void SkipSpaces(scannerADT scanner)$/;"	f	file:
+cp	scanadt.c	/^	int cp;$/;"	m	struct:scannerCDT	file:
+len	scanadt.c	/^	int len;$/;"	m	struct:scannerCDT	file:
+savedToken	scanadt.c	/^	string savedToken;$/;"	m	struct:scannerCDT	file:
+scannerCDT	scanadt.c	/^struct scannerCDT{$/;"	s	file:
+spaceOption	scanadt.c	/^	spaceOptionT spaceOption;$/;"	m	struct:scannerCDT	file:
+str	scanadt.c	/^	string str;$/;"	m	struct:scannerCDT	file:
+IgnoreSpaces	scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	e	enum:__anon2
+PreserveSpaces	scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	e	enum:__anon2
+_scanadt_h	scanadt.h	13;"	d
+scannerADT	scanadt.h	/^typedef struct scannerCDT *scannerADT;$/;"	t	typeref:struct:scannerCDT
+spaceOptionT	scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	t	typeref:enum:__anon2
+AddERef	set.c	/^static void AddERef(setADT set, void *ep)$/;"	f	file:
+AddElementToIterator	set.c	/^static void AddElementToIterator(void *np, void *clientData)$/;"	f	file:
+AddIntElement	set.c	/^void AddIntElement(setADT set, int element)$/;"	f
+AddPtrElement	set.c	/^void AddPtrElement(setADT set, void *element)$/;"	f
+Class	set.c	/^	setClassT Class;$/;"	m	struct:setCDT	file:
+DeleteERef	set.c	/^static void DeleteERef(setADT set, void *ep)$/;"	f	file:
+DeleteIntElement	set.c	/^void DeleteIntElement(setADT set, int element)$/;"	f
+DeletePtrElement	set.c	/^void DeletePtrElement(setADT set, void *element)$/;"	f
+FreeNodeFn	set.c	/^static void FreeNodeFn(void *np, void *clientData)$/;"	f	file:
+FreeSet	set.c	/^void FreeSet(setADT set)$/;"	f
+GetCompareFunction	set.c	/^cmpFnT GetCompareFunction(setADT set)$/;"	f
+GetSetClass	set.c	/^setClassT GetSetClass(setADT set)$/;"	f
+InitSetNodeFn	set.c	/^static void InitSetNodeFn(void *np, void *kp, void *clientData)$/;"	f	file:
+Intersection	set.c	/^setADT Intersection(setADT s1, setADT s2)$/;"	f
+IsIntElement	set.c	/^bool IsIntElement(setADT set, int element)$/;"	f
+IsPtrment	set.c	/^bool IsPtrment(setADT set, void *element)$/;"	f
+IsSubset	set.c	/^bool IsSubset(setADT s1, setADT s2)$/;"	f
+NElements	set.c	/^int NElements(setADT set)$/;"	f
+NewIntSet	set.c	/^setADT NewIntSet(void)$/;"	f
+NewPtrSet	set.c	/^setADT NewPtrSet(cmpFnT cmpFn)$/;"	f
+NewSet	set.c	/^static setADT NewSet(setClassT Class, cmpFnT cmpFn)$/;"	f	file:
+NewSetIterator	set.c	/^static iteratorADT NewSetIterator(void *collection)$/;"	f	file:
+SetDifference	set.c	/^setADT SetDifference(setADT s1, setADT s2)$/;"	f
+SetEqual	set.c	/^bool SetEqual(setADT s1, setADT s2)$/;"	f
+SetIsEmpty	set.c	/^bool SetIsEmpty(setADT set)$/;"	f
+TestERef	set.c	/^static bool TestERef(setADT set, void *ep)$/;"	f	file:
+Union	set.c	/^setADT Union(setADT s1, setADT s2)$/;"	f
+bst	set.c	/^	bstADT bst;$/;"	m	struct:setCDT	file:
+cmpFn	set.c	/^	cmpFnT cmpFn;$/;"	m	struct:setCDT	file:
+header	set.c	/^	iteratorHeaderT header;$/;"	m	struct:setCDT	file:
+intRep	set.c	/^	int intRep;$/;"	m	union:__anon4	file:
+nElements	set.c	/^	int nElements;$/;"	m	struct:setCDT	file:
+ptrRep	set.c	/^	void *ptrRep;$/;"	m	union:__anon4	file:
+setCDT	set.c	/^struct setCDT{$/;"	s	file:
+setElementT	set.c	/^}setElementT;$/;"	t	typeref:union:__anon4	file:
+IntSet	set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon6
+PtrSet	set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon6
+_set_h	set.h	21;"	d
+setADT	set.h	/^typedef struct setCDT *setADT;$/;"	t	typeref:struct:setCDT
+setClassT	set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon6
+GetInteger	simpio.c	/^int GetInteger(void)$/;"	f
+GetLine	simpio.c	/^string GetLine(void)$/;"	f
+GetLong	simpio.c	/^long GetLong(void)$/;"	f
+GetReal	simpio.c	/^double GetReal(void)$/;"	f
+InitialBufferSize	simpio.c	22;"	d	file:
+ReadLine	simpio.c	/^string ReadLine(FILE *infile)$/;"	f
+_simpio_h	simpio.h	11;"	d
+ExpandStack	stack.c	/^static void ExpandStack(stackADT stack)$/;"	f	file:
+FreeStack	stack.c	/^void FreeStack(stackADT stack)$/;"	f
+GetStackElement	stack.c	/^stackElementT GetStackElement(stackADT stack, int index)$/;"	f
+InitialStackSize	stack.c	9;"	d	file:
+NewStack	stack.c	/^stackADT NewStack(void)$/;"	f
+Pop	stack.c	/^stackElementT Pop(stackADT stack)$/;"	f
+Push	stack.c	/^void Push(stackADT stack, stackElementT element)$/;"	f
+StackDepth	stack.c	/^int  StackDepth(stackADT stack)$/;"	f
+StackIsEmpty	stack.c	/^bool StackIsEmpty(stackADT stack)$/;"	f
+StackIsFull	stack.c	/^bool StackIsFull(stackADT stack)$/;"	f
+count	stack.c	/^	int count;$/;"	m	struct:stackCDT	file:
+elements	stack.c	/^	stackElementT* elements;$/;"	m	struct:stackCDT	file:
+size	stack.c	/^	int size;$/;"	m	struct:stackCDT	file:
+stackCDT	stack.c	/^struct stackCDT{$/;"	s	file:
+_stack_h	stack.h	8;"	d
+stackADT	stack.h	/^typedef struct stackCDT *stackADT;$/;"	t	typeref:struct:stackCDT
+stackElementT	stack.h	/^typedef void* stackElementT;$/;"	t
+FreeStack	stacklist.c	/^void FreeStack(stackADT stack)$/;"	f
+GetStackElement	stacklist.c	/^stackElementT GetStackElement(stackADT stack, int index)$/;"	f
+NewStack	stacklist.c	/^stackADT NewStack(void)$/;"	f
+Pop	stacklist.c	/^stackElementT Pop(stackADT stack)$/;"	f
+Push	stacklist.c	/^void Push(stackADT stack, stackElementT element)$/;"	f
+StackDepth	stacklist.c	/^int  StackDepth(stackADT stack)$/;"	f
+StackIsEmpty	stacklist.c	/^bool StackIsEmpty(stackADT stack)$/;"	f
+StackIsFull	stacklist.c	/^bool StackIsFull(stackADT stack)$/;"	f
+cellT	stacklist.c	/^typedef struct cellT{$/;"	s	file:
+cellT	stacklist.c	/^} cellT; $/;"	t	typeref:struct:cellT	file:
+element	stacklist.c	/^  stackElementT element;$/;"	m	struct:cellT	file:
+link	stacklist.c	/^  struct cellT *link;$/;"	m	struct:cellT	typeref:struct:cellT::cellT	file:
+stackCDT	stacklist.c	/^struct stackCDT$/;"	s	file:
+start	stacklist.c	/^  cellT *start;$/;"	m	struct:stackCDT	file:
+_stacklist_h	stacklist.h	8;"	d
+stackADT	stacklist.h	/^typedef struct stackCDT *stackADT;$/;"	t	typeref:struct:stackCDT
+stackElementT	stacklist.h	/^typedef void* stackElementT;$/;"	t
+CharToString	strlib.c	/^string CharToString(char ch)$/;"	f
+Concat	strlib.c	/^string Concat(string s1, string s2)$/;"	f
+ConvertToLowerCase	strlib.c	/^string ConvertToLowerCase(string s)$/;"	f
+ConvertToUpperCase	strlib.c	/^string ConvertToUpperCase(string s)$/;"	f
+CopyString	strlib.c	/^string CopyString(string s)$/;"	f
+CreateString	strlib.c	/^static string CreateString(int len)$/;"	f	file:
+FindChar	strlib.c	/^int FindChar(char ch, string text, int start)$/;"	f
+FindString	strlib.c	/^int FindString(string str, string text, int start)$/;"	f
+IntegerToString	strlib.c	/^string IntegerToString(int n)$/;"	f
+IthChar	strlib.c	/^char IthChar(string s, int i)$/;"	f
+MaxDigits	strlib.c	34;"	d	file:
+RealToString	strlib.c	/^string RealToString(double d)$/;"	f
+StringCompare	strlib.c	/^int StringCompare(string s1, string s2)$/;"	f
+StringEqual	strlib.c	/^bool StringEqual(string s1, string s2)$/;"	f
+StringLength	strlib.c	/^int StringLength(string s)$/;"	f
+StringToInteger	strlib.c	/^int StringToInteger(string s)$/;"	f
+StringToReal	strlib.c	/^double StringToReal(string s)$/;"	f
+SubString	strlib.c	/^string SubString(string s, int p1, int p2)$/;"	f
+_strlib_h	strlib.h	32;"	d
+AddElementToIterator	symtab.c	/^static void AddElementToIterator(string key, void *value, void *clientData)$/;"	f	file:
+Enter	symtab.c	/^void Enter(symtabADT table, string key, void *value)$/;"	f
+FindCell	symtab.c	/^static cellT *FindCell(cellT *cp, string key)$/;"	f	file:
+FreeBucketChain	symtab.c	/^static void FreeBucketChain(cellT *cp)$/;"	f	file:
+FreeSymbolTable	symtab.c	/^void FreeSymbolTable(symtabADT table)$/;"	f
+Hash	symtab.c	/^static int Hash(string s, int nBuckets)$/;"	f	file:
+Lookup	symtab.c	/^void *Lookup(symtabADT table, string key)$/;"	f
+MapSymbolTable	symtab.c	/^void MapSymbolTable(symtabFnT fn, symtabADT table, void *clientData)$/;"	f
+Multiplier	symtab.c	179;"	d	file:
+NBuckets	symtab.c	17;"	d	file:
+NewSymbolTable	symtab.c	/^symtabADT NewSymbolTable(void)$/;"	f
+NewSymtabIterator	symtab.c	/^static iteratorADT NewSymtabIterator(void *collection)$/;"	f	file:
+buckets	symtab.c	/^  cellT *buckets[NBuckets];$/;"	m	struct:symtabCDT	file:
+cellT	symtab.c	/^typedef struct cellT{$/;"	s	file:
+cellT	symtab.c	/^}cellT;$/;"	t	typeref:struct:cellT	file:
+header	symtab.c	/^  iteratorHeaderT header;$/;"	m	struct:symtabCDT	file:
+key	symtab.c	/^	string key;$/;"	m	struct:cellT	file:
+link	symtab.c	/^	struct cellT *link;$/;"	m	struct:cellT	typeref:struct:cellT::cellT	file:
+symtabCDT	symtab.c	/^struct symtabCDT{$/;"	s	file:
+value	symtab.c	/^	void *value;$/;"	m	struct:cellT	file:
+_symtab_h	symtab.h	8;"	d
+symtabADT	symtab.h	/^typedef struct symtabCDT *symtabADT;$/;"	t	typeref:struct:symtabCDT
+symtabFnT	symtab.h	/^typedef void (*symtabFnT) (string key, void *value, void *clientData);$/;"	t
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
