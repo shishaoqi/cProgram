@@ -22,21 +22,23 @@
  */
 #define IteratorPassword 3141582653UL
 
+/* The actual data is alllocated here */
 typedef struct cellT{
   struct cellT *link;
-  /* The actual data is alllocated here */
 }cellT;
 
 struct iteratorCDT{
-	int elementSize;
-	cmpFnT cmpFn; 
+	int elementSize; 
 	//对于在NewIterator原型中声明为void * 的聚集参数的匿名字符，NewIterator并不知道如何初始化一个适合传入的聚集类型的迭代器：解决方法是：保证聚集类型的底层数据结构包含一个指向创建新迭代器的回调函数指针。
+	cmpFnT cmpFn;
 	cellT *head, *tail;
 };
 
+/* Part 1 -- Implementation of iterator.h */
+
 iteratorADT NewIterator(void *collection)
 {
-	iteratorHeaderT *hp = (iteratorHeaderT *)collection;
+	iteratorHeaderT *hp = collection;
 
 	if(hp->password != IteratorPassword){
 	  	Error("Itertion is not defined for this type");
@@ -44,10 +46,12 @@ iteratorADT NewIterator(void *collection)
 	return (hp->newFn(collection));
 }
 
-bool StepIterator(iteratorADT iterator, void **ep)
+bool StepIterator(iteratorADT iterator, void *ep)
+//void* StepIterator(iteratorADT iterator)
 {
 	cellT *cp;
 	void *dp;
+	int strLength;
 
 	cp = iterator->head;
 	if(cp == NULL){
@@ -56,12 +60,21 @@ bool StepIterator(iteratorADT iterator, void **ep)
 	}
 
 	dp = ((char *) cp) + sizeof(cellT);
-	/**ep = GetBlock(iterator->elementSize);
-	   memcpy(*ep, dp, iterator->elementSize);*/
-	*ep = dp;
+	//ep = GetBlock(iterator->elementSize);
+	//字符串 出现错误的原因是内存字节数不对
+	if(iterator->cmpFn == StringCmpFn){
+		strLength = StringLength((string)dp)+2;
+		memcpy(ep, dp, strLength);
+		printf("--%s,%d", dp, strLength);
+	}else{
+		memcpy(ep, dp, iterator->elementSize);
+		printf("--%s-%s: ", dp, iterator->cmpFn); 
+	}
+
 	iterator->head = cp->link;
 	FreeBlock(cp);
 	return (TRUE);
+	//return dp;
 }
 
 void FreeIterator(iteratorADT iterator)
@@ -77,10 +90,11 @@ void FreeIterator(iteratorADT iterator)
 
 /* 
  * File: itertype.h中定义的函数
+ * first time to call, after that NewIterator can be run.
  */
 void EnableIteration(void *collection, newIteratorFnT newFn)
 {
-	iteratorHeaderT *hp = (iteratorHeaderT *) collection;
+	iteratorHeaderT *hp = collection;
 
 	hp->password = IteratorPassword;
 	hp->newFn = newFn;
@@ -111,47 +125,42 @@ iteratorADT NewIteratorList(int size, cmpFnT cmpFn)
  * ip  --  pointer used as an index in the for loop
  * dp  --  pointer to the data field in the block
  */
+
 void AddToIteratorList(iteratorADT iterator, void *ep)
 {
-    cellT *np, *pp, *ip, *temp;
-	void *dp;
-    int size=0;
+    cellT *np, *pp, *ip;
+    void *dp;
 
-	size = (int)sizeof(cellT)+iterator->elementSize;
-	np =  GetBlock (size);
-	dp = ((char *)np) + sizeof(cellT);
-	memcpy(dp, ep, iterator->elementSize);
-	pp = NULL;
-	if(iterator->tail != NULL){
-		if(iterator->cmpFn == UnsortedFn){
-			pp = iterator->tail;
-		}else{
-			dp = ((char *) iterator->tail)+sizeof(cellT);
-			if(iterator->cmpFn(ep, dp) >= 0) pp = iterator->tail;
-		}
-	}
-	if(pp == NULL){
-		for(ip = iterator->head; ip != NULL; ip= ip->link){
-			dp = ((char *)ip) + sizeof(cellT);
-			if(iterator->cmpFn(ep, dp) < 0) break;
-			pp = ip;
-		}
-	}
-	if(pp == NULL){
-	  	if(iterator->head == NULL){
-            iterator->head=iterator->tail = np;
-		    iterator->head->link=iterator->tail->link=NULL;
-	  	}else{
-             temp = iterator->head;
-		    iterator->head = np;
-		    iterator->head->link = temp;
+    np = GetBlock(sizeof (cellT) + iterator->elementSize);
+    dp = ((char *) np) + sizeof (cellT);
+    memcpy(dp, ep, iterator->elementSize);
+    pp = NULL;
+
+    if (iterator->tail != NULL) {
+    	//是否比较
+        if (iterator->cmpFn == UnsortedFn) {
+            pp = iterator->tail;
+        } else { //新插入的数据 与 链表最后一个的数据 比较（提高算法效率）
+            dp = ((char *) iterator->tail) + sizeof (cellT);
+            if (iterator->cmpFn(ep, dp) >= 0) pp = iterator->tail;
         }
-	}else{
-		np->link = pp->link;
-		if(pp->link == NULL){
-			iterator->tail = np;
-			iterator->tail->link=NULL;
-		}
-		pp->link = np;
-	}
+    }
+
+    if (pp == NULL) {//之前都未给pp赋值，那么从表头开始做比较，小于某个节点时在那处截取链表截点
+        for (ip = iterator->head; ip != NULL; ip = ip->link) {
+            dp = ((char *) ip) + sizeof (cellT);
+            if (iterator->cmpFn(ep, dp) < 0) break;
+            pp = ip;
+        }
+    }
+
+    if (pp == NULL) {//插入值小于所有已插入的值 或 iterator->head为NULL（即链表为空）
+        np->link = iterator->head;
+        if (iterator->head == NULL) iterator->tail = np;
+        iterator->head = np;
+    } else {
+        np->link = pp->link;
+        if (pp->link == NULL) iterator->tail = np;
+        pp->link = np;
+    }
 }

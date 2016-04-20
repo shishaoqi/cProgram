@@ -21,7 +21,8 @@
 typedef struct iteratorCDT *iteratorADT;
 
 iteratorADT NewIterator(void *collection);
-bool StepIterator(iteratorADT iterator, void **ep);
+bool StepIterator(iteratorADT iterator, void *ep);
+//void* StepIterator(iteratorADT iterator);
 void FreeIterator(iteratorADT iterator);
 
 #endif

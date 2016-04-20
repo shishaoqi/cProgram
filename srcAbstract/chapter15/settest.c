@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "genlib.h"
 #include "foreach.h"
-#include "iterator.h"
+#include "iterator2.h"
 #include "set.h"
 
 #define DisplaySet(set) DisplaySetWithLabel(set, #set)

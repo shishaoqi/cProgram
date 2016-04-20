@@ -4,8 +4,8 @@
  * This file implements the set abstraction fefined in set.h.
  */
 #include <stdio.h>
+#include <stdarg.h>
 #include "genlib.h"
-#include "strlib.h"
 #include "bst.h" 
 #include "iterator2.h"
 #include "itertype.h"
@@ -19,7 +19,7 @@
 
 struct setCDT{
 	iteratorHeaderT header;
-	setClassT Class;
+	setClassT class;
 	cmpFnT cmpFn;
 	int nElements;
 	bstADT bst;
@@ -31,7 +31,7 @@ typedef union{
 }setElementT;
 
 /* Private function  prototypes */
-static setADT NewSet(setClassT Class, cmpFnT cmpFn);
+static setADT NewSet(setClassT class, cmpFnT cmpFn);
 static void InitSetNodeFn(void *np, void *kp, void *clientData);
 static void FreeNodeFn(void *np, void *clientData);
 static void AddERef(setADT set, void *ep);
@@ -51,26 +51,36 @@ setADT NewPtrSet(cmpFnT cmpFn)
 	return (NewSet(PtrSet, cmpFn));
 }
 
-static setADT NewSet(setClassT Class, cmpFnT cmpFn)
+static setADT NewSet(setClassT class, cmpFnT cmpFn)
 {
 	setADT set;
 
 	set = New(setADT);
 	EnableIteration(set, NewSetIterator);
-	set->Class = Class;
+	set->class = class;
 	set->cmpFn = cmpFn;
 	set->nElements = 0;
 	set->bst = NewBST(sizeof(setElementT), cmpFn, InitSetNodeFn);
 	return (set);
 }
 
+/*
+ * Implementation notes: NewSetIterator, AddElementToIterator
+ * ----------------------------------------------------------
+ * These functions make it possible to use the general iterator
+ * facility on sets.  For details on the general strategy, see
+ * the comments in the itertype.h interface.  The comparison
+ * function passed to NewIteratorList is UnsortedFn because the
+ * InOrder walk already guarantees that the elements will appear
+ * in sorted order.
+ */
 static iteratorADT NewSetIterator(void *collection)
 {
 	setADT set = (setADT) collection;
 	int elementSize;
 	iteratorADT iterator;
 
-	switch(set->Class){
+	switch(set->class){
 	   case IntSet: elementSize = sizeof(int); break;
 	   case PtrSet: elementSize = sizeof(void *); break;
 	}
@@ -80,7 +90,7 @@ static iteratorADT NewSetIterator(void *collection)
 }
 
 static void AddElementToIterator(void *np, void *clientData)
-{
+{   
     AddToIteratorList( (iteratorADT)clientData, np);
 }
 
@@ -88,7 +98,7 @@ static void InitSetNodeFn(void *np, void *kp, void *clientData)
 {
     setADT set = (setADT) clientData;
 
-    switch(set->Class){
+    switch(set->class){
         case IntSet: *((int *)np) = *((int *)kp);   break;
         case PtrSet: *((void**)np) = *((void**)kp); break;
     }
@@ -109,7 +119,7 @@ static void FreeNodeFn(void *np, void *clientData)
 /* Selection functions */
 setClassT GetSetClass(setADT set)
 {
-    return (set->Class);
+    return (set->class);
 }
 
 cmpFnT GetCompareFunction(setADT set)
@@ -129,13 +139,13 @@ bool SetIsEmpty(setADT set)
 
 void AddIntElement(setADT set, int element)
 {
-    if(set->Class != IntSet) Error("Set is not an iteger set");
+    if(set->class != IntSet) Error("Set is not an iteger set");
     AddERef(set, &element);
 }
 
 void AddPtrElement(setADT set, void *element)
 {
-    if(set->Class != PtrSet) Error("Set is not a pointer set");
+    if(set->class != PtrSet) Error("Set is not a pointer set");
     AddERef(set, element);
 }
 
@@ -146,13 +156,13 @@ static void AddERef(setADT set, void *ep)
 
 void DeleteIntElement(setADT set, int element)
 {
-    if(set->Class != IntSet) Error("Set if not an integer set");
+    if(set->class != IntSet) Error("Set if not an integer set");
     DeleteERef(set, &element);
 }
 
 void DeletePtrElement(setADT set, void *element)
 {
-    if(set->Class != PtrSet) Error("Set is not a pointer set");
+    if(set->class != PtrSet) Error("Set is not a pointer set");
     DeleteERef(set, element);
 }
  
@@ -164,13 +174,13 @@ static void DeleteERef(setADT set, void *ep)
 
 bool IsIntElement(setADT set, int element)
 {
-    if(set->Class != IntSet) Error("Set if not an integer set");
+    if(set->class != IntSet) Error("Set if not an integer set");
     return (TestERef(set, &element));
 }
 
 bool IsPtrment(setADT set, void *element)
 {
-    if(set->Class != PtrSet) Error("Set if not an pointer set");
+    if(set->class != PtrSet) Error("Set if not an pointer set");
     return (TestERef(set, element));
 }
 
@@ -198,7 +208,7 @@ bool IsSubset(setADT s1, setADT s2)
     iteratorADT iterator;
     setElementT element;
     bool result;
-    if(s1->Class != s2->Class || s1->cmpFn != s2->cmpFn){
+    if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
         Error ("IsSubset: Set types do not match");
     }
     result = TRUE;
@@ -216,10 +226,10 @@ setADT Union(setADT s1, setADT s2)
     setElementT element;
     setADT set;
 
-    if(s1->Class != s2->Class || s1->cmpFn != s2->cmpFn){
+    if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
         Error("Union: Set types do not match");
     }
-    set = NewSet(s1->Class, s1->cmpFn);
+    set = NewSet(s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
     while(StepIterator(iterator, (void*)&element)){
         AddERef(set, &element);
@@ -239,11 +249,11 @@ setADT Intersection(setADT s1, setADT s2)
     setElementT element;
     setADT set;
 
-    if(s1->Class != s2->Class || s1->cmpFn != s2->cmpFn){
+    if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
         Error("Intersection: Set types do not match");
     }
 
-    set = NewSet(s1->Class, s1->cmpFn);
+    set = NewSet(s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
     while(StepIterator(iterator, (void*)&element)){
         if(TestERef(s2, &element)) AddERef(set, &element);
@@ -258,14 +268,35 @@ setADT SetDifference(setADT s1, setADT s2)
     setElementT element;
     setADT set;
 
-    if(s1->Class != s2->Class || s1->cmpFn != s2->cmpFn){
+    if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
         Error("SetDifference: Set types do not match");
     }
-    set = NewSet(s1->Class, s1->cmpFn);
+    set = NewSet(s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
     while(StepIterator(iterator, (void*)&element)){
         if(!TestERef(s2, &element)) AddERef(set, &element);
     }
     FreeIterator(iterator);
     return set;
+}
+
+
+//---------------- 书里遗漏的方法 ----------------
+/*
+ * Implementation note: AddArrayToSet
+ * ----------------------------------
+ * This function calls AddERef for each element in the array.
+ * Note that the addressing depends on the set class.
+ */
+
+void AddArrayToSet(setADT set, void *array, int n)
+{
+    int i;
+
+    for (i = 0; i < n; i++) {
+        switch (set->class) {
+          case IntSet: AddERef(set, ((int *) array) + i); break;
+          case PtrSet: AddERef(set, ((void **) array) + i); break;
+        }
+    }
 }

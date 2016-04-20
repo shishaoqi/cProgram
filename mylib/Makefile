@@ -12,6 +12,7 @@ OBJECTS = \
     ref.o \
     scanadt.o \
     set.o \
+    foreach.o \
     simpio.o \
     stack.o \
     stacklist.o \
@@ -82,6 +83,9 @@ scanadt.o: scanadt.c scanadt.h genlib.h strlib.h
 
 set.o: set.c set.h bst.h genlib.h iterator2.h itertype.h
 	$(CC) $(CFLAGS) -c set.c
+
+foreach.o: foreach.c foreach.h genlib.h iterator2.h
+	$(CC) $(CFLAGS) -c foreach.c
 
 simpio.o: simpio.c simpio.h strlib.h genlib.h
 	$(CC) $(CFLAGS) -c simpio.c

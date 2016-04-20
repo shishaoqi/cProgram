@@ -226,14 +226,12 @@ static void *DeleteTargetNode(bstADT bst, treeT *tptr)
  * recursive function RecMapBST, which does the actual work.
  */
 
-void MapBST(nodeFnT fn, bstADT bst, traversalOrderT order,
-            void *clientData)
+void MapBST(nodeFnT fn, bstADT bst, traversalOrderT order, void *clientData)
 {
     RecMapBST(fn, bst, bst->root, order, clientData);
 }
 
-static void RecMapBST(nodeFnT fn, bstADT bst, treeT t,
-                      traversalOrderT order, void *clientData)
+static void RecMapBST(nodeFnT fn, bstADT bst, treeT t, traversalOrderT order, void *clientData)
 {
     bstDataT *dp;
 

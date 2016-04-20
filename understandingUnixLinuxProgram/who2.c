@@ -15,19 +15,19 @@ void show_info(struct utmp *);
 
 int main()
 {
-  struct utmp utbuf;                  /* read info into here */
-  int utmpfd;                   /* read from this descriptor */
+    struct utmp utbuf;                  /* read info into here */
+    int utmpfd;                   /* read from this descriptor */
 
-  if((utmpfd = open(UTMP_FILE, O_RDONLY)) == -1){
-    perror(UTMP_FILE);          /* UTMP_FILE is in utmp.h */
-    exit(1);
-}
+    if ((utmpfd = open(UTMP_FILE, O_RDONLY)) == -1) {
+        perror(UTMP_FILE);          /* UTMP_FILE is in utmp.h */
+        exit(1);
+    }
 
-    while( read(utmpfd, &utbuf, sizeof(utbuf)) == sizeof(utbuf) )
-      show_info(&utbuf);
+    while ( read(utmpfd, &utbuf, sizeof(utbuf)) == sizeof(utbuf) )
+        show_info(&utbuf);
     close(utmpfd);
     return 0;           /* went ok */
-  }
+}
 
 /*
  * show info()
@@ -37,24 +37,24 @@ int main()
  */
 void show_info(struct utmp *utbufp)
 {
-  if( utbufp->ut_type != USER_PROCESS )
-    return;
-  printf("% -8.8s", utbufp->ut_name); /* the logname */
-  printf(" ");                        /* aspace */
-  printf("% -8.8s", utbufp->ut_line); /* the tty */
-  printf(" ");
-  showtime(utbufp->ut_time);          /* display time */
-  printf(" ");
+    if ( utbufp->ut_type != USER_PROCESS )
+        return;
+    printf("% -8.8s", utbufp->ut_name); /* the logname */
+    printf(" ");                        /* aspace */
+    printf("% -8.8s", utbufp->ut_line); /* the tty */
+    printf(" ");
+    showtime(utbufp->ut_time);          /* display time */
+    printf(" ");
 #ifdef SHOWHOST
-  if(utbufp->ut_host[0]!='\0')
-   printf("(%s)", utbufp->ut_host);    /* the host */
+    if (utbufp->ut_host[0] != '\0')
+        printf("(%s)", utbufp->ut_host);    /* the host */
 #endif
-  printf("\n");                       /* newline */
+    printf("\n");                       /* newline */
 }
 
 void showtime( long timeval)
 {
-  char *cp;
-  cp = ctime(&timeval);
-  printf("%12.12s", cp+4);             /* pick 12 chars from pos 4 */
+    char *cp;
+    cp = ctime(&timeval);
+    printf("%12.12s", cp + 4);           /* pick 12 chars from pos 4 */
 }

@@ -22,6 +22,7 @@
 
 #include "genlib.h"
 #include "cmpfn.h"
+ 
 
 /*
  * Type: setClassT
@@ -148,4 +149,16 @@ setADT Union(setADT s1, setADT s2);
 setADT Intersection(setADT s1, setADT s2);
 setADT SetDifference(setADT s1, setADT s2);
 
+//---------------- 书里课后练习添加的方法 ----------------
+/*
+ * Function: AddArrayToSet
+ * Usage: AddArrayToSet(set, array, n);
+ * ------------------------------------
+ * This function adds the elements in the specified array to the
+ * set.  The parameter n gives the effective size of the array.
+ * The client is responsible for ensuring that the type of the
+ * array matches the element type of the set.
+ */
+
+void AddArrayToSet(setADT set, void *array, int n);
 #endif

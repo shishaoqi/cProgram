@@ -1,0 +1,6 @@
+man -k keyword
+使用带有选项-k的man命令可以根据关键字搜索联机帮助。
+例：man -k utmp
+    man 4 utmp
+    
+man -k file | grep read
