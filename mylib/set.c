@@ -82,7 +82,14 @@ static iteratorADT NewSetIterator(void *collection)
 
 	switch(set->class){
 	   case IntSet: elementSize = sizeof(int); break;
-	   case PtrSet: elementSize = sizeof(void *); break;
+	   case PtrSet: {
+            if(set->cmpFn == StringCmpFn){
+                elementSize = MAXSTRING;
+            }else{
+                elementSize = sizeof(void *);
+            }
+            break;
+        }
 	}
 	iterator = NewIteratorList(elementSize, UnsortedFn);
 	MapBST(AddElementToIterator, set->bst, InOrder, iterator);
@@ -146,7 +153,7 @@ void AddIntElement(setADT set, int element)
 void AddPtrElement(setADT set, void *element)
 {
     if(set->class != PtrSet) Error("Set is not a pointer set");
-    AddERef(set, element);
+    AddERef(set, &element);//遗漏 &(20160425 晚)
 }
 
 static void AddERef(setADT set, void *ep)

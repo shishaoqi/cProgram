@@ -23,6 +23,7 @@
 #include "genlib.h"
 #include "cmpfn.h"
  
+#define MAXSTRING 50
 
 /*
  * Type: setClassT

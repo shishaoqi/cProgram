@@ -114,11 +114,10 @@ static int RecInsertNode(bstADT bst, treeT *tptr, void *kp, void *clientData)
     t = *tptr;
     if (t == NULL) {
         t = GetBlock(bst->totalSize);
-        /*if (bst->cmpFn == StringCmpFn)
-            bst->nodeInitFn(t, kp, clientData);
+        if (bst->cmpFn == StringCmpFn)
+            bst->nodeInitFn(&t, kp, clientData);
         else
-            bst->nodeInitFn(t, kp, clientData);*/
-        bst->nodeInitFn(t, kp, clientData);
+            bst->nodeInitFn(t, kp, clientData);
         dp = BSTData(bst, t);
         dp->bf = 0;
         dp->left = dp->right = NULL;

@@ -1,7 +1,7 @@
-/* 
+/*
  * File: iterator.c
  * -----------------
- * This file implements a polymorphic version of the iterator 
+ * This file implements a polymorphic version of the iterator
  * and the tools necessary to construct types that support
  * iteration. This module implements both the iterator.h and
  * itertype.h interfaces.
@@ -23,12 +23,12 @@
 #define IteratorPassword 3141582653UL
 
 /* The actual data is alllocated here */
-typedef struct cellT{
-  struct cellT *link;
-}cellT;
+typedef struct cellT {
+	struct cellT *link;
+} cellT;
 
-struct iteratorCDT{
-	int elementSize; 
+struct iteratorCDT {
+	int elementSize;
 	//对于在NewIterator原型中声明为void * 的聚集参数的匿名字符，NewIterator并不知道如何初始化一个适合传入的聚集类型的迭代器：解决方法是：保证聚集类型的底层数据结构包含一个指向创建新迭代器的回调函数指针。
 	cmpFnT cmpFn;
 	cellT *head, *tail;
@@ -40,55 +40,56 @@ iteratorADT NewIterator(void *collection)
 {
 	iteratorHeaderT *hp = collection;
 
-	if(hp->password != IteratorPassword){
-	  	Error("Itertion is not defined for this type");
+	if (hp->password != IteratorPassword) {
+		Error("Itertion is not defined for this type");
 	}
 	return (hp->newFn(collection));
 }
 
 bool StepIterator(iteratorADT iterator, void *ep)
-//void* StepIterator(iteratorADT iterator)
 {
 	cellT *cp;
 	void *dp;
 	int strLength;
 
 	cp = iterator->head;
-	if(cp == NULL){
+	if (cp == NULL) {
 		iterator->tail = NULL;
 		return (FALSE);
 	}
 
 	dp = ((char *) cp) + sizeof(cellT);
+
 	//ep = GetBlock(iterator->elementSize);
 	//字符串 出现错误的原因是内存字节数不对
-	if(iterator->cmpFn == StringCmpFn){
-		strLength = StringLength((string)dp)+2;
+	/*if(iterator->cmpFn == StringCmpFn){
+		strLength = StringLength((string)dp);
 		memcpy(ep, dp, strLength);
-		printf("--%s,%d", dp, strLength);
+		printf("1--%s,%d \n", ep, strLength);
 	}else{
 		memcpy(ep, dp, iterator->elementSize);
-		printf("--%s-%s: ", dp, iterator->cmpFn); 
-	}
+		printf("2--%s-%s: ", dp, iterator->cmpFn);
+	}*/
+
+	memcpy(ep, dp, iterator->elementSize);
 
 	iterator->head = cp->link;
-	FreeBlock(cp);
+	//FreeBlock(cp);
 	return (TRUE);
-	//return dp;
 }
 
 void FreeIterator(iteratorADT iterator)
 {
 	cellT *cp;
-	 
-	while((cp = iterator->head) != NULL){
+
+	while ((cp = iterator->head) != NULL) {
 		iterator->head = cp->link;
 		FreeBlock(cp);
 	}
 	FreeBlock(iterator);
 }
 
-/* 
+/*
  * File: itertype.h中定义的函数
  * first time to call, after that NewIterator can be run.
  */
@@ -111,7 +112,7 @@ iteratorADT NewIteratorList(int size, cmpFnT cmpFn)
 	return iterator;
 }
 
-/* 
+/*
  * Implementtation notes: AddToIteratorList
  * ---------------------------------------------------
  * Most of the word of the package occers in this function, which
@@ -128,39 +129,56 @@ iteratorADT NewIteratorList(int size, cmpFnT cmpFn)
 
 void AddToIteratorList(iteratorADT iterator, void *ep)
 {
-    cellT *np, *pp, *ip;
-    void *dp;
+	cellT *np, *pp, *ip, *temp;
+	void *dp;
 
-    np = GetBlock(sizeof (cellT) + iterator->elementSize);
-    dp = ((char *) np) + sizeof (cellT);
-    memcpy(dp, ep, iterator->elementSize);
-    pp = NULL;
+	np = GetBlock(sizeof (cellT) + iterator->elementSize);
+	dp = ((char *) np) + sizeof (cellT);
+	memcpy(dp, ep, iterator->elementSize);
+	pp = NULL;
 
-    if (iterator->tail != NULL) {
-    	//是否比较
-        if (iterator->cmpFn == UnsortedFn) {
-            pp = iterator->tail;
-        } else { //新插入的数据 与 链表最后一个的数据 比较（提高算法效率）
-            dp = ((char *) iterator->tail) + sizeof (cellT);
-            if (iterator->cmpFn(ep, dp) >= 0) pp = iterator->tail;
-        }
-    }
+	if (iterator->tail != NULL) {
+		//是否比较
+		if (iterator->cmpFn == UnsortedFn) {
+			pp = iterator->tail;
+		} else { //新插入的数据 与 链表最后一个的数据 比较（提高算法效率）
+			dp = ((char *) iterator->tail) + sizeof (cellT);
+			if (iterator->cmpFn(ep, dp) >= 0) pp = iterator->tail;
+		}
+	}
 
-    if (pp == NULL) {//之前都未给pp赋值，那么从表头开始做比较，小于某个节点时在那处截取链表截点
-        for (ip = iterator->head; ip != NULL; ip = ip->link) {
-            dp = ((char *) ip) + sizeof (cellT);
-            if (iterator->cmpFn(ep, dp) < 0) break;
-            pp = ip;
-        }
-    }
+	if (pp == NULL) {//之前都未给pp赋值，那么从表头开始做比较，小于某个节点时在那处截取链表截点
+		for (ip = iterator->head; ip != NULL; ip = ip->link) {
+			dp = ((char *) ip) + sizeof (cellT);
+			if (iterator->cmpFn(ep, dp) < 0) break;
+			pp = ip;
+		}
+	}
 
-    if (pp == NULL) {//插入值小于所有已插入的值 或 iterator->head为NULL（即链表为空）
-        np->link = iterator->head;
-        if (iterator->head == NULL) iterator->tail = np;
-        iterator->head = np;
-    } else {
-        np->link = pp->link;
-        if (pp->link == NULL) iterator->tail = np;
-        pp->link = np;
-    }
+	/*if (pp == NULL) {//插入值小于所有已插入的值 或 iterator->head为NULL（即链表为空）
+	    np->link = iterator->head;
+	    if (iterator->head == NULL) iterator->tail = np;
+	    iterator->head = np;
+	} else {
+	    np->link = pp->link;
+	    if (pp->link == NULL) iterator->tail = np;
+	    pp->link = np;
+	}*/
+	if (pp == NULL) {
+		if (iterator->head == NULL) {
+			iterator->head = iterator->tail = np;
+			iterator->head->link = iterator->tail->link = NULL;
+		} else {
+			temp = iterator->head;
+			iterator->head = np;
+			iterator->head->link = temp;
+		}
+	} else {
+		np->link = pp->link;
+		if (pp->link == NULL) {
+			iterator->tail = np;
+			iterator->tail->link = NULL;
+		}
+		pp->link = np;
+	}
 }
