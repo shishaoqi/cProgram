@@ -38,6 +38,7 @@ main()
     AddArrayToSet(first, firstNames, sizeof firstNames / sizeof (string));
     DisplaySet(shorter);
     DisplaySet(first);
+    //exit(1);
     DisplaySet(Intersection(shorter, first));
     DisplaySet(Union(shorter, first));
 }
@@ -51,7 +52,8 @@ static void DisplaySetWithLabel(setADT set, string label)
     printf("%s:\n  {", label);
     iterator = NewIterator(set);
     first = TRUE;
-    while (StepIterator(iterator, &x)) {
+    x = GetBlock(30);
+    while (StepIterator(iterator, x)) {
         if (!first) printf(", ");
         first = FALSE;
         printf("%s", x);

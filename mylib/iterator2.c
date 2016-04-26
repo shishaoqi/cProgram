@@ -150,21 +150,4 @@ void AddToIteratorList(iteratorADT iterator, void *ep)
 	    if (pp->link == NULL) iterator->tail = np;
 	    pp->link = np;
 	}
-	/*if (pp == NULL) {
-		if (iterator->head == NULL) {
-			iterator->head = iterator->tail = np;
-			iterator->head->link = iterator->tail->link = NULL;
-		} else {
-			temp = iterator->head;
-			iterator->head = np;
-			iterator->head->link = temp;
-		}
-	} else {
-		np->link = pp->link;
-		if (pp->link == NULL) {
-			iterator->tail = np;
-			iterator->tail->link = NULL;
-		}
-		pp->link = np;
-	}*/
 }

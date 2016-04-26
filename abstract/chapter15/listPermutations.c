@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2016-04-20 04:49:35
 * @Last Modified by:   anchen
-* @Last Modified time: 2016-04-26 23:45:19
+* @Last Modified time: 2016-04-28 00:37:32
 */
 
 #include <stdio.h>
@@ -41,6 +41,7 @@ static void ListPermutations(string str){
         printf("%s\n", s);
     }
     FreeIterator(iterator);
+    FreeBlock(s);
 }
 
 static void RecursivePermute(string str, int k, setADT set){

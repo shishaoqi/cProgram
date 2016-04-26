@@ -6,30 +6,30 @@
 #include <stdio.h>
 #include <string.h>
 #include "genlib.h"
-#include "bst.h" 
+#include "bst.h"
 #include "iterator2.h"
 #include "itertype.h"
 #include "set.h"
 
-/* 
+/*
  * Type: setCDT
  * -------------
  * This type defines the concrete structure of a set.
  */
 
-struct setCDT{
-	iteratorHeaderT header;
-	setClassT class;
-	cmpFnT cmpFn;
-	int nElements;
-	bstADT bst;
+struct setCDT {
+    iteratorHeaderT header;
+    setClassT class;
+    cmpFnT cmpFn;
+    int nElements;
+    bstADT bst;
     int setElementSize;//新增(setElementT内存空间大小)
 };
 
-typedef union{
-	int intRep;
-	void *ptrRep;
-}setElementT;
+typedef union {
+    int intRep;
+    void *ptrRep;
+} setElementT;
 
 /* Private function  prototypes */
 static setADT NewSet(int size, setClassT class, cmpFnT cmpFn);
@@ -44,28 +44,28 @@ static void display(void *np, void *clientData);
 
 /* Exported entries */
 setADT NewIntSet(void)
-{   
+{
     int size = sizeof(int);
-	return (NewSet(size, IntSet, IntCmpFn));
+    return (NewSet(size, IntSet, IntCmpFn));
 }
 
 setADT NewPtrSet(int size, cmpFnT cmpFn)
 {
-	return (NewSet(size, PtrSet, cmpFn));
+    return (NewSet(size, PtrSet, cmpFn));
 }
 
 static setADT NewSet(int size, setClassT class, cmpFnT cmpFn)
 {
-	setADT set;
+    setADT set;
 
-	set = New(setADT);
-	EnableIteration(set, NewSetIterator);
-	set->class = class;
-	set->cmpFn = cmpFn;
-	set->nElements = 0;
+    set = New(setADT);
+    EnableIteration(set, NewSetIterator);
+    set->class = class;
+    set->cmpFn = cmpFn;
+    set->nElements = 0;
     set->setElementSize = size;
-	set->bst = NewBST(size, cmpFn, InitSetNodeFn);
-	return (set);
+    set->bst = NewBST(size, cmpFn, InitSetNodeFn);
+    return (set);
 }
 
 /**
@@ -79,10 +79,10 @@ static void InitSetNodeFn(void *np, void *kp, void *clientData)
     setADT set = (setADT) clientData;
     int setElementSize = set->setElementSize;
 
-    switch(set->class){
-        case IntSet: *((int *)np) = *((int *)kp);   break;
-        //case PtrSet: *((void**)np) = *((void**)kp); break;
-        case PtrSet: memcpy(np, kp, setElementSize); break;
+    switch (set->class) {
+    case IntSet: *((int *)np) = *((int *)kp);   break;
+    //case PtrSet: *((void**)np) = *((void**)kp); break;
+    case PtrSet: memcpy(np, kp, setElementSize); break;
     }
     set->nElements++;
 }
@@ -99,18 +99,18 @@ static void InitSetNodeFn(void *np, void *kp, void *clientData)
  */
 static iteratorADT NewSetIterator(void *collection)
 {
-	setADT set = (setADT) collection;
-	int setElementSize;
-	iteratorADT iterator;
+    setADT set = (setADT) collection;
+    int setElementSize;
+    iteratorADT iterator;
 
-	switch(set->class){
-	   case IntSet: setElementSize = sizeof(int); break;
-	   case PtrSet: setElementSize = set->setElementSize; break;
-	}
-	iterator = NewIteratorList(setElementSize, UnsortedFn);
-	MapBST(AddElementToIterator, set->bst, InOrder, iterator);
+    switch (set->class) {
+    case IntSet: setElementSize = sizeof(int); break;
+    case PtrSet: setElementSize = set->setElementSize; break;
+    }
+    iterator = NewIteratorList(setElementSize, UnsortedFn);
+    MapBST(AddElementToIterator, set->bst, InOrder, iterator);
 
-	return iterator;
+    return iterator;
 }
 
 /**
@@ -124,7 +124,7 @@ static void display(void *np, void *clientData)
 }
 
 static void AddElementToIterator(void *np, void *clientData)
-{   
+{
     AddToIteratorList( (iteratorADT)clientData, np);
 }
 
@@ -162,13 +162,13 @@ bool SetIsEmpty(setADT set)
 
 void AddIntElement(setADT set, int element)
 {
-    if(set->class != IntSet) Error("Set is not an iteger set");
+    if (set->class != IntSet) Error("Set is not an iteger set");
     AddERef(set, &element);
 }
 
 void AddPtrElement(setADT set, void *element)
 {
-    if(set->class != PtrSet) Error("Set is not a pointer set");
+    if (set->class != PtrSet) Error("Set is not a pointer set");
     AddERef(set, element);//遗漏 &(20160425 晚) === 不需要&(20160426 晚再证，以前应该测试过，所以之前也没加&)
 }
 
@@ -179,31 +179,31 @@ static void AddERef(setADT set, void *ep)
 
 void DeleteIntElement(setADT set, int element)
 {
-    if(set->class != IntSet) Error("Set if not an integer set");
+    if (set->class != IntSet) Error("Set if not an integer set");
     DeleteERef(set, &element);
 }
 
 void DeletePtrElement(setADT set, void *element)
 {
-    if(set->class != PtrSet) Error("Set is not a pointer set");
+    if (set->class != PtrSet) Error("Set is not a pointer set");
     DeleteERef(set, element);
 }
- 
+
 static void DeleteERef(setADT set, void *ep)
 {
-    if( DeleteBSTNode(set->bst, ep) )
+    if ( DeleteBSTNode(set->bst, ep) )
         set->nElements--;
 }
 
 bool IsIntElement(setADT set, int element)
 {
-    if(set->class != IntSet) Error("Set if not an integer set");
+    if (set->class != IntSet) Error("Set if not an integer set");
     return (TestERef(set, &element));
 }
 
 bool IsPtrment(setADT set, void *element)
 {
-    if(set->class != PtrSet) Error("Set if not an pointer set");
+    if (set->class != PtrSet) Error("Set if not an pointer set");
     return (TestERef(set, element));
 }
 
@@ -217,7 +217,7 @@ static bool TestERef(setADT set, void *ep)
  * ------------------------------------
  * The function IsSubset, Union, Intersection, and SetDifference
  * are similar in structure. Each one an iterator to walk over
- * the appropriate set, Because the functions in bst.h need only 
+ * the appropriate set, Because the functions in bst.h need only
  * the address of an element, the functions can use the union type
  * setElementT to avoid special-case code for the two set classes.
  */
@@ -229,77 +229,100 @@ bool SetEqual(setADT s1, setADT s2)
 bool IsSubset(setADT s1, setADT s2)
 {
     iteratorADT iterator;
-    setElementT element;
+    //setElementT element;
+    void *element;
     bool result;
-    if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
+    int elementSize;
+
+    elementSize = s1->setElementSize > s2->setElementSize ? s1->setElementSize : s2->setElementSize;
+    if (s1->class != s2->class || s1->cmpFn != s2->cmpFn) {
         Error ("IsSubset: Set types do not match");
     }
     result = TRUE;
     iterator = NewIterator(s1);
-    while(result && StepIterator(iterator, (void *)&element)){
-        if(!TestERef(s2, &element)) result = FALSE;
+    element = GetBlock(elementSize);
+    while (result && StepIterator(iterator, element)) {
+        if (!TestERef(s2, element)) result = FALSE;
     }
     FreeIterator(iterator);
+    FreeBlock(element);
     return (result);
 }
 
 setADT Union(setADT s1, setADT s2)
 {
     iteratorADT iterator;
-    setElementT element;
+    //setElementT element;
+    void *element;
     setADT set;
+    int elementSize;
 
-    if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
+    elementSize = s1->setElementSize > s2->setElementSize ? s1->setElementSize : s2->setElementSize;
+    if (s1->class != s2->class || s1->cmpFn != s2->cmpFn) {
         Error("Union: Set types do not match");
     }
     set = NewSet(s1->setElementSize, s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
-    while(StepIterator(iterator, (void*)&element)){
-        AddERef(set, &element);
+    element = GetBlock(elementSize);
+    while (StepIterator(iterator, element)) {
+        AddERef(set, element);
     }
     FreeIterator(iterator);
     iterator = NewIterator(s2);
-    while(StepIterator(iterator, (void*)&element)){
-        AddERef(set, &element);
+    FreeBlock(element);
+    element = GetBlock(elementSize);
+    while (StepIterator(iterator, element)) {
+        AddERef(set, element);
     }
     FreeIterator(iterator);
+    FreeBlock(element);
     return set;
 }
 
 setADT Intersection(setADT s1, setADT s2)
 {
     iteratorADT iterator;
-    setElementT element;
+    //setElementT element;
+    void *element;
     setADT set;
+    int elementSize;
 
-    if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
+    elementSize = s1->setElementSize > s2->setElementSize ? s1->setElementSize : s2->setElementSize;
+    if (s1->class != s2->class || s1->cmpFn != s2->cmpFn) {
         Error("Intersection: Set types do not match");
     }
 
     set = NewSet(s1->setElementSize, s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
-    while(StepIterator(iterator, (void*)&element)){
-        if(TestERef(s2, &element)) AddERef(set, &element);
+    element = GetBlock(elementSize);
+    while (StepIterator(iterator, element)) {
+        if (TestERef(s2, element)) AddERef(set, element);
     }
     FreeIterator(iterator);
+    FreeBlock(element);
     return set;
 }
 
 setADT SetDifference(setADT s1, setADT s2)
 {
     iteratorADT iterator;
-    setElementT element;
+    //setElementT element;
+    void *element;
     setADT set;
+    int elementSize;
 
-    if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
+    elementSize = s1->setElementSize > s2->setElementSize ? s1->setElementSize : s2->setElementSize;
+    if (s1->class != s2->class || s1->cmpFn != s2->cmpFn) {
         Error("SetDifference: Set types do not match");
     }
     set = NewSet(s1->setElementSize, s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
-    while(StepIterator(iterator, (void*)&element)){
-        if(!TestERef(s2, &element)) AddERef(set, &element);
+    element = GetBlock(elementSize);
+    while (StepIterator(iterator, element)) {
+        if (!TestERef(s2, element)) AddERef(set, element);
     }
     FreeIterator(iterator);
+    FreeBlock(element);
     return set;
 }
 
@@ -318,8 +341,8 @@ void AddArrayToSet(setADT set, void *array, int n)
 
     for (i = 0; i < n; i++) {
         switch (set->class) {
-          case IntSet: AddERef(set, ((int *) array) + i); break;
-          case PtrSet: AddERef(set, ((void **) array) + i); break;
+            case IntSet: AddERef(set, ((int *) array) + i); break;
+            case PtrSet: AddERef(set, *(((void **) array) + i)); break;
         }
     }
 }
