@@ -19,6 +19,7 @@
  * in s symbol table.
  */
 typedef struct iteratorCDT *iteratorADT;
+typedef void* iteratorElementT;
 
 iteratorADT NewIterator(void *collection);
 bool StepIterator(iteratorADT iterator, void *ep);

@@ -23,6 +23,7 @@ struct setCDT{
 	cmpFnT cmpFn;
 	int nElements;
 	bstADT bst;
+    int setElementSize;//新增(setElementT内存空间大小)
 };
 
 typedef union{
@@ -31,7 +32,7 @@ typedef union{
 }setElementT;
 
 /* Private function  prototypes */
-static setADT NewSet(setClassT class, cmpFnT cmpFn);
+static setADT NewSet(int size, setClassT class, cmpFnT cmpFn);
 static void InitSetNodeFn(void *np, void *kp, void *clientData);
 static void FreeNodeFn(void *np, void *clientData);
 static void AddERef(setADT set, void *ep);
@@ -43,16 +44,17 @@ static void display(void *np, void *clientData);
 
 /* Exported entries */
 setADT NewIntSet(void)
-{
-	return (NewSet(IntSet, IntCmpFn));
+{   
+    int size = sizeof(int);
+	return (NewSet(size, IntSet, IntCmpFn));
 }
 
-setADT NewPtrSet(cmpFnT cmpFn)
+setADT NewPtrSet(int size, cmpFnT cmpFn)
 {
-	return (NewSet(PtrSet, cmpFn));
+	return (NewSet(size, PtrSet, cmpFn));
 }
 
-static setADT NewSet(setClassT class, cmpFnT cmpFn)
+static setADT NewSet(int size, setClassT class, cmpFnT cmpFn)
 {
 	setADT set;
 
@@ -61,12 +63,8 @@ static setADT NewSet(setClassT class, cmpFnT cmpFn)
 	set->class = class;
 	set->cmpFn = cmpFn;
 	set->nElements = 0;
-    /*if(set->cmpFn == StringCmpFn){
-        set->bst = NewBST(MAXSTRING, cmpFn, InitSetNodeFn);
-    }else{
-        set->bst = NewBST(sizeof(setElementT), cmpFn, InitSetNodeFn);
-    }*/
-	set->bst = NewBST(sizeof(setElementT), cmpFn, InitSetNodeFn);
+    set->setElementSize = size;
+	set->bst = NewBST(size, cmpFn, InitSetNodeFn);
 	return (set);
 }
 
@@ -79,13 +77,12 @@ static setADT NewSet(setClassT class, cmpFnT cmpFn)
 static void InitSetNodeFn(void *np, void *kp, void *clientData)
 {
     setADT set = (setADT) clientData;
-    bstADT bst = (bstADT) set->bst;
-    int elementSize = bst->userSize;
+    int setElementSize = set->setElementSize;
 
     switch(set->class){
         case IntSet: *((int *)np) = *((int *)kp);   break;
         //case PtrSet: *((void**)np) = *((void**)kp); break;
-        case PtrSet: memcpy(np, kp, elementSize); break;
+        case PtrSet: memcpy(np, kp, setElementSize); break;
     }
     set->nElements++;
 }
@@ -103,37 +100,27 @@ static void InitSetNodeFn(void *np, void *kp, void *clientData)
 static iteratorADT NewSetIterator(void *collection)
 {
 	setADT set = (setADT) collection;
-	int elementSize;
+	int setElementSize;
 	iteratorADT iterator;
 
 	switch(set->class){
-	   case IntSet: elementSize = sizeof(int); break;
-	   case PtrSet: {
-            if(set->cmpFn == StringCmpFn){
-                elementSize = MAXSTRING;
-            }else{
-                elementSize = sizeof(void *);
-            }
-            break;
-        }
+	   case IntSet: setElementSize = sizeof(int); break;
+	   case PtrSet: setElementSize = set->setElementSize; break;
 	}
-	iterator = NewIteratorList(elementSize, UnsortedFn);
-	MapBST(display, set->bst, InOrder, iterator);
+	iterator = NewIteratorList(setElementSize, UnsortedFn);
+	MapBST(AddElementToIterator, set->bst, InOrder, iterator);
 
 	return iterator;
 }
 
 /**
- * test function
+ * 替换  AddElementToIterator 用于测试
  * @param np         [description]
  * @param clientData [description]
  */
 static void display(void *np, void *clientData)
 {
-    string str;
-
-    str = (string)np;
-    printf("%s\n", str);
+    printf("%s\n", (string)np);
 }
 
 static void AddElementToIterator(void *np, void *clientData)
@@ -182,7 +169,7 @@ void AddIntElement(setADT set, int element)
 void AddPtrElement(setADT set, void *element)
 {
     if(set->class != PtrSet) Error("Set is not a pointer set");
-    AddERef(set, &element);//遗漏 &(20160425 晚)
+    AddERef(set, element);//遗漏 &(20160425 晚) === 不需要&(20160426 晚再证，以前应该测试过，所以之前也没加&)
 }
 
 static void AddERef(setADT set, void *ep)
@@ -265,7 +252,7 @@ setADT Union(setADT s1, setADT s2)
     if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
         Error("Union: Set types do not match");
     }
-    set = NewSet(s1->class, s1->cmpFn);
+    set = NewSet(s1->setElementSize, s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
     while(StepIterator(iterator, (void*)&element)){
         AddERef(set, &element);
@@ -289,7 +276,7 @@ setADT Intersection(setADT s1, setADT s2)
         Error("Intersection: Set types do not match");
     }
 
-    set = NewSet(s1->class, s1->cmpFn);
+    set = NewSet(s1->setElementSize, s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
     while(StepIterator(iterator, (void*)&element)){
         if(TestERef(s2, &element)) AddERef(set, &element);
@@ -307,7 +294,7 @@ setADT SetDifference(setADT s1, setADT s2)
     if(s1->class != s2->class || s1->cmpFn != s2->cmpFn){
         Error("SetDifference: Set types do not match");
     }
-    set = NewSet(s1->class, s1->cmpFn);
+    set = NewSet(s1->setElementSize, s1->class, s1->cmpFn);
     iterator = NewIterator(s1);
     while(StepIterator(iterator, (void*)&element)){
         if(!TestERef(s2, &element)) AddERef(set, &element);

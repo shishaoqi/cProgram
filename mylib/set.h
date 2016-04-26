@@ -53,7 +53,7 @@ typedef struct setCDT *setADT;
  * general set type capable of holding client-specified types
  */
 setADT NewIntSet(void);
-setADT NewPrtSet(cmpFnT cmpFn);
+setADT NewPrtSet(int size, cmpFnT cmpFn);
 
 /*
  * Function: FreeSet

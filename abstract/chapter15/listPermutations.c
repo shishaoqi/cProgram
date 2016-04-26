@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2016-04-20 04:49:35
 * @Last Modified by:   anchen
-* @Last Modified time: 2016-04-26 12:53:05
+* @Last Modified time: 2016-04-26 23:45:19
 */
 
 #include <stdio.h>
@@ -30,13 +30,16 @@ static void ListPermutations(string str){
     setADT set;
     iteratorADT iterator;
     string s;
+    int size;
 
-    set = NewPtrSet(StringCmpFn);
+    size = 20;
+    set = NewPtrSet(size, StringCmpFn);
     RecursivePermute(str, 0, set);
     iterator = NewIterator(set);
-    /*while(StepIterator(iterator, &s)){
-        //printf("%s\n", s);
-    }*/
+    s = GetBlock(20);
+    while(StepIterator(iterator, s)){
+        printf("%s\n", s);
+    }
     FreeIterator(iterator);
 }
 

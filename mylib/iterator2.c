@@ -22,9 +22,9 @@
  */
 #define IteratorPassword 3141582653UL
 
-/* The actual data is alllocated here */
 typedef struct cellT {
 	struct cellT *link;
+	/* The actual data is alllocated here */
 } cellT;
 
 struct iteratorCDT {
@@ -49,33 +49,19 @@ iteratorADT NewIterator(void *collection)
 bool StepIterator(iteratorADT iterator, void *ep)
 {
 	cellT *cp;
-	void *dp;
-	int strLength;
+    void *dp;
 
-	cp = iterator->head;
-	if (cp == NULL) {
-		iterator->tail = NULL;
-		return (FALSE);
-	}
-
-	dp = ((char *) cp) + sizeof(cellT);
-
-	//ep = GetBlock(iterator->elementSize);
-	//字符串 出现错误的原因是内存字节数不对
-	/*if(iterator->cmpFn == StringCmpFn){
-		strLength = StringLength((string)dp);
-		memcpy(ep, dp, strLength);
-		printf("1--%s,%d \n", ep, strLength);
-	}else{
-		memcpy(ep, dp, iterator->elementSize);
-		printf("2--%s-%s: ", dp, iterator->cmpFn);
-	}*/
-
-	memcpy(ep, dp, iterator->elementSize);
-
-	iterator->head = cp->link;
-	//FreeBlock(cp);
-	return (TRUE);
+    cp = iterator->head;
+    if (cp == NULL) {
+        iterator->tail = NULL;
+        return (FALSE);
+    }
+    dp = ((char *) cp) + sizeof (cellT);
+    //printf("%s\n", dp);
+    memcpy(ep, dp, iterator->elementSize);
+    iterator->head = cp->link;
+    FreeBlock(cp);
+    return (TRUE);
 }
 
 void FreeIterator(iteratorADT iterator)
@@ -155,7 +141,7 @@ void AddToIteratorList(iteratorADT iterator, void *ep)
 		}
 	}
 
-	/*if (pp == NULL) {//插入值小于所有已插入的值 或 iterator->head为NULL（即链表为空）
+	if (pp == NULL) {//插入值小于所有已插入的值 或 iterator->head为NULL（即链表为空）
 	    np->link = iterator->head;
 	    if (iterator->head == NULL) iterator->tail = np;
 	    iterator->head = np;
@@ -163,8 +149,8 @@ void AddToIteratorList(iteratorADT iterator, void *ep)
 	    np->link = pp->link;
 	    if (pp->link == NULL) iterator->tail = np;
 	    pp->link = np;
-	}*/
-	if (pp == NULL) {
+	}
+	/*if (pp == NULL) {
 		if (iterator->head == NULL) {
 			iterator->head = iterator->tail = np;
 			iterator->head->link = iterator->tail->link = NULL;
@@ -180,5 +166,5 @@ void AddToIteratorList(iteratorADT iterator, void *ep)
 			iterator->tail->link = NULL;
 		}
 		pp->link = np;
-	}
+	}*/
 }
