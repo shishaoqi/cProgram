@@ -36,6 +36,7 @@ main()
     AddArrayToSet(shorter, shorterNames, sizeof shorterNames / sizeof (string));
     first = NewPtrSet(size, StringCmpFn);
     AddArrayToSet(first, firstNames, sizeof firstNames / sizeof (string));
+    
     DisplaySet(shorter);
     DisplaySet(first);
     //exit(1);
