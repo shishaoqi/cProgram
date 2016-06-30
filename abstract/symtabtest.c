@@ -24,7 +24,7 @@ void DumpWordFrequencies(symtabADT table, string filename);
 void DumpEntry(string key, void *value, void *clientData);
 
 /* use iterator to implements the DumpWordFrequencies */
-static void DumpWordFrequencies2(symtabADT table);  
+static void DumpWordFrequencies_second_edition(symtabADT table);  
 
 int main()
 {
@@ -37,7 +37,7 @@ int main()
 	table = NewSymbolTable();
 	printf("Input file: ");
 	filename = GetLine();
-	outFN= "/savefile/abstract/temp";
+	outFN= "./symtabtestOutputFile";
 
 	infile = fopen(filename, "r");
 	if(infile == NULL)  Error("Can't open %s", filename);
@@ -50,16 +50,20 @@ int main()
 				RecordWord(table, token);
 		}
 	}
-
-     /* use iterator implements the DumpWordFrequencies */
-    DumpWordFrequencies2(table);
-	fclose(infile);
    
-     /* first edition */  
-    // DisplayWordFrequencies(table);
-
-    /* pass additional state information to the function DumpEntry */
-   // DumpWordFrequencies(table, outFN);
+     /**
+      *first edition
+      *pass additional state information to the function DumpEntry 
+      */  
+   	 DumpWordFrequencies(table, outFN);
+   	
+   	/**
+	 * second edition
+	 * use iterator implements the DumpWordFrequencies
+	 */
+    //DumpWordFrequencies_second_edition(table);
+   	
+   	fclose(infile);
 	return 0;
 }
 
@@ -115,7 +119,7 @@ void DumpEntry(string key, void *value, void *clientData)
 /* use iterator to implements the DumpWordFrequencies 
  * show the result on the screen
  */
-static void DumpWordFrequencies2(symtabADT table)
+static void DumpWordFrequencies_second_edition(symtabADT table)
 {
 	iteratorADT iterator;
 	counterT entry;
