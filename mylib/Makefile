@@ -2,28 +2,29 @@
 #****************************************************************
 
 OBJECTS = \
-    bst.o \
-    cmpfn.o \
     genlib.o \
-    iterator2.o \
+    simpio.o \
+    strlib.o \
     queue.o \
     queuelist.o \
     random.o \
+    cmpfn.o \
     ref.o \
     scanadt.o \
     set.o \
     foreach.o \
-    simpio.o \
     stack.o \
     stacklist.o \
-    strlib.o \
     symtab.o \
+    iterator1.o \
+    iterator2.o \
     exception.o \
     graphics.o \
     xmanager.o \
     xdisplay.o \
     xcompat.o \
-    glibrary.o
+    glibrary.o \
+    bst.o
 
 CSLIB = libcs.a
 

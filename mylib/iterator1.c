@@ -24,7 +24,7 @@ struct iteratorCDT{
 
 static void InsertKey(string key, void *value, void *clientData);
 
-iteratorADT NewIterator(symtabADT table)
+iteratorADT NewIterator_1(symtabADT table)
 {
 	iteratorADT iterator;
 
@@ -34,7 +34,7 @@ iteratorADT NewIterator(symtabADT table)
 	return (iterator);
 }
 
-bool StepIterator(iteratorADT iterator, string *pKey)
+bool StepIterator_1(iteratorADT iterator, string *pKey)
 {
 	cellT *cp;
 
@@ -46,7 +46,7 @@ bool StepIterator(iteratorADT iterator, string *pKey)
 	return (TRUE);
 }
 
-void FreeIterator(iteratorADT iterator)
+void FreeIterator_1(iteratorADT iterator)
 {
 	cellT *cp;
 	 

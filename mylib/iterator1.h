@@ -41,8 +41,8 @@ typedef struct iteratorCDT *iteratorADT;
  * returns FALSE. The FreeIterator function releases any
  * storage associated with the iterator.
  */
-iteratorADT NewIterator(symtabADT table);
-bool StepIterator(iteratorADT iterator, string *pKey);
-void FreeIterator(iteratorADT iterator);
+iteratorADT NewIterator_1(symtabADT table);
+bool StepIterator_1(iteratorADT iterator, string *pKey);
+void FreeIterator_1(iteratorADT iterator);
 
 #endif

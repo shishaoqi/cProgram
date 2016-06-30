@@ -55,13 +55,13 @@ int main()
       *first edition
       *pass additional state information to the function DumpEntry 
       */  
-   	 DumpWordFrequencies(table, outFN);
+   	 //DumpWordFrequencies(table, outFN);
    	
    	/**
 	 * second edition
 	 * use iterator implements the DumpWordFrequencies
 	 */
-    //DumpWordFrequencies_second_edition(table);
+    DumpWordFrequencies_second_edition(table);
    	
    	fclose(infile);
 	return 0;
@@ -124,12 +124,14 @@ static void DumpWordFrequencies_second_edition(symtabADT table)
 	iteratorADT iterator;
 	counterT entry;
 	string key;
+	//key = GetBlock(50);
 
 	printf("Word frequency table:\n");
-	iterator = NewIterator(table);
-	while(StepIterator(iterator, &key)){
+	iterator = NewIterator_1(table);
+	while(StepIterator_1(iterator, &key)){
 		entry=(counterT)Lookup(table, key);
 		printf("%-15s%5d\n", key, entry->count );
 	}
-	FreeIterator(iterator);
+	//FreeBlock(key);
+	FreeIterator_1(iterator);
 }
