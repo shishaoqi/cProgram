@@ -2,7 +2,7 @@
  * File: bst.c
  * -----------
  * This file implements the bst.h interface, which provides a
- * general implementation of binary search treel
+ * general implementation of binary search tree
  */
 
 #include <stdio.h>
