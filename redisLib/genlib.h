@@ -30,7 +30,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
-#include "jemalloc.h"
+#include <jemalloc/jemalloc.h>
 
 /* Section 1 -- Define new "primitive" types */
 

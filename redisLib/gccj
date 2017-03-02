@@ -1,0 +1,11 @@
+#! /bin/csh -f
+set INCLUDE = /www/cProgram/redisLib
+set CSLIB = $INCLUDE/redislib.a
+set LIBRARIES = ($CSLIB -L/usr/local/jemalloc/lib -lX11 -lm -Wl,-rpath,/usr/local/jemalloc/lib -ljemalloc)
+foreach x ($*)
+  if ("x$x" == "x-c") then
+    set LIBRARIES = ""
+    break
+  endif
+end
+gcc -g -I$INCLUDE -I/usr/local/jemalloc/include/jemalloc $* $LIBRARIES
