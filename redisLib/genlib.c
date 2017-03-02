@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <stddef.h>
+#include <pthread.h>
 #include <string.h>
 #include <stdarg.h>
 #include <jemalloc/jemalloc.h>
@@ -23,7 +24,6 @@
 
 #define ErrorExitStatus 1
 #define PREFIX_SIZE (sizeof(size_t))
-static int zmalloc_thread_safe = 0;
 
 /* Section 1 -- Define new "primitive" types */
 
@@ -78,6 +78,8 @@ char undefined_object[] = "UNDEFINED";
 } while(0)
 
 static size_t used_memory = 0;
+static int zmalloc_thread_safe = 0;
+pthread_mutex_t used_memory_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 void *GetBlock(size_t size)
 {
