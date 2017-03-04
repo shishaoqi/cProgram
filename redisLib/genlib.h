@@ -31,7 +31,6 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <pthread.h>
-#include <jemalloc/jemalloc.h>
 
 /* Section 1 -- Define new "primitive" types */
 

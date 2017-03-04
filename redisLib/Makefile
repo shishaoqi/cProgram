@@ -90,6 +90,9 @@ endif
 
 all: $(CSLIB) gccj
 
+clean:
+	rm -rf  *.o *.a
+
 # ***************************************************************
 # C compilations
 genlib.o: genlib.c genlib.h exception.h

@@ -124,7 +124,6 @@ static void DumpWordFrequencies_second_edition(symtabADT table)
 	iteratorADT iterator;
 	counterT entry;
 	string key;
-	//key = GetBlock(50);
 
 	printf("Word frequency table:\n");
 	iterator = NewIterator_1(table);
@@ -132,6 +131,5 @@ static void DumpWordFrequencies_second_edition(symtabADT table)
 		entry=(counterT)Lookup(table, key);
 		printf("%-15s%5d\n", key, entry->count );
 	}
-	//FreeBlock(key);
 	FreeIterator_1(iterator);
 }

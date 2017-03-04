@@ -40,7 +40,7 @@ char undefined_object[] = "UNDEFINED";
 
 /* Memory allocation implementation */
 
-#define malloc(size) je_malloc(size)
+/*#define malloc(size) je_malloc(size)
 #define calloc(count,size) je_calloc(count,size)
 #define realloc(ptr,size) je_realloc(ptr,size)
 #define free(ptr) je_free(ptr)
@@ -79,26 +79,18 @@ char undefined_object[] = "UNDEFINED";
 
 static size_t used_memory = 0;
 static int zmalloc_thread_safe = 0;
-pthread_mutex_t used_memory_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t used_memory_mutex = PTHREAD_MUTEX_INITIALIZER;*/
 
 void *GetBlock(size_t size)
 {
-    void *ptr = malloc(size+PREFIX_SIZE);
-
-    *((size_t*)ptr) = size;
-    update_zmalloc_stat_alloc(size+PREFIX_SIZE);
-    return (char*)ptr+PREFIX_SIZE;
+    void *ptr = malloc(size);
+    if (ptr == NULL) Error("No memory available");
+    return ptr;
 }
 
 void FreeBlock(void *ptr)
 {
-    void *realptr;
-    size_t oldsize;
-
-    realptr = (char*)ptr-PREFIX_SIZE;
-    oldsize = *((size_t*)realptr);
-    update_zmalloc_stat_free(oldsize+PREFIX_SIZE);
-    free(realptr);
+    free(ptr);
 }
 
 

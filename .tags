@@ -30,8 +30,8 @@ AP_subi	.\C Interfaces and Implementations\src\ap.c	/^T AP_subi(T x, long int y)
 AP_toint	.\C Interfaces and Implementations\src\ap.c	/^long int AP_toint(T x) {$/;"	f
 AP_tostr	.\C Interfaces and Implementations\src\ap.c	/^char *AP_tostr(char *str, int size, int base, T x) {$/;"	f
 ARENA_INCLUDED	.\C Interfaces and Implementations\include\arena.h	3;"	d
-ARGLEN	.\understandingUnixLinuxProgram\chapter8\psh1.c	12;"	d	file:
-ARGLEN	.\understandingUnixLinuxProgram\chapter8\psh2.c	12;"	d	file:
+ARGLEN	.\understandingUnixLinuxProgram\chapter8\psh1.c	13;"	d	file:
+ARGLEN	.\understandingUnixLinuxProgram\chapter8\psh2.c	14;"	d	file:
 ARRAYREP_INCLUDED	.\C Interfaces and Implementations\include\arrayrep.h	3;"	d
 ARRAY_INCLUDED	.\C Interfaces and Implementations\include\array.h	3;"	d
 ATOM_INCLUDED	.\C Interfaces and Implementations\include\atom.h	3;"	d
@@ -97,7 +97,7 @@ ApplyOperator	.\srcAbstract\chapter10\rpncalc.c	/^static void ApplyOperator(char
 ApplyOperator	.\srcAbstract\chapter8\rpncalc.c	/^static void ApplyOperator(char op, stackADT operandStack)$/;"	f	file:
 ApproximatelyEqual	.\ProgrammingAbstracetionsInC\06-Algorithms\nsqrt.c	/^bool ApproximatelyEqual(double x, double y)$/;"	f
 April	.\srcAbstract\chapter1\calendar.c	30;"	d	file:
-ArcCmd	.\mylib\xmanager.h	/^   ArcCmd,$/;"	e	enum:__anon37
+ArcCmd	.\mylib\xmanager.h	/^   ArcCmd,$/;"	e	enum:__anon38
 ArcMessage	.\mylib\xmanager.c	/^static void ArcMessage(string args)$/;"	f	file:
 Arcs	.\srcAbstract\chapter16\graph.c	/^setADT Arcs(graphADT graph)$/;"	f
 ArcsFrom	.\srcAbstract\chapter16\graph.c	/^setADT ArcsFrom(nodeADT node)$/;"	f
@@ -298,7 +298,7 @@ CheckForWin	.\srcAbstract\chapter6\tictac.c	/^static bool CheckForWin(stateT sta
 CheckPalindrome	.\srcAbstract\chapter4\palin2.c	/^static bool CheckPalindrome(char str[], int len)$/;"	f	file:
 ChooseComputerMove	.\srcAbstract\chapter6\nim.c	/^static int ChooseComputerMove(int nCoins)$/;"	f	file:
 ChooseComputerMove	.\srcAbstract\chapter6\tictac.c	/^static moveT ChooseComputerMove(stateT state)$/;"	f	file:
-ClearCmd	.\mylib\xmanager.h	/^   ClearCmd,$/;"	e	enum:__anon37
+ClearCmd	.\mylib\xmanager.h	/^   ClearCmd,$/;"	e	enum:__anon38
 ClearCmd	.\srcAbstract\chapter11\cmddisp.c	/^static void ClearCmd(void)$/;"	f	file:
 ClearCmdFn	.\srcAbstract\chapter13\symtest.c	/^static void ClearCmdFn(cmdScannerADT cs)$/;"	f	file:
 ClearIntegerArray	.\ProgrammingAbstracetionsInC\11-Arrays\countlet.c	/^void ClearIntegerArray(int array[], int n)$/;"	f
@@ -318,10 +318,10 @@ ComboBox	.\BeginnigLinuxProgramming\chapter17\ComboBox.h	/^class ComboBox : publ
 CommandBufferSize	.\mylib\xmanager.h	24;"	d
 CommandLoop	.\srcAbstract\chapter13\cmdscan.c	/^void CommandLoop(cmdScannerADT cs, string prompt)$/;"	f
 CommandLoop	.\srcAbstract\chapter16\cmdscan.c	/^void CommandLoop(cmdScannerADT cs, string prompt)$/;"	f
-CompoundType	.\srcAbstract\chapter14\exp.h	/^    CompoundType$/;"	e	enum:__anon69
+CompoundType	.\srcAbstract\chapter14\exp.h	/^    CompoundType$/;"	e	enum:__anon70
 ComputeMazeSize	.\srcAbstract\chapter6\mazelib.c	/^static void ComputeMazeSize(FILE *infile)$/;"	f	file:
-Computer	.\srcAbstract\chapter6\nim.c	/^typedef enum { Human, Computer } playerT;$/;"	e	enum:__anon75	file:
-Computer	.\srcAbstract\chapter6\tictac.c	/^typedef enum { Human, Computer } playerT;$/;"	e	enum:__anon76	file:
+Computer	.\srcAbstract\chapter6\nim.c	/^typedef enum { Human, Computer } playerT;$/;"	e	enum:__anon76	file:
+Computer	.\srcAbstract\chapter6\tictac.c	/^typedef enum { Human, Computer } playerT;$/;"	e	enum:__anon77	file:
 Concat	.\mylib\strlib.c	/^string Concat(string s1, string s2)$/;"	f
 ConcatNCopies	.\ProgrammingAbstracetionsInC\09-Strings\ncopies.c	/^string ConcatNCopies(int n, string str)$/;"	f
 ConcatNCopies	.\ProgrammingAbstracetionsInC\09-Strings\protect.c	/^string ConcatNCopies(int n, string str)$/;"	f
@@ -355,6 +355,8 @@ CountSpaces	.\srcAbstract\chapter3\spcount.c	70;"	d	file:
 CreatePayroll	.\srcAbstract\chapter2\employee.c	/^static payrollT CreatePayroll(employeeRecordT staff[], int nEmployees)$/;"	f	file:
 CreatePoint	.\ProgrammingAbstracetionsInC\16-Records\point.c	/^pointT CreatePoint(double x, double y)$/;"	f
 CreateString	.\mylib\strlib.c	/^static string CreateString(int len)$/;"	f	file:
+DELAY	.\understandingUnixLinuxProgram\chapter8\waitdemo1.c	13;"	d	file:
+DELAY	.\understandingUnixLinuxProgram\chapter8\waitdemo2.c	13;"	d	file:
 DFL_SYMBOL	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	5;"	d
 DFSCmdFn	.\srcAbstract\chapter16\gtest.c	/^static void DFSCmdFn(cmdScannerADT cs)$/;"	f	file:
 December	.\srcAbstract\chapter1\calendar.c	38;"	d	file:
@@ -439,10 +441,14 @@ DisplayPoint	.\ProgrammingAbstracetionsInC\16-Records\point.c	/^void DisplayPoin
 DisplayPolygon	.\mylib\xdisplay.c	/^static void DisplayPolygon(void)$/;"	f	file:
 DisplayQueue	.\srcAbstract\chapter10\qtest.c	/^static void DisplayQueue(queueADT queue)$/;"	f	file:
 DisplayRoots	.\srcAbstract\chapter2\quadeq.c	/^static void DisplayRoots(double x1, double x2)$/;"	f	file:
+DisplaySet	.\abstract\chapter15\settest.c	14;"	d	file:
+DisplaySet	.\abstract\chapter15\strtest.c	25;"	d	file:
 DisplaySet	.\srcAbstract\chapter14\settest.c	14;"	d	file:
 DisplaySet	.\srcAbstract\chapter14\strtest.c	25;"	d	file:
 DisplaySet	.\srcAbstract\chapter15\settest.c	14;"	d	file:
 DisplaySet	.\srcAbstract\chapter15\strtest.c	25;"	d	file:
+DisplaySetWithLabel	.\abstract\chapter15\settest.c	/^static void DisplaySetWithLabel(setADT set, string label)$/;"	f	file:
+DisplaySetWithLabel	.\abstract\chapter15\strtest.c	/^static void DisplaySetWithLabel(setADT set, string label)$/;"	f	file:
 DisplaySetWithLabel	.\srcAbstract\chapter14\settest.c	/^static void DisplaySetWithLabel(setADT set, string label)$/;"	f	file:
 DisplaySetWithLabel	.\srcAbstract\chapter14\strtest.c	/^static void DisplaySetWithLabel(setADT set, string label)$/;"	f	file:
 DisplaySetWithLabel	.\srcAbstract\chapter15\settest.c	/^static void DisplaySetWithLabel(setADT set, string label)$/;"	f	file:
@@ -499,8 +505,8 @@ DumpWordFrequencies	.\abstract\chapter11\symtabtest.c	/^void DumpWordFrequencies
 DumpWordFrequencies	.\abstract\symtabtest.c	/^void DumpWordFrequencies(symtabADT table, string filename)$/;"	f
 DumpWordFrequencies	.\abstract\symtabtest2.c	/^void DumpWordFrequencies(symtabADT table, string filename)$/;"	f
 DumpWordFrequencies	.\srcAbstract\chapter11\dumpfreq.c	/^static void DumpWordFrequencies(symtabADT table, string filename)$/;"	f	file:
-DumpWordFrequencies2	.\abstract\symtabtest.c	/^static void DumpWordFrequencies2(symtabADT table)$/;"	f	file:
 DumpWordFrequencies2	.\abstract\symtabtest2.c	/^static void DumpWordFrequencies2(symtabADT table)$/;"	f	file:
+DumpWordFrequencies_second_edition	.\abstract\symtabtest.c	/^static void DumpWordFrequencies_second_edition(symtabADT table)$/;"	f	file:
 ELSE	.\C Interfaces and Implementations\include\except.h	48;"	d
 ELSE	.\C Interfaces and Implementations\include\except.h	77;"	d
 END_LOCK	.\C Interfaces and Implementations\include\sem.h	11;"	d
@@ -518,7 +524,7 @@ EUnhandledException	.\mylib\exception.h	153;"	d
 EXCEPT	.\C Interfaces and Implementations\include\except.h	44;"	d
 EXCEPT	.\C Interfaces and Implementations\include\except.h	73;"	d
 EXCEPT_INCLUDED	.\C Interfaces and Implementations\include\except.h	3;"	d
-East	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	e	enum:__anon80
+East	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	e	enum:__anon81
 ElementsFile	.\ProgrammingAbstracetionsInC\15-Text-Files\elements.c	21;"	d	file:
 EnableIteration	.\mylib\iterator2.c	/^void EnableIteration(void *collection, newIteratorFnT newFn)$/;"	f
 EnableIteration	.\srcAbstract\chapter14\iterator.c	/^void EnableIteration(void *collection, newIteratorFnT newFn)$/;"	f
@@ -527,7 +533,7 @@ EnableIteration	.\srcAbstract\chapter16\iterator.c	/^void EnableIteration(void *
 EndFilledRegion	.\mylib\graphics.c	/^void EndFilledRegion(void)$/;"	f
 EndMarker	.\ProgrammingAbstracetionsInC\16-Records\teach.c	30;"	d	file:
 EndOfArc	.\srcAbstract\chapter16\graph.c	/^nodeADT EndOfArc(arcADT arc)$/;"	f
-EndRegionCmd	.\mylib\xmanager.h	/^   EndRegionCmd,$/;"	e	enum:__anon37
+EndRegionCmd	.\mylib\xmanager.h	/^   EndRegionCmd,$/;"	e	enum:__anon38
 EndRegionMessage	.\mylib\xmanager.c	/^static void EndRegionMessage(string args)$/;"	f	file:
 Enqueue	.\ProgrammingAbstracetionsInC\17-Looking-Ahead\queue.c	/^void Enqueue(queueADT queue, void *obj)$/;"	f
 Enqueue	.\mylib\queue.c	/^void Enqueue(queueADT queue, queueElementT element)$/;"	f
@@ -554,15 +560,15 @@ EvaluatePosition	.\srcAbstract\chapter6\tictac.c	/^static int EvaluatePosition(s
 EvaluateStaticPosition	.\srcAbstract\chapter6\tictac.c	/^static int EvaluateStaticPosition(stateT state)$/;"	f	file:
 Except_Frame	.\C Interfaces and Implementations\include\except.h	/^struct Except_Frame {$/;"	s
 Except_Frame	.\C Interfaces and Implementations\include\except.h	/^typedef struct Except_Frame Except_Frame;$/;"	t	typeref:struct:Except_Frame
-Except_entered	.\C Interfaces and Implementations\include\except.h	/^enum { Except_entered=0, Except_raised,$/;"	e	enum:__anon106
-Except_finalized	.\C Interfaces and Implementations\include\except.h	/^       Except_handled,   Except_finalized };$/;"	e	enum:__anon106
-Except_handled	.\C Interfaces and Implementations\include\except.h	/^       Except_handled,   Except_finalized };$/;"	e	enum:__anon106
+Except_entered	.\C Interfaces and Implementations\include\except.h	/^enum { Except_entered=0, Except_raised,$/;"	e	enum:__anon107
+Except_finalized	.\C Interfaces and Implementations\include\except.h	/^       Except_handled,   Except_finalized };$/;"	e	enum:__anon107
+Except_handled	.\C Interfaces and Implementations\include\except.h	/^       Except_handled,   Except_finalized };$/;"	e	enum:__anon107
 Except_index	.\C Interfaces and Implementations\src\except.c	/^int Except_index = -1;$/;"	v
 Except_init	.\C Interfaces and Implementations\src\except.c	/^void Except_init(void) {$/;"	f
 Except_pop	.\C Interfaces and Implementations\src\except.c	/^void Except_pop(void) {$/;"	f
 Except_push	.\C Interfaces and Implementations\src\except.c	/^void Except_push(Except_Frame *fp) {$/;"	f
 Except_raise	.\C Interfaces and Implementations\src\except.c	/^void Except_raise(const T *e, const char *file,$/;"	f
-Except_raised	.\C Interfaces and Implementations\include\except.h	/^enum { Except_entered=0, Except_raised,$/;"	e	enum:__anon106
+Except_raised	.\C Interfaces and Implementations\include\except.h	/^enum { Except_entered=0, Except_raised,$/;"	e	enum:__anon107
 Except_stack	.\C Interfaces and Implementations\src\except.c	/^Except_Frame *Except_stack = NULL;$/;"	v
 ExchangCharacters	.\abstract\RescursivePermute161.c	/^static ExchangCharacters(string str, int p1, int p2)$/;"	f	file:
 ExchangCharacters	.\abstract\chapter5\Movetower-saveinfile.c	/^static ExchangCharacters(string str, int p1, int p2)$/;"	f	file:
@@ -581,7 +587,7 @@ ExecuteCommand	.\srcAbstract\chapter13\cmdscan.c	/^bool ExecuteCommand(cmdScanne
 ExecuteCommand	.\srcAbstract\chapter16\cmdscan.c	/^bool ExecuteCommand(cmdScannerADT cs, string line)$/;"	f
 ExecuteCommand	.\srcAbstract\chapter9\editor.c	/^static void ExecuteCommand(bufferADT buffer, string line)$/;"	f	file:
 ExitGraphics	.\mylib\graphics.c	/^void ExitGraphics(void)$/;"	f
-ExitGraphicsCmd	.\mylib\xmanager.h	/^   ExitGraphicsCmd$/;"	e	enum:__anon37
+ExitGraphicsCmd	.\mylib\xmanager.h	/^   ExitGraphicsCmd$/;"	e	enum:__anon38
 ExpIdentifier	.\srcAbstract\chapter14\exp.c	/^string ExpIdentifier(expressionADT exp)$/;"	f
 ExpInteger	.\srcAbstract\chapter14\exp.c	/^int ExpInteger(expressionADT exp)$/;"	f
 ExpLHS	.\srcAbstract\chapter14\exp.c	/^expressionADT ExpLHS(expressionADT exp)$/;"	f
@@ -592,8 +598,10 @@ ExpandArray	.\abstract\chapter9\arraybuffer.c	/^void ExpandArray(bufferADT buffe
 ExpandStack	.\mylib\stack.c	/^static void ExpandStack(stackADT stack)$/;"	f	file:
 ExpandStack	.\srcAbstract\chapter8\stack.c	/^static void ExpandStack(stackADT stack)$/;"	f	file:
 ExpandStack	.\srcAbstract\chapter9\stack.c	/^static void ExpandStack(stackADT stack)$/;"	f	file:
-FALSE	.\mylib\genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	e	enum:__anon38
+FALSE	.\mylib\genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	e	enum:__anon39
 FALSE	.\mylib\genlib.h	58;"	d
+FALSE	.\test\bool.c	/^       typedef enum {FALSE, TRUE} bool;$/;"	e	enum:__anon24	file:
+FALSE	.\test\bool.c	20;"	d	file:
 FD_CLR	.\mylib\xcompat.h	39;"	d
 FD_CLR	.\mylib\xcompat.h	45;"	d
 FD_ISSET	.\mylib\xcompat.h	40;"	d
@@ -690,7 +698,7 @@ Fmt_string	.\C Interfaces and Implementations\src\fmt.c	/^char *Fmt_string(const
 Fmt_vfmt	.\C Interfaces and Implementations\src\fmt.c	/^void Fmt_vfmt(int put(int c, void *cl), void *cl,$/;"	f
 Fmt_vsfmt	.\C Interfaces and Implementations\src\fmt.c	/^int Fmt_vsfmt(char *buf, int size, const char *fmt,$/;"	f
 Fmt_vstring	.\C Interfaces and Implementations\src\fmt.c	/^char *Fmt_vstring(const char *fmt, va_list_box *box) {$/;"	f
-FontMetricsCmd	.\mylib\xmanager.h	/^   FontMetricsCmd,$/;"	e	enum:__anon37
+FontMetricsCmd	.\mylib\xmanager.h	/^   FontMetricsCmd,$/;"	e	enum:__anon38
 FontMetricsMessage	.\mylib\xmanager.c	/^static void FontMetricsMessage(string args)$/;"	f	file:
 ForceRedraw	.\mylib\xdisplay.c	/^static void ForceRedraw(void)$/;"	f	file:
 FoundExponentSign	.\srcAbstract\chapter10\scanadt.c	247;"	d	file:
@@ -724,13 +732,13 @@ FreeCommandScanner	.\srcAbstract\chapter13\cmdscan.c	/^void FreeCommandScanner(c
 FreeCommandScanner	.\srcAbstract\chapter16\cmdscan.c	/^void FreeCommandScanner(cmdScannerADT cs)$/;"	f
 FreeEntry	.\srcAbstract\chapter13\bsttab.c	/^static void FreeEntry(void *np, void *clientData)$/;"	f	file:
 FreeGraph	.\srcAbstract\chapter16\graph.c	/^void FreeGraph(graphADT graph)$/;"	f
-FreeIterator	.\mylib\iterator1.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
 FreeIterator	.\mylib\iterator2.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
 FreeIterator	.\srcAbstract\chapter11\iterator.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
 FreeIterator	.\srcAbstract\chapter13\iterator.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
 FreeIterator	.\srcAbstract\chapter14\iterator.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
 FreeIterator	.\srcAbstract\chapter15\iterator.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
 FreeIterator	.\srcAbstract\chapter16\iterator.c	/^void FreeIterator(iteratorADT iterator)$/;"	f
+FreeIterator_1	.\mylib\iterator1.c	/^void FreeIterator_1(iteratorADT iterator)$/;"	f
 FreeNodeFn	.\mylib\set.c	/^static void FreeNodeFn(void *np, void *clientData)$/;"	f	file:
 FreeNodeFn	.\srcAbstract\chapter14\set.c	/^static void FreeNodeFn(void *np, void *clientData)$/;"	f	file:
 FreeNodeFn	.\srcAbstract\chapter15\set.c	/^static void FreeNodeFn(void *np, void *clientData)$/;"	f	file:
@@ -811,7 +819,7 @@ GetFullScreenHeight	.\mylib\graphics.c	/^double GetFullScreenHeight(void)$/;"	f
 GetFullScreenWidth	.\mylib\graphics.c	/^double GetFullScreenWidth(void)$/;"	f
 GetGraph	.\srcAbstract\chapter16\graph.c	/^graphADT GetGraph(nodeADT node)$/;"	f
 GetGraphData	.\srcAbstract\chapter16\graph.c	/^void *GetGraphData(graphADT graph)$/;"	f
-GetHeightCmd	.\mylib\xmanager.h	/^   GetHeightCmd,$/;"	e	enum:__anon37
+GetHeightCmd	.\mylib\xmanager.h	/^   GetHeightCmd,$/;"	e	enum:__anon38
 GetIdentifierValue	.\srcAbstract\chapter14\eval.c	/^int GetIdentifierValue(string name)$/;"	f
 GetInteger	.\mylib\simpio.c	/^int GetInteger(void)$/;"	f
 GetIntegerArray	.\ProgrammingAbstracetionsInC\11-Arrays\reverse.c	/^static int GetIntegerArray(int array[], int max, int sentinel)$/;"	f	file:
@@ -824,7 +832,7 @@ GetIntegerArray	.\srcAbstract\chapter6\testsort.c	/^static int GetIntegerArray(i
 GetIntegerArray	.\srcAbstract\chapter7\testsort.c	/^static int GetIntegerArray(int array[], int max, int sentinel)$/;"	f	file:
 GetLine	.\mylib\simpio.c	/^string GetLine(void)$/;"	f
 GetLong	.\mylib\simpio.c	/^long GetLong(void)$/;"	f
-GetMouseCmd	.\mylib\xmanager.h	/^   GetMouseCmd,$/;"	e	enum:__anon37
+GetMouseCmd	.\mylib\xmanager.h	/^   GetMouseCmd,$/;"	e	enum:__anon38
 GetMouseMessage	.\mylib\xmanager.c	/^static void GetMouseMessage(string args)$/;"	f	file:
 GetMouseX	.\mylib\graphics.c	/^double GetMouseX(void)$/;"	f
 GetMouseY	.\mylib\graphics.c	/^double GetMouseY(void)$/;"	f
@@ -875,7 +883,7 @@ GetTokenScanner	.\srcAbstract\chapter16\cmdscan.c	/^scannerADT GetTokenScanner(c
 GetUserMove	.\srcAbstract\chapter6\nim.c	/^static int GetUserMove(int nCoins)$/;"	f	file:
 GetUserMove	.\srcAbstract\chapter6\tictac.c	/^static moveT GetUserMove(stateT state)$/;"	f	file:
 GetValue	.\srcAbstract\chapter12\listtest.c	/^static void *GetValue(dataBlockT db, string var)$/;"	f	file:
-GetWidthCmd	.\mylib\xmanager.h	/^   GetWidthCmd,$/;"	e	enum:__anon37
+GetWidthCmd	.\mylib\xmanager.h	/^   GetWidthCmd,$/;"	e	enum:__anon38
 GetWindowHeight	.\mylib\graphics.c	/^double GetWindowHeight(void)$/;"	f
 GetWindowTitle	.\mylib\graphics.c	/^string GetWindowTitle(void)$/;"	f
 GetWindowWidth	.\mylib\graphics.c	/^double GetWindowWidth(void)$/;"	f
@@ -916,29 +924,29 @@ HelpCommand	.\srcAbstract\chapter8\rpncalc.c	/^static void HelpCommand(void)$/;"
 HelpCommand	.\srcAbstract\chapter9\editor.c	/^static void HelpCommand(void)$/;"	f	file:
 HouseHeight	.\ProgrammingAbstracetionsInC\07-Graphics\house.c	19;"	d	file:
 HouseWidth	.\ProgrammingAbstracetionsInC\07-Graphics\house.c	20;"	d	file:
-Human	.\srcAbstract\chapter6\nim.c	/^typedef enum { Human, Computer } playerT;$/;"	e	enum:__anon75	file:
-Human	.\srcAbstract\chapter6\tictac.c	/^typedef enum { Human, Computer } playerT;$/;"	e	enum:__anon76	file:
+Human	.\srcAbstract\chapter6\nim.c	/^typedef enum { Human, Computer } playerT;$/;"	e	enum:__anon76	file:
+Human	.\srcAbstract\chapter6\tictac.c	/^typedef enum { Human, Computer } playerT;$/;"	e	enum:__anon77	file:
 IDThread	.\C Interfaces and Implementations\src\thread-nt.c	/^	DWORD IDThread;		\/* Win 32 thread identifier *\/$/;"	m	struct:T	file:
 INPUTLEN	.\understandingUnixLinuxProgram\chapter7\sigactdemo.c	9;"	d	file:
 INPUTLEN	.\understandingUnixLinuxProgram\chapter7\sigdemo3.c	12;"	d	file:
 INTEGER_INCLUDED	.\C Interfaces and Implementations\examples\integer.h	2;"	d
 ITEMS_USED	.\BeginnigLinuxProgramming\chapter07\dbm1.c	15;"	d	file:
 ITEMS_USED	.\BeginnigLinuxProgramming\chapter07\dbm2.c	14;"	d	file:
-IdentifierType	.\srcAbstract\chapter14\exp.h	/^    IdentifierType,$/;"	e	enum:__anon69
-IgnoreSpaces	.\mylib\scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	e	enum:__anon26
-IgnoreSpaces	.\srcAbstract\chapter10\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon54
-IgnoreSpaces	.\srcAbstract\chapter11\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon90
-IgnoreSpaces	.\srcAbstract\chapter12\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon70
-IgnoreSpaces	.\srcAbstract\chapter13\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon98
-IgnoreSpaces	.\srcAbstract\chapter14\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon60
-IgnoreSpaces	.\srcAbstract\chapter16\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon82
-IgnoreSpaces	.\srcAbstract\chapter8\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon74
-InOrder	.\abstract\chapter13\bstRB.c	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon110	file:
-InOrder	.\mylib\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon24
-InOrder	.\srcAbstract\chapter13\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon97
-InOrder	.\srcAbstract\chapter14\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon59
-InOrder	.\srcAbstract\chapter15\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon49
-InOrder	.\srcAbstract\chapter16\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon81
+IdentifierType	.\srcAbstract\chapter14\exp.h	/^    IdentifierType,$/;"	e	enum:__anon70
+IgnoreSpaces	.\mylib\scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	e	enum:__anon27
+IgnoreSpaces	.\srcAbstract\chapter10\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon55
+IgnoreSpaces	.\srcAbstract\chapter11\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon91
+IgnoreSpaces	.\srcAbstract\chapter12\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon71
+IgnoreSpaces	.\srcAbstract\chapter13\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon99
+IgnoreSpaces	.\srcAbstract\chapter14\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon61
+IgnoreSpaces	.\srcAbstract\chapter16\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon83
+IgnoreSpaces	.\srcAbstract\chapter8\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon75
+InOrder	.\abstract\chapter13\bstRB.c	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon111	file:
+InOrder	.\mylib\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon25
+InOrder	.\srcAbstract\chapter13\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon98
+InOrder	.\srcAbstract\chapter14\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon60
+InOrder	.\srcAbstract\chapter15\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon50
+InOrder	.\srcAbstract\chapter16\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon82
 InRange	.\srcAbstract\chapter6\mazelib.c	/^static bool InRange(int x, int y)$/;"	f	file:
 InchesX	.\mylib\xdisplay.c	/^static double InchesX(int x)$/;"	f	file:
 InchesY	.\mylib\xdisplay.c	/^static double InchesY(int y)$/;"	f	file:
@@ -1056,12 +1064,12 @@ IntNodeInit	.\abstract\chapter13\bst-intT-test.c	/^void IntNodeInit(void *np, vo
 IntNodeInit	.\abstract\chapter13\bst-stringT-test.c	/^void IntNodeInit(void *np, void *kp, void *clientData)$/;"	f
 IntNodeInit	.\abstract\chapter13\bstint2.c	/^void IntNodeInit(void *np, void *kp, void *clientData)$/;"	f
 IntNodeInit	.\abstract\stringbst.c	/^void IntNodeInit(void *np, void *kp, void *clientData)$/;"	f
-IntSet	.\mylib\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon35
-IntSet	.\srcAbstract\chapter14\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon67
-IntSet	.\srcAbstract\chapter15\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon52
-IntSet	.\srcAbstract\chapter16\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon87
+IntSet	.\mylib\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon36
+IntSet	.\srcAbstract\chapter14\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon68
+IntSet	.\srcAbstract\chapter15\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon53
+IntSet	.\srcAbstract\chapter16\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon88
 IntegerToString	.\mylib\strlib.c	/^string IntegerToString(int n)$/;"	f
-IntegerType	.\srcAbstract\chapter14\exp.h	/^    IntegerType,$/;"	e	enum:__anon69
+IntegerType	.\srcAbstract\chapter14\exp.h	/^    IntegerType,$/;"	e	enum:__anon70
 Integer_cmp	.\C Interfaces and Implementations\examples\integer.c	/^int Integer_cmp(T i1, T i2) {$/;"	f
 Integer_fmt	.\C Interfaces and Implementations\examples\integer.c	/^void Integer_fmt(int code, va_list_box *box,$/;"	f
 Integer_get	.\C Interfaces and Implementations\examples\integer.c	/^int Integer_get(T integer) {$/;"	f
@@ -1146,7 +1154,7 @@ LeadingDigits	.\srcAbstract\chapter12\bigint.c	/^static bigIntADT LeadingDigits(
 LeftMargin	.\srcAbstract\chapter6\mazelib.c	26;"	d	file:
 LengthOperation	.\srcAbstract\chapter12\listtest.c	/^static void LengthOperation(dataBlockT db, string lhs)$/;"	f	file:
 LetterIndex	.\ProgrammingAbstracetionsInC\11-Arrays\countlet.c	/^int LetterIndex(char ch)$/;"	f
-LineCmd	.\mylib\xmanager.h	/^   LineCmd,$/;"	e	enum:__anon37
+LineCmd	.\mylib\xmanager.h	/^   LineCmd,$/;"	e	enum:__anon38
 LineEdit	.\BeginnigLinuxProgramming\chapter17\LineEdit.cpp	/^LineEdit::LineEdit(QWidget *parent, const char *name) : QMainWindow(parent, name)$/;"	f	class:LineEdit
 LineEdit	.\BeginnigLinuxProgramming\chapter17\LineEdit.h	/^class LineEdit : public QMainWindow$/;"	c
 LineMessage	.\mylib\xmanager.c	/^static void LineMessage(string args)$/;"	f	file:
@@ -1215,8 +1223,8 @@ LowerLimit	.\srcAbstract\chapter1\powertab.c	18;"	d	file:
 LowerLimit	.\srcAbstract\chapter4\fact.c	19;"	d	file:
 LowerLimit	.\srcAbstract\chapter4\ifact.c	19;"	d	file:
 LowerLimit	.\srcAbstract\chapter4\oddeven.c	20;"	d	file:
-MAXARGS	.\understandingUnixLinuxProgram\chapter8\psh1.c	11;"	d	file:
-MAXARGS	.\understandingUnixLinuxProgram\chapter8\psh2.c	11;"	d	file:
+MAXARGS	.\understandingUnixLinuxProgram\chapter8\psh1.c	12;"	d	file:
+MAXARGS	.\understandingUnixLinuxProgram\chapter8\psh2.c	13;"	d	file:
 MAXSTRING	.\mylib\set.h	26;"	d
 MAX_CD_RESULT	.\BeginnigLinuxProgramming\chapter08\app\app_mysql.h	18;"	d
 MAX_CD_RESULT	.\BeginnigLinuxProgramming\chapter16\app\app_mysql.h	19;"	d
@@ -1498,7 +1506,6 @@ NewIntSet	.\srcAbstract\chapter15\cvecset.c	/^setADT NewIntSet(void)$/;"	f
 NewIntSet	.\srcAbstract\chapter15\set.c	/^setADT NewIntSet(void)$/;"	f
 NewIntSet	.\srcAbstract\chapter16\set.c	/^setADT NewIntSet(void)$/;"	f
 NewIntegerExp	.\srcAbstract\chapter14\exp.c	/^expressionADT NewIntegerExp(int n)$/;"	f
-NewIterator	.\mylib\iterator1.c	/^iteratorADT NewIterator(symtabADT table)$/;"	f
 NewIterator	.\mylib\iterator2.c	/^iteratorADT NewIterator(void *collection)$/;"	f
 NewIterator	.\srcAbstract\chapter11\iterator.c	/^iteratorADT NewIterator(symtabADT table)$/;"	f
 NewIterator	.\srcAbstract\chapter13\iterator.c	/^iteratorADT NewIterator(symtabADT table)$/;"	f
@@ -1509,10 +1516,11 @@ NewIteratorList	.\mylib\iterator2.c	/^iteratorADT NewIteratorList(int size, cmpF
 NewIteratorList	.\srcAbstract\chapter14\iterator.c	/^iteratorADT NewIteratorList(int size, cmpFnT cmpFn)$/;"	f
 NewIteratorList	.\srcAbstract\chapter15\iterator.c	/^iteratorADT NewIteratorList(int size, cmpFnT cmpFn)$/;"	f
 NewIteratorList	.\srcAbstract\chapter16\iterator.c	/^iteratorADT NewIteratorList(int size, cmpFnT cmpFn)$/;"	f
+NewIterator_1	.\mylib\iterator1.c	/^iteratorADT NewIterator_1(symtabADT table)$/;"	f
 NewNode	.\srcAbstract\chapter16\adjmat-graph.c	/^nodeADT NewNode(graphADT graph)$/;"	f
 NewNode	.\srcAbstract\chapter16\graph.c	/^nodeADT NewNode(graphADT graph)$/;"	f
 NewNode	.\srcAbstract\chapter16\simple-graph.c	/^nodeADT NewNode(graphADT graph)$/;"	f
-NewPtrSet	.\mylib\set.c	/^setADT NewPtrSet(cmpFnT cmpFn)$/;"	f
+NewPtrSet	.\mylib\set.c	/^setADT NewPtrSet(int size, cmpFnT cmpFn)$/;"	f
 NewPtrSet	.\srcAbstract\chapter14\cvecset.c	/^setADT NewPtrSet(cmpFnT cmpFn)$/;"	f
 NewPtrSet	.\srcAbstract\chapter14\set.c	/^setADT NewPtrSet(cmpFnT cmpFn)$/;"	f
 NewPtrSet	.\srcAbstract\chapter15\cvecset.c	/^setADT NewPtrSet(cmpFnT cmpFn)$/;"	f
@@ -1541,7 +1549,7 @@ NewScanner	.\srcAbstract\chapter13\scanadt.c	/^scannerADT NewScanner(void)$/;"	f
 NewScanner	.\srcAbstract\chapter14\scanadt.c	/^scannerADT NewScanner(void)$/;"	f
 NewScanner	.\srcAbstract\chapter16\scanadt.c	/^scannerADT NewScanner(void)$/;"	f
 NewScanner	.\srcAbstract\chapter8\scanadt.c	/^scannerADT NewScanner(void)$/;"	f
-NewSet	.\mylib\set.c	/^static setADT NewSet(setClassT class, cmpFnT cmpFn)$/;"	f	file:
+NewSet	.\mylib\set.c	/^static setADT NewSet(int size, setClassT class, cmpFnT cmpFn)$/;"	f	file:
 NewSet	.\srcAbstract\chapter14\set.c	/^static setADT NewSet(setClassT class, cmpFnT cmpFn)$/;"	f	file:
 NewSet	.\srcAbstract\chapter15\set.c	/^static setADT NewSet(setClassT class, cmpFnT cmpFn)$/;"	f	file:
 NewSet	.\srcAbstract\chapter16\set.c	/^static setADT NewSet(setClassT class, cmpFnT cmpFn)$/;"	f	file:
@@ -1564,13 +1572,13 @@ NewSymbolTable	.\srcAbstract\chapter14\symtab.c	/^symtabADT NewSymbolTable(void)
 NewSymbolTable	.\srcAbstract\chapter16\symtab.c	/^symtabADT NewSymbolTable(void)$/;"	f
 NewSymtabIterator	.\mylib\symtab.c	/^static iteratorADT NewSymtabIterator(void *collection)$/;"	f	file:
 NoGoodMove	.\srcAbstract\chapter6\nim.c	27;"	d	file:
-NoRegion	.\mylib\graphics.c	/^    NoRegion, RegionStarting, RegionActive, PenHasMoved$/;"	e	enum:__anon31	file:
+NoRegion	.\mylib\graphics.c	/^    NoRegion, RegionStarting, RegionActive, PenHasMoved$/;"	e	enum:__anon32	file:
 NodeCmdFn	.\srcAbstract\chapter16\gtest.c	/^static void NodeCmdFn(cmdScannerADT cs)$/;"	f	file:
 NodeInitFn	.\srcAbstract\chapter13\bsttest.c	/^static void NodeInitFn(void *np, void *kp, void *clientData)$/;"	f	file:
 Nodes	.\srcAbstract\chapter16\graph.c	/^setADT Nodes(graphADT graph)$/;"	f
 Normal	.\mylib\extgraph.h	148;"	d
-North	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	e	enum:__anon80
-NotWaiting	.\mylib\xdisplay.c	/^    NotWaiting,$/;"	e	enum:__anon25	file:
+North	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	e	enum:__anon81
+NotWaiting	.\mylib\xdisplay.c	/^    NotWaiting,$/;"	e	enum:__anon26	file:
 November	.\srcAbstract\chapter1\calendar.c	37;"	d	file:
 NthElement	.\srcAbstract\chapter12\listtest.c	/^static listElementT NthElement(listADT list, int n)$/;"	f	file:
 NumericSentinel	.\srcAbstract\chapter11\sorttest.c	24;"	d	file:
@@ -1586,8 +1594,8 @@ OpenUserFile	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^static FILE *Ope
 OpenUserFile	.\srcAbstract\chapter3\copyfile.c	/^static FILE *OpenUserFile(string prompt, string mode)$/;"	f	file:
 OpenUserFile	.\srcAbstract\chapter3\linecopy.c	/^static FILE *OpenUserFile(string prompt, string mode)$/;"	f	file:
 Opponent	.\srcAbstract\chapter6\tictac.c	/^static playerT Opponent(playerT player)$/;"	f	file:
-OrderT	.\abstract\chapter13\bstRB.c	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	t	typeref:enum:__anon110	file:
-OrderT	.\mylib\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	t	typeref:enum:__anon24
+OrderT	.\abstract\chapter13\bstRB.c	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	t	typeref:enum:__anon111	file:
+OrderT	.\mylib\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	t	typeref:enum:__anon25
 OutputFileName	.\srcAbstract\chapter11\dumpfreq.c	25;"	d	file:
 OutsideMaze	.\srcAbstract\chapter6\mazelib.c	/^bool OutsideMaze(pointT pt)$/;"	f
 PAGELEN	.\understandingUnixLinuxProgram\more01.c	6;"	d	file:
@@ -1607,7 +1615,7 @@ Partition	.\srcAbstract\chapter6\qsort.c	/^static int Partition(int array[], int
 Partition	.\srcAbstract\chapter7\qsort.c	/^static int Partition(int array[], int n)$/;"	f	file:
 Pause	.\mylib\graphics.c	/^void Pause(double seconds)$/;"	f
 PauseTime	.\srcAbstract\chapter6\mazelib.c	31;"	d	file:
-PenHasMoved	.\mylib\graphics.c	/^    NoRegion, RegionStarting, RegionActive, PenHasMoved$/;"	e	enum:__anon31	file:
+PenHasMoved	.\mylib\graphics.c	/^    NoRegion, RegionStarting, RegionActive, PenHasMoved$/;"	e	enum:__anon32	file:
 PermuteWithFixedPrefix	.\ProgrammingAbstracetionsInC\17-Looking-Ahead\permute.c	/^static void PermuteWithFixedPrefix(string str, int k)$/;"	f	file:
 Pi	.\mylib\glibrary.c	16;"	d	file:
 Pi	.\srcAbstract\chapter11\plot.c	20;"	d	file:
@@ -1625,30 +1633,30 @@ Pop	.\mylib\stacklist.c	/^stackElementT Pop(stackADT stack)$/;"	f
 Pop	.\srcAbstract\chapter10\stack.c	/^stackElementT Pop(stackADT stack)$/;"	f
 Pop	.\srcAbstract\chapter8\stack.c	/^stackElementT Pop(stackADT stack)$/;"	f
 Pop	.\srcAbstract\chapter9\stack.c	/^stackElementT Pop(stackADT stack)$/;"	f
-PostOrder	.\abstract\chapter13\bstRB.c	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon110	file:
-PostOrder	.\mylib\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon24
-PostOrder	.\srcAbstract\chapter13\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon97
-PostOrder	.\srcAbstract\chapter14\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon59
-PostOrder	.\srcAbstract\chapter15\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon49
-PostOrder	.\srcAbstract\chapter16\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon81
+PostOrder	.\abstract\chapter13\bstRB.c	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon111	file:
+PostOrder	.\mylib\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon25
+PostOrder	.\srcAbstract\chapter13\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon98
+PostOrder	.\srcAbstract\chapter14\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon60
+PostOrder	.\srcAbstract\chapter15\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon50
+PostOrder	.\srcAbstract\chapter16\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon82
 PostOrderWalk	.\srcAbstract\chapter13\introbst.c	/^static void PostOrderWalk(treeT t)$/;"	f	file:
-PreOrder	.\abstract\chapter13\bstRB.c	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon110	file:
-PreOrder	.\mylib\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon24
-PreOrder	.\srcAbstract\chapter13\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon97
-PreOrder	.\srcAbstract\chapter14\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon59
-PreOrder	.\srcAbstract\chapter15\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon49
-PreOrder	.\srcAbstract\chapter16\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon81
+PreOrder	.\abstract\chapter13\bstRB.c	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon111	file:
+PreOrder	.\mylib\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } OrderT;$/;"	e	enum:__anon25
+PreOrder	.\srcAbstract\chapter13\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon98
+PreOrder	.\srcAbstract\chapter14\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon60
+PreOrder	.\srcAbstract\chapter15\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon50
+PreOrder	.\srcAbstract\chapter16\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	e	enum:__anon82
 PreOrderWalk	.\srcAbstract\chapter13\introbst.c	/^static void PreOrderWalk(treeT t)$/;"	f	file:
 Precedence	.\srcAbstract\chapter14\parser.c	/^int Precedence(string token)$/;"	f
 PrefixMatch	.\srcAbstract\chapter11\sorttest.c	/^static bool PrefixMatch(string prefix, string str)$/;"	f	file:
-PreserveSpaces	.\mylib\scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	e	enum:__anon26
-PreserveSpaces	.\srcAbstract\chapter10\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon54
-PreserveSpaces	.\srcAbstract\chapter11\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon90
-PreserveSpaces	.\srcAbstract\chapter12\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon70
-PreserveSpaces	.\srcAbstract\chapter13\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon98
-PreserveSpaces	.\srcAbstract\chapter14\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon60
-PreserveSpaces	.\srcAbstract\chapter16\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon82
-PreserveSpaces	.\srcAbstract\chapter8\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon74
+PreserveSpaces	.\mylib\scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	e	enum:__anon27
+PreserveSpaces	.\srcAbstract\chapter10\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon55
+PreserveSpaces	.\srcAbstract\chapter11\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon91
+PreserveSpaces	.\srcAbstract\chapter12\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon71
+PreserveSpaces	.\srcAbstract\chapter13\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon99
+PreserveSpaces	.\srcAbstract\chapter14\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon61
+PreserveSpaces	.\srcAbstract\chapter16\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon83
+PreserveSpaces	.\srcAbstract\chapter8\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	e	enum:__anon75
 PrintActive	.\BeginnigLinuxProgramming\chapter17\Buttons.cpp	/^void Buttons::PrintActive(QButton *button)$/;"	f	class:Buttons
 PrintCalendar	.\ProgrammingAbstracetionsInC\05-Functions\calendar.c	/^void PrintCalendar(int year)$/;"	f
 PrintCalendar	.\srcAbstract\chapter1\calendar.c	/^void PrintCalendar(int year)$/;"	f
@@ -1676,10 +1684,10 @@ PtrCmpFn	.\srcAbstract\chapter13\cmpfn.c	/^int PtrCmpFn(const void *p1, const vo
 PtrCmpFn	.\srcAbstract\chapter14\cmpfn.c	/^int PtrCmpFn(const void *p1, const void *p2)$/;"	f
 PtrCmpFn	.\srcAbstract\chapter15\cmpfn.c	/^int PtrCmpFn(const void *p1, const void *p2)$/;"	f
 PtrCmpFn	.\srcAbstract\chapter16\cmpfn.c	/^int PtrCmpFn(const void *p1, const void *p2)$/;"	f
-PtrSet	.\mylib\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon35
-PtrSet	.\srcAbstract\chapter14\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon67
-PtrSet	.\srcAbstract\chapter15\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon52
-PtrSet	.\srcAbstract\chapter16\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon87
+PtrSet	.\mylib\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon36
+PtrSet	.\srcAbstract\chapter14\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon68
+PtrSet	.\srcAbstract\chapter15\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon53
+PtrSet	.\srcAbstract\chapter16\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	e	enum:__anon88
 Push	.\mylib\stack.c	/^void Push(stackADT stack, stackElementT element)$/;"	f
 Push	.\mylib\stacklist.c	/^void Push(stackADT stack, stackElementT element)$/;"	f
 Push	.\srcAbstract\chapter10\stack.c	/^void Push(stackADT stack, stackElementT element)$/;"	f
@@ -1823,8 +1831,8 @@ RefToUnsigned	.\mylib\ref.c	/^unsigned RefToUnsigned(void *ref)$/;"	f
 RefToUnsignedChar	.\mylib\ref.c	/^unsigned char RefToUnsignedChar(void *ref)$/;"	f
 RefToUnsignedLong	.\mylib\ref.c	/^unsigned long RefToUnsignedLong(void *ref)$/;"	f
 RefToUnsignedShort	.\mylib\ref.c	/^unsigned short RefToUnsignedShort(void *ref)$/;"	f
-RegionActive	.\mylib\graphics.c	/^    NoRegion, RegionStarting, RegionActive, PenHasMoved$/;"	e	enum:__anon31	file:
-RegionStarting	.\mylib\graphics.c	/^    NoRegion, RegionStarting, RegionActive, PenHasMoved$/;"	e	enum:__anon31	file:
+RegionActive	.\mylib\graphics.c	/^    NoRegion, RegionStarting, RegionActive, PenHasMoved$/;"	e	enum:__anon32	file:
+RegionStarting	.\mylib\graphics.c	/^    NoRegion, RegionStarting, RegionActive, PenHasMoved$/;"	e	enum:__anon32	file:
 RenderArc	.\mylib\xdisplay.c	/^static void RenderArc(double x, double y, double rx, double ry,$/;"	f	file:
 ReplaceFirst	.\ProgrammingAbstracetionsInC\09-Strings\repfirst.c	/^string ReplaceFirst(string str, string pattern, string replacement)$/;"	f
 ReportResults	.\srcAbstract\chapter10\checkout.c	/^static void ReportResults(simDataT *sdp)$/;"	f	file:
@@ -1897,42 +1905,42 @@ ScanEscapeCharacter	.\srcAbstract\chapter12\scanadt.c	/^static char ScanEscapeCh
 ScanEscapeCharacter	.\srcAbstract\chapter13\scanadt.c	/^static char ScanEscapeCharacter(scannerADT scanner)$/;"	f	file:
 ScanEscapeCharacter	.\srcAbstract\chapter14\scanadt.c	/^static char ScanEscapeCharacter(scannerADT scanner)$/;"	f	file:
 ScanEscapeCharacter	.\srcAbstract\chapter16\scanadt.c	/^static char ScanEscapeCharacter(scannerADT scanner)$/;"	f	file:
-ScanNumbersAsIntegers	.\srcAbstract\chapter10\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon55
-ScanNumbersAsIntegers	.\srcAbstract\chapter11\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon91
-ScanNumbersAsIntegers	.\srcAbstract\chapter12\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon71
-ScanNumbersAsIntegers	.\srcAbstract\chapter13\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon99
-ScanNumbersAsIntegers	.\srcAbstract\chapter14\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon61
-ScanNumbersAsIntegers	.\srcAbstract\chapter16\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon83
-ScanNumbersAsLetters	.\srcAbstract\chapter10\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon55
-ScanNumbersAsLetters	.\srcAbstract\chapter11\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon91
-ScanNumbersAsLetters	.\srcAbstract\chapter12\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon71
-ScanNumbersAsLetters	.\srcAbstract\chapter13\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon99
-ScanNumbersAsLetters	.\srcAbstract\chapter14\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon61
-ScanNumbersAsLetters	.\srcAbstract\chapter16\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon83
-ScanNumbersAsReals	.\srcAbstract\chapter10\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon55
-ScanNumbersAsReals	.\srcAbstract\chapter11\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon91
-ScanNumbersAsReals	.\srcAbstract\chapter12\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon71
-ScanNumbersAsReals	.\srcAbstract\chapter13\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon99
-ScanNumbersAsReals	.\srcAbstract\chapter14\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon61
-ScanNumbersAsReals	.\srcAbstract\chapter16\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon83
+ScanNumbersAsIntegers	.\srcAbstract\chapter10\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon56
+ScanNumbersAsIntegers	.\srcAbstract\chapter11\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon92
+ScanNumbersAsIntegers	.\srcAbstract\chapter12\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon72
+ScanNumbersAsIntegers	.\srcAbstract\chapter13\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon100
+ScanNumbersAsIntegers	.\srcAbstract\chapter14\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon62
+ScanNumbersAsIntegers	.\srcAbstract\chapter16\scanadt.h	/^    ScanNumbersAsIntegers,$/;"	e	enum:__anon84
+ScanNumbersAsLetters	.\srcAbstract\chapter10\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon56
+ScanNumbersAsLetters	.\srcAbstract\chapter11\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon92
+ScanNumbersAsLetters	.\srcAbstract\chapter12\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon72
+ScanNumbersAsLetters	.\srcAbstract\chapter13\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon100
+ScanNumbersAsLetters	.\srcAbstract\chapter14\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon62
+ScanNumbersAsLetters	.\srcAbstract\chapter16\scanadt.h	/^    ScanNumbersAsLetters,$/;"	e	enum:__anon84
+ScanNumbersAsReals	.\srcAbstract\chapter10\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon56
+ScanNumbersAsReals	.\srcAbstract\chapter11\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon92
+ScanNumbersAsReals	.\srcAbstract\chapter12\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon72
+ScanNumbersAsReals	.\srcAbstract\chapter13\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon100
+ScanNumbersAsReals	.\srcAbstract\chapter14\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon62
+ScanNumbersAsReals	.\srcAbstract\chapter16\scanadt.h	/^    ScanNumbersAsReals$/;"	e	enum:__anon84
 ScanQuotedString	.\srcAbstract\chapter10\scanadt.c	/^static string ScanQuotedString(scannerADT scanner)$/;"	f	file:
 ScanQuotedString	.\srcAbstract\chapter11\scanadt.c	/^static string ScanQuotedString(scannerADT scanner)$/;"	f	file:
 ScanQuotedString	.\srcAbstract\chapter12\scanadt.c	/^static string ScanQuotedString(scannerADT scanner)$/;"	f	file:
 ScanQuotedString	.\srcAbstract\chapter13\scanadt.c	/^static string ScanQuotedString(scannerADT scanner)$/;"	f	file:
 ScanQuotedString	.\srcAbstract\chapter14\scanadt.c	/^static string ScanQuotedString(scannerADT scanner)$/;"	f	file:
 ScanQuotedString	.\srcAbstract\chapter16\scanadt.c	/^static string ScanQuotedString(scannerADT scanner)$/;"	f	file:
-ScanQuotesAsPunctuation	.\srcAbstract\chapter10\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon56
-ScanQuotesAsPunctuation	.\srcAbstract\chapter11\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon92
-ScanQuotesAsPunctuation	.\srcAbstract\chapter12\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon72
-ScanQuotesAsPunctuation	.\srcAbstract\chapter13\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon100
-ScanQuotesAsPunctuation	.\srcAbstract\chapter14\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon62
-ScanQuotesAsPunctuation	.\srcAbstract\chapter16\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon84
-ScanQuotesAsStrings	.\srcAbstract\chapter10\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon56
-ScanQuotesAsStrings	.\srcAbstract\chapter11\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon92
-ScanQuotesAsStrings	.\srcAbstract\chapter12\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon72
-ScanQuotesAsStrings	.\srcAbstract\chapter13\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon100
-ScanQuotesAsStrings	.\srcAbstract\chapter14\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon62
-ScanQuotesAsStrings	.\srcAbstract\chapter16\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon84
+ScanQuotesAsPunctuation	.\srcAbstract\chapter10\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon57
+ScanQuotesAsPunctuation	.\srcAbstract\chapter11\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon93
+ScanQuotesAsPunctuation	.\srcAbstract\chapter12\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon73
+ScanQuotesAsPunctuation	.\srcAbstract\chapter13\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon101
+ScanQuotesAsPunctuation	.\srcAbstract\chapter14\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon63
+ScanQuotesAsPunctuation	.\srcAbstract\chapter16\scanadt.h	/^    ScanQuotesAsPunctuation,$/;"	e	enum:__anon85
+ScanQuotesAsStrings	.\srcAbstract\chapter10\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon57
+ScanQuotesAsStrings	.\srcAbstract\chapter11\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon93
+ScanQuotesAsStrings	.\srcAbstract\chapter12\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon73
+ScanQuotesAsStrings	.\srcAbstract\chapter13\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon101
+ScanQuotesAsStrings	.\srcAbstract\chapter14\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon63
+ScanQuotesAsStrings	.\srcAbstract\chapter16\scanadt.h	/^    ScanQuotesAsStrings$/;"	e	enum:__anon85
 ScanToEndOfIdentifier	.\mylib\scanadt.c	/^static int ScanToEndOfIdentifier(scannerADT scanner)$/;"	f	file:
 ScanToEndOfIdentifier	.\srcAbstract\chapter10\scanadt.c	/^static int ScanToEndOfIdentifier(scannerADT scanner)$/;"	f	file:
 ScanToEndOfIdentifier	.\srcAbstract\chapter11\scanadt.c	/^static int ScanToEndOfIdentifier(scannerADT scanner)$/;"	f	file:
@@ -1991,7 +1999,7 @@ Seq_remlo	.\C Interfaces and Implementations\src\seq.c	/^void *Seq_remlo(T seq) 
 Seq_seq	.\C Interfaces and Implementations\src\seq.c	/^T Seq_seq(void *x, ...) {$/;"	f
 ServeCustomer	.\srcAbstract\chapter10\checkout.c	/^static void ServeCustomer(simDataT *sdp)$/;"	f	file:
 SetArcData	.\srcAbstract\chapter16\graph.c	/^void SetArcData(arcADT arc, void *data)$/;"	f
-SetColorCmd	.\mylib\xmanager.h	/^   SetColorCmd,$/;"	e	enum:__anon37
+SetColorCmd	.\mylib\xmanager.h	/^   SetColorCmd,$/;"	e	enum:__anon38
 SetColorMessage	.\mylib\xmanager.c	/^static void SetColorMessage(string args)$/;"	f	file:
 SetCommandData	.\srcAbstract\chapter13\cmdscan.c	/^void SetCommandData(cmdScannerADT cs, void *data)$/;"	f
 SetCommandData	.\srcAbstract\chapter16\cmdscan.c	/^void SetCommandData(cmdScannerADT cs, void *data)$/;"	f
@@ -2005,11 +2013,11 @@ SetEqual	.\mylib\set.c	/^bool SetEqual(setADT s1, setADT s2)$/;"	f
 SetEqual	.\srcAbstract\chapter14\set.c	/^bool SetEqual(setADT s1, setADT s2)$/;"	f
 SetEqual	.\srcAbstract\chapter15\set.c	/^bool SetEqual(setADT s1, setADT s2)$/;"	f
 SetEqual	.\srcAbstract\chapter16\set.c	/^bool SetEqual(setADT s1, setADT s2)$/;"	f
-SetEraseCmd	.\mylib\xmanager.h	/^   SetEraseCmd,$/;"	e	enum:__anon37
+SetEraseCmd	.\mylib\xmanager.h	/^   SetEraseCmd,$/;"	e	enum:__anon38
 SetEraseMessage	.\mylib\xmanager.c	/^static void SetEraseMessage(string args)$/;"	f	file:
 SetEraseMode	.\mylib\graphics.c	/^void SetEraseMode(bool mode)$/;"	f
 SetFont	.\mylib\graphics.c	/^void SetFont(string font)$/;"	f
-SetFontCmd	.\mylib\xmanager.h	/^   SetFontCmd,$/;"	e	enum:__anon37
+SetFontCmd	.\mylib\xmanager.h	/^   SetFontCmd,$/;"	e	enum:__anon38
 SetFontMessage	.\mylib\xmanager.c	/^static void SetFontMessage(string args)$/;"	f	file:
 SetFromCVector	.\srcAbstract\chapter14\cvecset.c	/^static setADT SetFromCVector(cVectorADT cvec)$/;"	f	file:
 SetFromCVector	.\srcAbstract\chapter15\cvecset.c	/^static setADT SetFromCVector(cVectorADT cvec)$/;"	f	file:
@@ -2053,7 +2061,7 @@ SetScannerStringOption	.\srcAbstract\chapter14\scanadt.c	/^void SetScannerString
 SetScannerStringOption	.\srcAbstract\chapter16\scanadt.c	/^void SetScannerStringOption(scannerADT scanner, stringOptionT option)$/;"	f
 SetStartSquare	.\srcAbstract\chapter6\mazelib.c	/^static void SetStartSquare(pointT pt)$/;"	f	file:
 SetStyle	.\mylib\graphics.c	/^void SetStyle(int style)$/;"	f
-SetTitleCmd	.\mylib\xmanager.h	/^   SetTitleCmd,$/;"	e	enum:__anon37
+SetTitleCmd	.\mylib\xmanager.h	/^   SetTitleCmd,$/;"	e	enum:__anon38
 SetTitleMessage	.\mylib\xmanager.c	/^static void SetTitleMessage(string args)$/;"	f	file:
 SetValue	.\srcAbstract\chapter12\listtest.c	/^static void SetValue(dataBlockT db, string var, void *value)$/;"	f	file:
 SetVerticalWall	.\srcAbstract\chapter6\mazelib.c	/^static void SetVerticalWall(pointT pt)$/;"	f	file:
@@ -2103,7 +2111,7 @@ SortIntegerArray	.\srcAbstract\chapter7\msort.c	/^void SortIntegerArray(int arra
 SortIntegerArray	.\srcAbstract\chapter7\qsort.c	/^void SortIntegerArray(int array[], int n)$/;"	f
 SortIntegerArray	.\srcAbstract\chapter7\ssort.c	/^void SortIntegerArray(int array[], int n)$/;"	f
 SourceCmdFn	.\srcAbstract\chapter16\gtest.c	/^static void SourceCmdFn(cmdScannerADT cs)$/;"	f	file:
-South	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	e	enum:__anon80
+South	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	e	enum:__anon81
 Sqrt	.\ProgrammingAbstracetionsInC\06-Algorithms\nsqrt.c	/^double Sqrt(double x)$/;"	f
 Sqrt	.\ProgrammingAbstracetionsInC\06-Algorithms\tsqrt.c	/^double Sqrt(double x)$/;"	f
 SquareSize	.\srcAbstract\chapter6\mazelib.c	28;"	d	file:
@@ -2131,7 +2139,7 @@ StartFilledRegion	.\mylib\graphics.c	/^void StartFilledRegion(double density)$/;
 StartOfArc	.\srcAbstract\chapter16\graph.c	/^nodeADT StartOfArc(arcADT arc)$/;"	f
 StartPolygon	.\mylib\xdisplay.c	/^static void StartPolygon(void)$/;"	f	file:
 StartRadius	.\srcAbstract\chapter6\mazelib.c	30;"	d	file:
-StartRegionCmd	.\mylib\xmanager.h	/^   StartRegionCmd,$/;"	e	enum:__anon37
+StartRegionCmd	.\mylib\xmanager.h	/^   StartRegionCmd,$/;"	e	enum:__anon38
 StartRegionMessage	.\mylib\xmanager.c	/^static void StartRegionMessage(string args)$/;"	f	file:
 StartToOpenDisplay	.\mylib\xdisplay.c	/^static void StartToOpenDisplay(void)$/;"	f	file:
 StartingCount	.\ProgrammingAbstracetionsInC\04-Statement-Forms\liftoff.c	17;"	d	file:
@@ -2145,13 +2153,13 @@ StepForEach	.\mylib\foreach.c	/^bool StepForEach(void *ep)$/;"	f
 StepForEach	.\srcAbstract\chapter14\foreach.c	/^bool StepForEach(void *ep)$/;"	f
 StepForEach	.\srcAbstract\chapter15\foreach.c	/^bool StepForEach(void *ep)$/;"	f
 StepForEach	.\srcAbstract\chapter16\foreach.c	/^bool StepForEach(void *ep)$/;"	f
-StepIterator	.\mylib\iterator1.c	/^bool StepIterator(iteratorADT iterator, string *pKey)$/;"	f
 StepIterator	.\mylib\iterator2.c	/^bool StepIterator(iteratorADT iterator, void *ep)$/;"	f
 StepIterator	.\srcAbstract\chapter11\iterator.c	/^bool StepIterator(iteratorADT iterator, string *pKey)$/;"	f
 StepIterator	.\srcAbstract\chapter13\iterator.c	/^bool StepIterator(iteratorADT iterator, string *pKey)$/;"	f
 StepIterator	.\srcAbstract\chapter14\iterator.c	/^bool StepIterator(iteratorADT iterator, void *ep)$/;"	f
 StepIterator	.\srcAbstract\chapter15\iterator.c	/^bool StepIterator(iteratorADT iterator, void *ep)$/;"	f
 StepIterator	.\srcAbstract\chapter16\iterator.c	/^bool StepIterator(iteratorADT iterator, void *ep)$/;"	f
+StepIterator_1	.\mylib\iterator1.c	/^bool StepIterator_1(iteratorADT iterator, string *pKey)$/;"	f
 StepSize	.\ProgrammingAbstracetionsInC\05-Functions\c2ftable.c	21;"	d	file:
 Str	.\mylib\cmpfn.h	/^struct Str{$/;"	s
 Str_any	.\C Interfaces and Implementations\src\str.c	/^int Str_any(const char *s, int i, const char *set) {$/;"	f
@@ -2193,6 +2201,7 @@ StringToInteger	.\mylib\strlib.c	/^int StringToInteger(string s)$/;"	f
 StringToReal	.\mylib\strlib.c	/^double StringToReal(string s)$/;"	f
 SubString	.\mylib\strlib.c	/^string SubString(string s, int p1, int p2)$/;"	f
 SubdivideCanvas	.\srcAbstract\chapter5\mondrian.c	/^static void SubdivideCanvas(double x, double y,$/;"	f	file:
+SumIntSet	.\abstract\chapter15\settest.c	/^int SumIntSet(setADT set)$/;"	f
 SumIntSet	.\srcAbstract\chapter14\settest.c	/^int SumIntSet(setADT set)$/;"	f
 SumIntSet	.\srcAbstract\chapter15\settest.c	/^int SumIntSet(setADT set)$/;"	f
 Sunday	.\ProgrammingAbstracetionsInC\05-Functions\calendar.c	21;"	d	file:
@@ -2323,8 +2332,10 @@ TRACK_TTEXT_LEN	.\BeginnigLinuxProgramming\chapter13\app\cd_data.h	18;"	d
 TRACK_TTEXT_LEN	.\BeginnigLinuxProgramming\chapter14\app\cd_data.h	18;"	d
 TRIES	.\understandingUnixLinuxProgram\chapter6\play_again3.c	15;"	d	file:
 TRIES	.\understandingUnixLinuxProgram\chapter6\play_again4.c	17;"	d	file:
-TRUE	.\mylib\genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	e	enum:__anon38
+TRUE	.\mylib\genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	e	enum:__anon39
 TRUE	.\mylib\genlib.h	59;"	d
+TRUE	.\test\bool.c	/^       typedef enum {FALSE, TRUE} bool;$/;"	e	enum:__anon24	file:
+TRUE	.\test\bool.c	21;"	d	file:
 TRY	.\C Interfaces and Implementations\include\except.h	36;"	d
 TRY	.\C Interfaces and Implementations\include\except.h	66;"	d
 TSqrt	.\ProgrammingAbstracetionsInC\06-Algorithms\tsqrt.c	/^double TSqrt(double x)$/;"	f
@@ -2344,7 +2355,7 @@ TestERef	.\srcAbstract\chapter16\set.c	/^static bool TestERef(setADT set, void *
 TestSearch	.\srcAbstract\chapter13\introbst.c	/^static void TestSearch(treeT tree, string key)$/;"	f	file:
 TestSqrt	.\ProgrammingAbstracetionsInC\06-Algorithms\nsqrt.c	/^void TestSqrt(double x)$/;"	f
 TestSqrt	.\ProgrammingAbstracetionsInC\06-Algorithms\tsqrt.c	/^void TestSqrt(double x)$/;"	f
-TextCmd	.\mylib\xmanager.h	/^   TextCmd,$/;"	e	enum:__anon37
+TextCmd	.\mylib\xmanager.h	/^   TextCmd,$/;"	e	enum:__anon38
 TextMessage	.\mylib\xmanager.c	/^static void TextMessage(string args)$/;"	f	file:
 TextStringWidth	.\mylib\graphics.c	/^double TextStringWidth(string text)$/;"	f
 Text_any	.\C Interfaces and Implementations\src\text.c	/^int Text_any(T s, int i, T set) {$/;"	f
@@ -2446,7 +2457,7 @@ UnsortedFn	.\srcAbstract\chapter14\itertype.h	56;"	d
 UnsortedFn	.\srcAbstract\chapter15\itertype.h	56;"	d
 UnsortedFn	.\srcAbstract\chapter16\itertype.h	56;"	d
 Unsupported	.\C Interfaces and Implementations\src\swtch.s	/^Unsupported platform$/;"	l
-UpdateCmd	.\mylib\xmanager.h	/^   UpdateCmd,$/;"	e	enum:__anon37
+UpdateCmd	.\mylib\xmanager.h	/^   UpdateCmd,$/;"	e	enum:__anon38
 UpdateDisplay	.\mylib\graphics.c	/^void UpdateDisplay(void)$/;"	f
 UpdateMessage	.\mylib\xmanager.c	/^static void UpdateMessage(string args)$/;"	f	file:
 UpperCaseCopy	.\ProgrammingAbstracetionsInC\15-Text-Files\ucfile.c	/^static void UpperCaseCopy(FILE *infile, FILE *outfile)$/;"	f	file:
@@ -2467,18 +2478,18 @@ Visit	.\srcAbstract\chapter16\gtest.c	/^static void Visit(nodeADT node)$/;"	f	fi
 WORK_SIZE	.\BeginnigLinuxProgramming\chapter12\thread3.c	11;"	d	file:
 WORK_SIZE	.\BeginnigLinuxProgramming\chapter12\thread3a.c	11;"	d	file:
 WORK_SIZE	.\BeginnigLinuxProgramming\chapter12\thread4.c	11;"	d	file:
-WaitForMouseCmd	.\mylib\xmanager.h	/^   WaitForMouseCmd,$/;"	e	enum:__anon37
+WaitForMouseCmd	.\mylib\xmanager.h	/^   WaitForMouseCmd,$/;"	e	enum:__anon38
 WaitForMouseDown	.\mylib\graphics.c	/^void WaitForMouseDown(void)$/;"	f
 WaitForMouseMessage	.\mylib\xmanager.c	/^static void WaitForMouseMessage(string args)$/;"	f	file:
 WaitForMouseUp	.\mylib\graphics.c	/^void WaitForMouseUp(void)$/;"	f
-WaitingForMouseDown	.\mylib\xdisplay.c	/^    WaitingForMouseDown,$/;"	e	enum:__anon25	file:
-WaitingForMouseUp	.\mylib\xdisplay.c	/^    WaitingForMouseUp$/;"	e	enum:__anon25	file:
+WaitingForMouseDown	.\mylib\xdisplay.c	/^    WaitingForMouseDown,$/;"	e	enum:__anon26	file:
+WaitingForMouseUp	.\mylib\xdisplay.c	/^    WaitingForMouseUp$/;"	e	enum:__anon26	file:
 WallExists	.\srcAbstract\chapter6\mazelib.c	/^bool WallExists(pointT pt, directionT dir)$/;"	f
 Wednesday	.\ProgrammingAbstracetionsInC\05-Functions\calendar.c	24;"	d	file:
 Wednesday	.\srcAbstract\chapter1\calendar.c	22;"	d	file:
-West	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	e	enum:__anon80
+West	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	e	enum:__anon81
 WhoseTurn	.\srcAbstract\chapter6\tictac.c	/^static playerT WhoseTurn(stateT state)$/;"	f	file:
-WidthCmd	.\mylib\xmanager.h	/^   WidthCmd,$/;"	e	enum:__anon37
+WidthCmd	.\mylib\xmanager.h	/^   WidthCmd,$/;"	e	enum:__anon38
 WidthMessage	.\mylib\xmanager.c	/^static void WidthMessage(string args)$/;"	f	file:
 WinningPosition	.\srcAbstract\chapter6\tictac.c	30;"	d	file:
 XDCheckForRedraw	.\mylib\xdisplay.c	/^void XDCheckForRedraw(void)$/;"	f
@@ -2531,7 +2542,7 @@ X_TTM	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	14;"	d
 Y_INIT	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	11;"	d
 Y_TTM	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	15;"	d
 _ENDMONITOR	.\C Interfaces and Implementations\src\swtch.s	/^_ENDMONITOR:$/;"	l
-_GCControlBlock	.\mylib\gcalloc.h	/^} *_GCControlBlock;$/;"	t	typeref:struct:__anon34
+_GCControlBlock	.\mylib\gcalloc.h	/^} *_GCControlBlock;$/;"	t	typeref:struct:__anon35
 _GNU_SOURCE	.\BeginnigLinuxProgramming\chapter04\longopt.c	5;"	d	file:
 _MONITOR	.\C Interfaces and Implementations\src\thread.c	/^void _MONITOR(void) {}$/;"	f
 _POSIX_SOURCE	.\BeginnigLinuxProgramming\chapter13\app\clientif.c	3;"	d	file:
@@ -2654,8 +2665,8 @@ _xmanager_h	.\mylib\xmanager.h	12;"	d
 a	.\C Interfaces and Implementations\examples\sort.c	/^	int *a;$/;"	m	struct:args	file:
 a	.\C Interfaces and Implementations\src\arena.c	/^	union align a;$/;"	m	union:header	typeref:union:header::align	file:
 aboutApp	.\BeginnigLinuxProgramming\chapter17\kde\menus\KDEMenu.cpp	/^void KDEMenu::aboutApp()$/;"	f	class:KDEMenu
-activeCustomer	.\srcAbstract\chapter10\checkout.c	/^    customerT activeCustomer;$/;"	m	struct:__anon58	file:
-add	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*add)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon105	file:
+activeCustomer	.\srcAbstract\chapter10\checkout.c	/^    customerT activeCustomer;$/;"	m	struct:__anon59	file:
+add	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*add)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon106	file:
 add	.\C Interfaces and Implementations\src\ap.c	/^static T add(T z, T x, T y) {$/;"	f	file:
 addThread	.\C Interfaces and Implementations\src\thread-nt.c	/^static void addThread(T t) {$/;"	f	file:
 add_cd	.\BeginnigLinuxProgramming\chapter08\app\app_mysql.c	/^int add_cd(char *artist, char *title, char *catalogue, int *cd_id) {$/;"	f
@@ -2688,14 +2699,14 @@ align	.\C Interfaces and Implementations\misc\maxalign.c	/^union align {$/;"	u	f
 align	.\C Interfaces and Implementations\src\arena.c	/^union align {$/;"	u	file:
 align	.\C Interfaces and Implementations\src\memchk.c	/^union align {$/;"	u	file:
 alloc	.\C Interfaces and Implementations\src\text.c	/^static char *alloc(int len) {$/;"	f	file:
-allocMethod	.\mylib\gcalloc.h	/^    void *(*allocMethod)(size_t nbytes);$/;"	m	struct:__anon34
+allocMethod	.\mylib\gcalloc.h	/^    void *(*allocMethod)(size_t nbytes);$/;"	m	struct:__anon35
 allthreads	.\C Interfaces and Implementations\src\thread-nt.c	/^static T allthreads[317];$/;"	v	file:
 announce	.\BeginnigLinuxProgramming\chapter07\app\app_ui.c	/^static void announce(void) {$/;"	f	file:
 announce	.\BeginnigLinuxProgramming\chapter13\app\app_ui.c	/^static void announce(void)$/;"	f	file:
 announce	.\BeginnigLinuxProgramming\chapter14\app\app_ui.c	/^static void announce(void)$/;"	f	file:
-ans	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    string ans;$/;"	m	struct:__anon41	file:
-answerT	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^} answerT;$/;"	t	typeref:struct:__anon41	file:
-answers	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    answerT answers[MaxAnswersPerQuestion];$/;"	m	struct:__anon42	file:
+ans	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    string ans;$/;"	m	struct:__anon42	file:
+answerT	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^} answerT;$/;"	t	typeref:struct:__anon42	file:
+answers	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    answerT answers[MaxAnswersPerQuestion];$/;"	m	struct:__anon43	file:
 any_integer	.\BeginnigLinuxProgramming\chapter07\dbm1.c	/^    int  any_integer;$/;"	m	struct:test_data	file:
 any_integer	.\BeginnigLinuxProgramming\chapter07\dbm2.c	/^    int  any_integer;$/;"	m	struct:test_data	file:
 ap	.\C Interfaces and Implementations\include\fmt.h	/^	va_list ap;$/;"	m	struct:va_list_box
@@ -2723,7 +2734,7 @@ array	.\C Interfaces and Implementations\include\arrayrep.h	/^	char *array;$/;"	
 array	.\C Interfaces and Implementations\src\seq.c	/^	struct Array_T array;$/;"	m	struct:T	typeref:struct:T::Array_T	file:
 array	.\ProgrammingAbstracetionsInC\17-Looking-Ahead\queue.c	/^    void *array[MaxQueueSize];$/;"	m	struct:queueCDT	file:
 array	.\mylib\exception.h	/^    exception *array[MaxExceptionsPerScope];$/;"	m	struct:ctx_block
-arrivalTime	.\srcAbstract\chapter10\checkout.c	/^    int arrivalTime;$/;"	m	struct:__anon57	file:
+arrivalTime	.\srcAbstract\chapter10\checkout.c	/^    int arrivalTime;$/;"	m	struct:__anon58	file:
 artist	.\BeginnigLinuxProgramming\chapter07\app\cd_data.h	/^    char artist[CAT_ARTIST_LEN + 1];$/;"	m	struct:__anon13
 artist	.\BeginnigLinuxProgramming\chapter08\app\create_tables.sql	/^create table artist ($/;"	t
 artist	.\BeginnigLinuxProgramming\chapter13\app\cd_data.h	/^    char artist[CAT_ARTIST_LEN + 1];$/;"	m	struct:__anon18
@@ -2754,8 +2765,8 @@ basename	.\C Interfaces and Implementations\examples\basename.c	/^char *basename
 before	.\abstract\chapter9\stackbuffer.c	/^	stackADT before;$/;"	m	struct:bufferCDT	file:
 before	.\srcAbstract\chapter9\stackbuf.c	/^    stackADT before;$/;"	m	struct:bufferCDT	file:
 bf	.\abstract\bstAVL.c	/^  int bf;$/;"	m	struct:nodeT	file:
-bf	.\mylib\bst.c	/^    int bf;$/;"	m	struct:__anon30	file:
-bf	.\mylib\bst_save.c	/^  int bf;$/;"	m	struct:__anon28	file:
+bf	.\mylib\bst.c	/^    int bf;$/;"	m	struct:__anon31	file:
+bf	.\mylib\bst_save.c	/^  int bf;$/;"	m	struct:__anon29	file:
 bf	.\srcAbstract\chapter13\avltree.c	/^    int bf;$/;"	m	struct:nodeT	file:
 bigIntADT	.\srcAbstract\chapter12\bigint.h	/^typedef struct bigIntCDT *bigIntADT;$/;"	t	typeref:struct:bigIntCDT
 bigIntCDT	.\srcAbstract\chapter12\bigint.c	/^struct bigIntCDT {$/;"	s	file:
@@ -2766,14 +2777,17 @@ bin_sem	.\BeginnigLinuxProgramming\chapter12\thread3a.c	/^sem_t bin_sem;$/;"	v
 binding	.\C Interfaces and Implementations\src\table.c	/^	struct binding {$/;"	s	struct:T	file:
 bitop	.\C Interfaces and Implementations\src\mp.c	17;"	d	file:
 bitopi	.\C Interfaces and Implementations\src\mp.c	21;"	d	file:
-blue	.\mylib\graphics.c	/^    double red, green, blue;$/;"	m	struct:__anon32	file:
-board	.\srcAbstract\chapter6\tictac.c	/^    char board[(3 * 3) + 1];$/;"	m	struct:__anon77	file:
-bool	.\mylib\genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	t	typeref:enum:__anon38
+blue	.\mylib\graphics.c	/^    double red, green, blue;$/;"	m	struct:__anon33	file:
+board	.\srcAbstract\chapter6\tictac.c	/^    char board[(3 * 3) + 1];$/;"	m	struct:__anon78	file:
+bool	.\mylib\genlib.h	/^       typedef enum {FALSE, TRUE} bool;$/;"	t	typeref:enum:__anon39
 bool	.\mylib\genlib.h	/^   typedef int bool;$/;"	t
 bool	.\mylib\genlib.h	54;"	d
+bool	.\test\bool.c	/^       typedef enum {FALSE, TRUE} bool;$/;"	t	typeref:enum:__anon24	file:
+bool	.\test\bool.c	/^   typedef int bool;$/;"	t	file:
+bool	.\test\bool.c	16;"	d	file:
 bounce_or_lose	.\understandingUnixLinuxProgram\chapter7\bounce\bounce2d.c	/^int bounce_or_lose(struct ppball *bp)$/;"	f
 bp	.\C Interfaces and Implementations\src\fmt.c	/^	char *bp;$/;"	m	struct:buf	file:
-bst	.\mylib\set.c	/^	bstADT bst;$/;"	m	struct:setCDT	file:
+bst	.\mylib\set.c	/^    bstADT bst;$/;"	m	struct:setCDT	file:
 bst	.\srcAbstract\chapter13\bsttab.c	/^    bstADT bst;$/;"	m	struct:symtabCDT	file:
 bst	.\srcAbstract\chapter14\set.c	/^    bstADT bst;$/;"	m	struct:setCDT	file:
 bst	.\srcAbstract\chapter15\set.c	/^    bstADT bst;$/;"	m	struct:setCDT	file:
@@ -2789,12 +2803,12 @@ bstCDT	.\srcAbstract\chapter13\bst.c	/^struct bstCDT {$/;"	s	file:
 bstCDT	.\srcAbstract\chapter14\bst.c	/^struct bstCDT {$/;"	s	file:
 bstCDT	.\srcAbstract\chapter15\bst.c	/^struct bstCDT {$/;"	s	file:
 bstCDT	.\srcAbstract\chapter16\bst.c	/^struct bstCDT {$/;"	s	file:
-bstDataT	.\mylib\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon30	file:
-bstDataT	.\mylib\bst_save.c	/^} bstDataT;$/;"	t	typeref:struct:__anon28	file:
-bstDataT	.\srcAbstract\chapter13\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon103	file:
-bstDataT	.\srcAbstract\chapter14\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon66	file:
-bstDataT	.\srcAbstract\chapter15\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon51	file:
-bstDataT	.\srcAbstract\chapter16\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon86	file:
+bstDataT	.\mylib\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon31	file:
+bstDataT	.\mylib\bst_save.c	/^} bstDataT;$/;"	t	typeref:struct:__anon29	file:
+bstDataT	.\srcAbstract\chapter13\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon104	file:
+bstDataT	.\srcAbstract\chapter14\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon67	file:
+bstDataT	.\srcAbstract\chapter15\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon52	file:
+bstDataT	.\srcAbstract\chapter16\bst.c	/^} bstDataT;$/;"	t	typeref:struct:__anon87	file:
 buckets	.\C Interfaces and Implementations\src\atom.c	/^} *buckets[2048];$/;"	v	typeref:struct:atom	file:
 buckets	.\C Interfaces and Implementations\src\set.c	/^	} **buckets;$/;"	m	struct:T	typeref:struct:T::member	file:
 buckets	.\C Interfaces and Implementations\src\table.c	/^	} **buckets;$/;"	m	struct:T	typeref:struct:T::binding	file:
@@ -2829,7 +2843,7 @@ cVectorADT	.\srcAbstract\chapter14\cvector.h	/^typedef struct cVectorCDT *cVecto
 cVectorADT	.\srcAbstract\chapter15\cvector.h	/^typedef struct cVectorCDT *cVectorADT;$/;"	t	typeref:struct:cVectorCDT
 cVectorCDT	.\srcAbstract\chapter14\cvector.c	/^struct cVectorCDT {$/;"	s	file:
 cVectorCDT	.\srcAbstract\chapter15\cvector.c	/^struct cVectorCDT {$/;"	s	file:
-callbackDataT	.\srcAbstract\chapter13\bsttab.c	/^} *callbackDataT;$/;"	t	typeref:struct:__anon102	file:
+callbackDataT	.\srcAbstract\chapter13\bsttab.c	/^} *callbackDataT;$/;"	t	typeref:struct:__anon103	file:
 catalog	.\BeginnigLinuxProgramming\chapter07\app\cd_data.h	/^    char catalog[CAT_CAT_LEN + 1];$/;"	m	struct:__anon13
 catalog	.\BeginnigLinuxProgramming\chapter07\app\cd_data.h	/^    char catalog[TRACK_CAT_LEN + 1];$/;"	m	struct:__anon14
 catalog	.\BeginnigLinuxProgramming\chapter13\app\cd_data.h	/^    char catalog[CAT_CAT_LEN + 1];$/;"	m	struct:__anon18
@@ -2929,6 +2943,8 @@ char_to_terminal	.\BeginnigLinuxProgramming\chapter05\menu5.c	/^int char_to_term
 checkbox	.\BeginnigLinuxProgramming\chapter17\Buttons.h	/^    QCheckBox *checkbox;$/;"	m	class:Buttons
 checkbutton	.\BeginnigLinuxProgramming\chapter16\buttons.c	/^GtkWidget *checkbutton;$/;"	v
 child	.\mylib\xmanager.c	/^static pid_t child;$/;"	v	file:
+child_code	.\understandingUnixLinuxProgram\chapter8\waitdemo1.c	/^void child_code(int delay){$/;"	f
+child_code	.\understandingUnixLinuxProgram\chapter8\waitdemo2.c	/^void child_code(int delay){$/;"	f
 children	.\BeginnigLinuxProgramming\chapter08\create_children.sql	/^CREATE TABLE children ($/;"	t
 children.age	.\BeginnigLinuxProgramming\chapter08\create_children.sql	/^   age int(11),$/;"	F
 children.childno	.\BeginnigLinuxProgramming\chapter08\create_children.sql	/^   childno int(11) NOT NULL auto_increment,$/;"	F
@@ -2937,13 +2953,13 @@ chunk	.\C Interfaces and Implementations\src\text.c	/^static struct chunk {$/;"	
 cityTable	.\ProgrammingAbstracetionsInC\12-Sorting\mileage.c	/^static string cityTable[NCities] = {$/;"	v	file:
 cityTable	.\ProgrammingAbstracetionsInC\12-Sorting\mileage2.c	/^static string cityTable[NCities] = {$/;"	v	file:
 cityTable	.\srcAbstract\chapter4\bsearch.c	/^static string cityTable[NCities] = {$/;"	v	file:
-class	.\mylib\set.c	/^	setClassT class;$/;"	m	struct:setCDT	file:
+class	.\mylib\set.c	/^    setClassT class;$/;"	m	struct:setCDT	file:
 class	.\srcAbstract\chapter14\set.c	/^    setClassT class;$/;"	m	struct:setCDT	file:
 class	.\srcAbstract\chapter15\set.c	/^    setClassT class;$/;"	m	struct:setCDT	file:
 class	.\srcAbstract\chapter16\set.c	/^    setClassT class;$/;"	m	struct:setCDT	file:
 clear_all_screen	.\BeginnigLinuxProgramming\chapter06\app\curses_app.c	/^void clear_all_screen()$/;"	f
 cli_qid	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^static int cli_qid = -1;$/;"	v	file:
-clientData	.\srcAbstract\chapter13\bsttab.c	/^    void *clientData;$/;"	m	struct:__anon102	file:
+clientData	.\srcAbstract\chapter13\bsttab.c	/^    void *clientData;$/;"	m	struct:__anon103	file:
 client_ending	.\BeginnigLinuxProgramming\chapter13\app\pipe_imp.c	/^void client_ending(void)$/;"	f
 client_ending	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^void client_ending()$/;"	f
 client_fd	.\BeginnigLinuxProgramming\chapter13\app\pipe_imp.c	/^static int client_fd = -1;$/;"	v	file:
@@ -2967,15 +2983,15 @@ close_app	.\BeginnigLinuxProgramming\chapter16\app\callbacks.c	/^gboolean close_
 close_keyboard	.\BeginnigLinuxProgramming\chapter05\kbhit.c	/^void close_keyboard()$/;"	f
 cmdBuffer	.\mylib\graphics.c	/^static char cmdBuffer[CommandBufferSize];$/;"	v	file:
 cmdBuffer	.\mylib\xmanager.c	/^static char cmdBuffer[CommandBufferSize];$/;"	v	file:
-cmdEntryT	.\srcAbstract\chapter13\cmdscan.c	/^} *cmdEntryT;$/;"	t	typeref:struct:__anon104	file:
-cmdEntryT	.\srcAbstract\chapter16\cmdscan.c	/^} *cmdEntryT;$/;"	t	typeref:struct:__anon89	file:
-cmdFn	.\srcAbstract\chapter13\cmdscan.c	/^    cmdFnT cmdFn;$/;"	m	struct:__anon104	file:
-cmdFn	.\srcAbstract\chapter16\cmdscan.c	/^    cmdFnT cmdFn;$/;"	m	struct:__anon89	file:
+cmdEntryT	.\srcAbstract\chapter13\cmdscan.c	/^} *cmdEntryT;$/;"	t	typeref:struct:__anon105	file:
+cmdEntryT	.\srcAbstract\chapter16\cmdscan.c	/^} *cmdEntryT;$/;"	t	typeref:struct:__anon90	file:
+cmdFn	.\srcAbstract\chapter13\cmdscan.c	/^    cmdFnT cmdFn;$/;"	m	struct:__anon105	file:
+cmdFn	.\srcAbstract\chapter16\cmdscan.c	/^    cmdFnT cmdFn;$/;"	m	struct:__anon90	file:
 cmdFnT	.\srcAbstract\chapter13\cmdscan.h	/^typedef void (*cmdFnT)(cmdScannerADT cs);$/;"	t
 cmdFnT	.\srcAbstract\chapter16\cmdscan.h	/^typedef void (*cmdFnT)(cmdScannerADT cs);$/;"	t
-cmdName	.\srcAbstract\chapter13\cmdscan.c	/^    string cmdName;$/;"	m	struct:__anon104	file:
+cmdName	.\srcAbstract\chapter13\cmdscan.c	/^    string cmdName;$/;"	m	struct:__anon105	file:
 cmdName	.\srcAbstract\chapter13\cmdscan.c	/^    string cmdName;$/;"	m	struct:cmdScannerCDT	file:
-cmdName	.\srcAbstract\chapter16\cmdscan.c	/^    string cmdName;$/;"	m	struct:__anon89	file:
+cmdName	.\srcAbstract\chapter16\cmdscan.c	/^    string cmdName;$/;"	m	struct:__anon90	file:
 cmdName	.\srcAbstract\chapter16\cmdscan.c	/^    string cmdName;$/;"	m	struct:cmdScannerCDT	file:
 cmdScannerADT	.\srcAbstract\chapter13\cmdscan.h	/^typedef struct cmdScannerCDT *cmdScannerADT;$/;"	t	typeref:struct:cmdScannerCDT
 cmdScannerADT	.\srcAbstract\chapter16\cmdscan.h	/^typedef struct cmdScannerCDT *cmdScannerADT;$/;"	t	typeref:struct:cmdScannerCDT
@@ -2989,7 +3005,7 @@ cmp	.\C Interfaces and Implementations\src\table.c	/^	int (*cmp)(const void *x, 
 cmpFn	.\mylib\bst.c	/^    cmpFnT cmpFn;$/;"	m	struct:bstCDT	file:
 cmpFn	.\mylib\bst_save.c	/^  cmpFnT cmpFn;$/;"	m	struct:bstCDT	file:
 cmpFn	.\mylib\iterator2.c	/^	cmpFnT cmpFn;$/;"	m	struct:iteratorCDT	file:
-cmpFn	.\mylib\set.c	/^	cmpFnT cmpFn;$/;"	m	struct:setCDT	file:
+cmpFn	.\mylib\set.c	/^    cmpFnT cmpFn;$/;"	m	struct:setCDT	file:
 cmpFn	.\srcAbstract\chapter13\bst.c	/^    cmpFnT cmpFn;$/;"	m	struct:bstCDT	file:
 cmpFn	.\srcAbstract\chapter14\bst.c	/^    cmpFnT cmpFn;$/;"	m	struct:bstCDT	file:
 cmpFn	.\srcAbstract\chapter14\iterator.c	/^    cmpFnT cmpFn;$/;"	m	struct:iteratorCDT	file:
@@ -3016,13 +3032,13 @@ coinValues	.\ProgrammingAbstracetionsInC\12-Sorting\findcoin.c	/^static int coin
 col	.\understandingUnixLinuxProgram\chapter7\bounce\bounceld.c	/^int col;   \/* current column *\/$/;"	v
 color	.\abstract\chapter13\bstRB.c	/^  char color;$/;"	m	struct:nodeT	file:
 color	.\mylib\graphics.c	/^    int color;$/;"	m	struct:graphicsStateT	file:
-colorEntryT	.\mylib\graphics.c	/^} colorEntryT;$/;"	t	typeref:struct:__anon32	file:
+colorEntryT	.\mylib\graphics.c	/^} colorEntryT;$/;"	t	typeref:struct:__anon33	file:
 colorOK	.\mylib\graphics.c	/^static bool colorOK;$/;"	v	file:
 colorTable	.\mylib\graphics.c	/^static colorEntryT colorTable[MaxColors];$/;"	v	file:
 colormap	.\mylib\xdisplay.c	/^static Colormap colormap;$/;"	v	file:
-commandEntryT	.\srcAbstract\chapter11\cmddisp.c	/^} *commandEntryT;$/;"	t	typeref:struct:__anon94	file:
+commandEntryT	.\srcAbstract\chapter11\cmddisp.c	/^} *commandEntryT;$/;"	t	typeref:struct:__anon95	file:
 commandFnT	.\srcAbstract\chapter11\cmddisp.c	/^typedef void (*commandFnT)(void);$/;"	t	file:
-commandT	.\mylib\xmanager.h	/^} commandT;$/;"	t	typeref:enum:__anon37
+commandT	.\mylib\xmanager.h	/^} commandT;$/;"	t	typeref:enum:__anon38
 commandTable	.\srcAbstract\chapter11\cmddisp.c	/^static symtabADT commandTable;$/;"	v	file:
 command_mode	.\BeginnigLinuxProgramming\chapter07\app\app_ui.c	/^static int command_mode(int argc, char *argv[]) {$/;"	f	file:
 command_mode	.\BeginnigLinuxProgramming\chapter13\app\app_ui.c	/^static int command_mode(int argc, char *argv[])$/;"	f	file:
@@ -3032,7 +3048,7 @@ compare	.\C Interfaces and Implementations\examples\iref.c	/^int compare(const v
 compare	.\C Interfaces and Implementations\examples\kref.c	/^int compare(const void *x, const void *y) {$/;"	f
 compare	.\C Interfaces and Implementations\examples\wf.c	/^int compare(const void *x, const void *y) {$/;"	f
 compare	.\C Interfaces and Implementations\examples\xref.c	/^int compare(const void *x, const void *y) {$/;"	f
-compoundRep	.\srcAbstract\chapter14\exp.c	/^        } compoundRep;$/;"	m	union:expressionCDT::__anon63	typeref:struct:expressionCDT::__anon63::__anon64	file:
+compoundRep	.\srcAbstract\chapter14\exp.c	/^        } compoundRep;$/;"	m	union:expressionCDT::__anon64	typeref:struct:expressionCDT::__anon64::__anon65	file:
 confirm_exit	.\BeginnigLinuxProgramming\chapter16\app\callbacks.c	/^gint confirm_exit()$/;"	f
 context_block	.\mylib\exception.h	/^} context_block;$/;"	t	typeref:struct:ctx_block
 convert	.\C Interfaces and Implementations\src\str.c	9;"	d	file:
@@ -3043,14 +3059,14 @@ copy	.\C Interfaces and Implementations\src\set.c	/^static T copy(T t, int hint)
 count	.\BeginnigLinuxProgramming\chapter16\gtk2.c	/^static int count = 0;$/;"	v	file:
 count	.\C Interfaces and Implementations\include\sem.h	/^	int count;$/;"	m	struct:T
 count	.\C Interfaces and Implementations\src\stack.c	/^	int count;$/;"	m	struct:T	file:
-count	.\abstract\chapter11\symtabtest.c	/^	int count;$/;"	m	struct:__anon109	file:
+count	.\abstract\chapter11\symtabtest.c	/^	int count;$/;"	m	struct:__anon110	file:
 count	.\abstract\chapter9\chapter9 programPractise\editor_changeQ3,4.c	/^int count=0;$/;"	v
-count	.\abstract\symtabtest.c	/^	int count;$/;"	m	struct:__anon107	file:
-count	.\abstract\symtabtest2.c	/^	int count;$/;"	m	struct:__anon108	file:
+count	.\abstract\symtabtest.c	/^	int count;$/;"	m	struct:__anon108	file:
+count	.\abstract\symtabtest2.c	/^	int count;$/;"	m	struct:__anon109	file:
 count	.\mylib\stack.c	/^	int count;$/;"	m	struct:stackCDT	file:
-count	.\srcAbstract\chapter11\dumpfreq.c	/^    int count;$/;"	m	struct:__anon96	file:
-count	.\srcAbstract\chapter11\mapfreq.c	/^    int count;$/;"	m	struct:__anon93	file:
-count	.\srcAbstract\chapter11\wordfreq.c	/^    int count;$/;"	m	struct:__anon95	file:
+count	.\srcAbstract\chapter11\dumpfreq.c	/^    int count;$/;"	m	struct:__anon97	file:
+count	.\srcAbstract\chapter11\mapfreq.c	/^    int count;$/;"	m	struct:__anon94	file:
+count	.\srcAbstract\chapter11\wordfreq.c	/^    int count;$/;"	m	struct:__anon96	file:
 count	.\srcAbstract\chapter8\stack.c	/^    int count;$/;"	m	struct:stackCDT	file:
 count	.\srcAbstract\chapter9\stack.c	/^    int count;$/;"	m	struct:stackCDT	file:
 count_all_entries	.\BeginnigLinuxProgramming\chapter07\app\app_ui.c	/^static void count_all_entries(void) {$/;"	f	file:
@@ -3058,13 +3074,13 @@ count_all_entries	.\BeginnigLinuxProgramming\chapter13\app\app_ui.c	/^static voi
 count_all_entries	.\BeginnigLinuxProgramming\chapter14\app\app_ui.c	/^static void count_all_entries(void)$/;"	f	file:
 count_cds	.\BeginnigLinuxProgramming\chapter06\app\curses_app.c	/^void count_cds()$/;"	f
 countdown	.\understandingUnixLinuxProgram\chapter7\ticker_demo.c	/^void countdown(int signum)$/;"	f
-counterT	.\abstract\chapter11\symtabtest.c	/^} *counterT;$/;"	t	typeref:struct:__anon109	file:
-counterT	.\abstract\symtabtest.c	/^} *counterT;$/;"	t	typeref:struct:__anon107	file:
-counterT	.\abstract\symtabtest2.c	/^} *counterT;$/;"	t	typeref:struct:__anon108	file:
-counterT	.\srcAbstract\chapter11\dumpfreq.c	/^} *counterT;$/;"	t	typeref:struct:__anon96	file:
-counterT	.\srcAbstract\chapter11\mapfreq.c	/^} *counterT;$/;"	t	typeref:struct:__anon93	file:
-counterT	.\srcAbstract\chapter11\wordfreq.c	/^} *counterT;$/;"	t	typeref:struct:__anon95	file:
-courseDB	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^} *courseDB;$/;"	t	typeref:struct:__anon43	file:
+counterT	.\abstract\chapter11\symtabtest.c	/^} *counterT;$/;"	t	typeref:struct:__anon110	file:
+counterT	.\abstract\symtabtest.c	/^} *counterT;$/;"	t	typeref:struct:__anon108	file:
+counterT	.\abstract\symtabtest2.c	/^} *counterT;$/;"	t	typeref:struct:__anon109	file:
+counterT	.\srcAbstract\chapter11\dumpfreq.c	/^} *counterT;$/;"	t	typeref:struct:__anon97	file:
+counterT	.\srcAbstract\chapter11\mapfreq.c	/^} *counterT;$/;"	t	typeref:struct:__anon94	file:
+counterT	.\srcAbstract\chapter11\wordfreq.c	/^} *counterT;$/;"	t	typeref:struct:__anon96	file:
+courseDB	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^} *courseDB;$/;"	t	typeref:struct:__anon44	file:
 cp	.\mylib\scanadt.c	/^	int cp;$/;"	m	struct:scannerCDT	file:
 cp	.\srcAbstract\chapter10\scanadt.c	/^    int cp;$/;"	m	struct:scannerCDT	file:
 cp	.\srcAbstract\chapter11\scanadt.c	/^    int cp;$/;"	m	struct:scannerCDT	file:
@@ -3104,8 +3120,8 @@ cursor	.\abstract\chapter9\doublelistbuffer.c	/^	cellT *cursor;$/;"	m	struct:buf
 cursor	.\abstract\chapter9\listbuffer.c	/^	cellT *cursor;$/;"	m	struct:bufferCDT	file:
 cursor	.\srcAbstract\chapter9\arraybuf.c	/^    int cursor;$/;"	m	struct:bufferCDT	file:
 cursor	.\srcAbstract\chapter9\listbuf.c	/^    cellT *cursor;$/;"	m	struct:bufferCDT	file:
-customerNumber	.\srcAbstract\chapter10\checkout.c	/^    int customerNumber;$/;"	m	struct:__anon57	file:
-customerT	.\srcAbstract\chapter10\checkout.c	/^} *customerT;$/;"	t	typeref:struct:__anon57	file:
+customerNumber	.\srcAbstract\chapter10\checkout.c	/^    int customerNumber;$/;"	m	struct:__anon58	file:
+customerT	.\srcAbstract\chapter10\checkout.c	/^} *customerT;$/;"	t	typeref:struct:__anon58	file:
 cutoff	.\C Interfaces and Implementations\examples\sort.c	/^int cutoff = 10000;$/;"	v
 cvec	.\srcAbstract\chapter14\cvecset.c	/^    cVectorADT cvec;$/;"	m	struct:setCDT	file:
 cvec	.\srcAbstract\chapter15\cvecset.c	/^    cVectorADT cvec;$/;"	m	struct:setCDT	file:
@@ -3134,7 +3150,7 @@ data	.\srcAbstract\chapter16\cmdscan.c	/^    void *data;$/;"	m	struct:cmdScanner
 data	.\srcAbstract\chapter16\graph.c	/^    void *data;$/;"	m	struct:arcCDT	file:
 data	.\srcAbstract\chapter16\graph.c	/^    void *data;$/;"	m	struct:graphCDT	file:
 data	.\srcAbstract\chapter16\graph.c	/^    void *data;$/;"	m	struct:nodeCDT	file:
-dataBlockT	.\srcAbstract\chapter12\listtest.c	/^} *dataBlockT;$/;"	t	typeref:struct:__anon73	file:
+dataBlockT	.\srcAbstract\chapter12\listtest.c	/^} *dataBlockT;$/;"	t	typeref:struct:__anon74	file:
 data_to_pass_st	.\BeginnigLinuxProgramming\chapter13\client.h	/^struct data_to_pass_st {$/;"	s
 database_close	.\BeginnigLinuxProgramming\chapter07\app\access.c	/^void database_close(void)$/;"	f
 database_close	.\BeginnigLinuxProgramming\chapter13\app\cd_dbm.c	/^void database_close(void)$/;"	f
@@ -3185,7 +3201,7 @@ descriptor	.\C Interfaces and Implementations\src\memchk.c	/^static struct descr
 digits	.\C Interfaces and Implementations\src\ap.c	/^	XP_T digits;$/;"	m	struct:T	file:
 ding	.\BeginnigLinuxProgramming\chapter11\alarm.c	/^void ding(int sig)$/;"	f
 dir	.\understandingUnixLinuxProgram\chapter7\bounce\bounceld.c	/^int dir;   \/* where we are going *\/$/;"	v
-directionT	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	t	typeref:enum:__anon80
+directionT	.\srcAbstract\chapter6\mazelib.h	/^typedef enum { North, East, South, West } directionT;$/;"	t	typeref:enum:__anon81
 dirname	.\C Interfaces and Implementations\examples\basename.c	/^char *dirname(char *path, int i, int j) {$/;"	f
 disp	.\mylib\xdisplay.c	/^static Display *disp;$/;"	v	file:
 display	.\abstract\chapter13\AVLtest\height2\L_l=-1.c	/^void display(void *np, void *clientData)$/;"	f
@@ -3243,7 +3259,7 @@ display_cdt	.\BeginnigLinuxProgramming\chapter14\app\app_ui.c	/^static void disp
 display_header	.\BeginnigLinuxProgramming\chapter08\select4.c	/^void display_header() {$/;"	f
 display_row	.\BeginnigLinuxProgramming\chapter08\select3.c	/^void display_row() {$/;"	f
 display_row	.\BeginnigLinuxProgramming\chapter08\select4.c	/^void display_row() {$/;"	f
-div	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*div)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon105	file:
+div	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*div)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon106	file:
 doSearch	.\BeginnigLinuxProgramming\chapter17\kde\cdapp\MainWindow.cpp	/^void MainWindow::doSearch()$/;"	f	class:MainWindow
 do_ls	.\understandingUnixLinuxProgram\ls1.c	/^void do_ls(char dirname[])$/;"	f
 do_ls	.\understandingUnixLinuxProgram\ls2.c	/^void do_ls(char dirname[])$/;"	f
@@ -3269,12 +3285,12 @@ elements	.\mylib\stack.c	/^	stackElementT* elements;$/;"	m	struct:stackCDT	file:
 elements	.\srcAbstract\chapter10\qarray.c	/^    queueElementT elements[QueueArraySize];$/;"	m	struct:queueCDT	file:
 elements	.\srcAbstract\chapter8\stack.c	/^    stackElementT *elements;$/;"	m	struct:stackCDT	file:
 elements	.\srcAbstract\chapter9\stack.c	/^    stackElementT *elements;$/;"	m	struct:stackCDT	file:
-employeeDB	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^} *employeeDB;$/;"	t	typeref:struct:__anon45	file:
-employeeRecordT	.\srcAbstract\chapter2\employee.c	/^} employeeRecordT;$/;"	t	typeref:struct:__anon46	file:
-employeeT	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^} *employeeT;$/;"	t	typeref:struct:__anon44	file:
-employeeT	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^} employeeT;$/;"	t	typeref:struct:__anon40	file:
-employeeT	.\srcAbstract\chapter2\employee.c	/^} *employeeT;$/;"	t	typeref:struct:__anon47	file:
-employees	.\srcAbstract\chapter2\employee.c	/^    employeeT *employees;$/;"	m	struct:__anon48	file:
+employeeDB	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^} *employeeDB;$/;"	t	typeref:struct:__anon46	file:
+employeeRecordT	.\srcAbstract\chapter2\employee.c	/^} employeeRecordT;$/;"	t	typeref:struct:__anon47	file:
+employeeT	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^} *employeeT;$/;"	t	typeref:struct:__anon45	file:
+employeeT	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^} employeeT;$/;"	t	typeref:struct:__anon41	file:
+employeeT	.\srcAbstract\chapter2\employee.c	/^} *employeeT;$/;"	t	typeref:struct:__anon48	file:
+employees	.\srcAbstract\chapter2\employee.c	/^    employeeT *employees;$/;"	m	struct:__anon49	file:
 end	.\abstract\chapter9\doublelistbuffer.c	/^	cellT *end;$/;"	m	struct:bufferCDT	file:
 end_resp_from_server	.\BeginnigLinuxProgramming\chapter13\app\pipe_imp.c	/^void end_resp_from_server(void)$/;"	f
 end_resp_from_server	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^void end_resp_from_server(void)$/;"	f
@@ -3303,7 +3319,7 @@ error_text	.\BeginnigLinuxProgramming\chapter14\app\cliserv.h	/^    char        
 estack	.\C Interfaces and Implementations\src\thread.c	/^	Except_Frame *estack;$/;"	m	struct:T	file:
 except	.\mylib\exception.h	238;"	d
 exception	.\C Interfaces and Implementations\include\except.h	/^	const T *exception;$/;"	m	struct:Except_Frame
-exception	.\mylib\exception.h	/^typedef struct { string name; } exception;$/;"	t	typeref:struct:__anon27
+exception	.\mylib\exception.h	/^typedef struct { string name; } exception;$/;"	t	typeref:struct:__anon28
 exceptionStack	.\mylib\exception.c	/^context_block *exceptionStack = NULL;$/;"	v
 exchFnT	.\mylib\cmpfn.h	/^typedef void (*exchFnT) (void *p1, void *p2);$/;"	t
 execute	.\understandingUnixLinuxProgram\chapter8\psh1.c	/^int execute(char *arglist[])$/;"	f
@@ -3312,16 +3328,16 @@ exitGraphicsFlag	.\mylib\xmanager.c	/^static bool exitGraphicsFlag;$/;"	v	file:
 expand	.\C Interfaces and Implementations\src\seq.c	/^static void expand(T seq) {$/;"	f	file:
 expressionADT	.\srcAbstract\chapter14\exp.h	/^typedef struct expressionCDT *expressionADT;$/;"	t	typeref:struct:expressionCDT
 expressionCDT	.\srcAbstract\chapter14\exp.c	/^struct expressionCDT {$/;"	s	file:
-exptypeT	.\srcAbstract\chapter14\exp.h	/^} exptypeT;$/;"	t	typeref:enum:__anon69
+exptypeT	.\srcAbstract\chapter14\exp.h	/^} exptypeT;$/;"	t	typeref:enum:__anon70
 extended_menu	.\BeginnigLinuxProgramming\chapter06\app\curses_app.c	/^char *extended_menu[] =$/;"	v
-f	.\C Interfaces and Implementations\examples\mpcalc.c	/^ *f = &s;$/;"	v	typeref:struct:__anon105
+f	.\C Interfaces and Implementations\examples\mpcalc.c	/^ *f = &s;$/;"	v	typeref:struct:__anon106
 f	.\C Interfaces and Implementations\misc\maxalign.c	/^	float f;$/;"	m	union:align	file:
 f	.\abstract\chapter8\practice\movetower.c	/^  int s, f, t;$/;"	m	struct:moveT	file:
 f	.\abstract\chapter8\practice\stackMovetower.c	/^    int s, f, t;$/;"	m	struct:moveT	file:
-fdSetT	.\mylib\xcompat.h	/^} fdSetT;$/;"	t	typeref:struct:__anon33
+fdSetT	.\mylib\xcompat.h	/^} fdSetT;$/;"	t	typeref:struct:__anon34
 fd_set	.\mylib\xcompat.h	36;"	d
 fd_set	.\mylib\xcompat.h	42;"	d
-fds	.\mylib\xcompat.h	/^    char fds[FOPEN_MAX];$/;"	m	struct:__anon33
+fds	.\mylib\xcompat.h	/^    char fds[FOPEN_MAX];$/;"	m	struct:__anon34
 fib1	.\abstract\chapter4\practice5p149.c	/^long fib1=0,fib2=0;$/;"	v
 fib2	.\abstract\chapter4\practice5p149.c	/^long fib1=0,fib2=0;$/;"	v
 file	.\C Interfaces and Implementations\include\except.h	/^	const char *file;$/;"	m	struct:Except_Frame
@@ -3349,11 +3365,12 @@ first	.\C Interfaces and Implementations\examples\kref.c	/^char *first, *rest;$/
 first	.\C Interfaces and Implementations\examples\wf.c	/^int first(int c) {$/;"	f
 first	.\C Interfaces and Implementations\examples\xref.c	/^int first(int c) {$/;"	f
 first	.\C Interfaces and Implementations\include\list.h	/^	void *first;$/;"	m	struct:T
+firstNames	.\abstract\chapter15\strtest.c	/^static string firstNames[] = {$/;"	v	file:
 firstNames	.\srcAbstract\chapter14\strtest.c	/^static string firstNames[] = {$/;"	v	file:
 firstNames	.\srcAbstract\chapter15\strtest.c	/^static string firstNames[] = {$/;"	v	file:
-fmt	.\C Interfaces and Implementations\examples\mpcalc.c	/^	const char *fmt;$/;"	m	struct:__anon105	file:
-fn	.\srcAbstract\chapter11\cmddisp.c	/^    commandFnT fn;$/;"	m	struct:__anon94	file:
-fn	.\srcAbstract\chapter13\bsttab.c	/^    symtabFnT fn;$/;"	m	struct:__anon102	file:
+fmt	.\C Interfaces and Implementations\examples\mpcalc.c	/^	const char *fmt;$/;"	m	struct:__anon106	file:
+fn	.\srcAbstract\chapter11\cmddisp.c	/^    commandFnT fn;$/;"	m	struct:__anon95	file:
+fn	.\srcAbstract\chapter13\bsttab.c	/^    symtabFnT fn;$/;"	m	struct:__anon103	file:
 font	.\mylib\graphics.c	/^    string font;$/;"	m	struct:graphicsStateT	file:
 fontChanged	.\mylib\graphics.c	/^static bool fontChanged;$/;"	v	file:
 fontInfo	.\mylib\xdisplay.c	/^static XFontStruct *fontInfo;$/;"	v	file:
@@ -3365,7 +3382,7 @@ fp	.\C Interfaces and Implementations\misc\maxalign.c	/^	void (*fp)(void);$/;"	m
 fred	.\BeginnigLinuxProgramming\LinuxProgramming\chapter1\fred.c	/^void fred(int arg){$/;"	f
 fred	.\BeginnigLinuxProgramming\chapter01\fred.c	/^void fred(int arg)$/;"	f
 free	.\C Interfaces and Implementations\src\memchk.c	/^	struct descriptor *free;$/;"	m	struct:descriptor	typeref:struct:descriptor::descriptor	file:
-freeMethod	.\mylib\gcalloc.h	/^    void (*freeMethod)(void *ptr);$/;"	m	struct:__anon34
+freeMethod	.\mylib\gcalloc.h	/^    void (*freeMethod)(void *ptr);$/;"	m	struct:__anon35
 freechunks	.\C Interfaces and Implementations\src\arena.c	/^static T freechunks;$/;"	v	file:
 freelist	.\C Interfaces and Implementations\src\memchk.c	/^static struct descriptor freelist = { &freelist };$/;"	v	typeref:struct:descriptor	file:
 freelist	.\C Interfaces and Implementations\src\thread.c	/^static T freelist;$/;"	v	file:
@@ -3437,7 +3454,7 @@ graphicsStateT	.\mylib\graphics.c	/^} *graphicsStateT;$/;"	t	typeref:struct:grap
 grayGC	.\mylib\xdisplay.c	/^static GC grayGC[NGrays];$/;"	v	file:
 grayList	.\mylib\xdisplay.c	/^static char grayList[][8] = {$/;"	v	file:
 grayStipple	.\mylib\xdisplay.c	/^static Pixmap grayStipple[NGrays];$/;"	v	file:
-green	.\mylib\graphics.c	/^    double red, green, blue;$/;"	m	struct:__anon32	file:
+green	.\mylib\graphics.c	/^    double red, green, blue;$/;"	m	struct:__anon33	file:
 handle	.\C Interfaces and Implementations\src\thread-nt.c	/^	T handle;		\/* self pointer *\/$/;"	m	struct:T	file:
 handle	.\C Interfaces and Implementations\src\thread.c	/^	T handle;$/;"	m	struct:T	file:
 hash	.\C Interfaces and Implementations\src\memchk.c	21;"	d	file:
@@ -3460,7 +3477,7 @@ head	.\srcAbstract\chapter15\iterator.c	/^    cellT *head, *tail;$/;"	m	struct:i
 head	.\srcAbstract\chapter16\iterator.c	/^    cellT *head, *tail;$/;"	m	struct:iteratorCDT	file:
 head	.\srcAbstract\chapter16\list.c	/^    listElementT head;$/;"	m	struct:listCDT	file:
 header	.\C Interfaces and Implementations\src\arena.c	/^union header {$/;"	u	file:
-header	.\mylib\set.c	/^	iteratorHeaderT header;$/;"	m	struct:setCDT	file:
+header	.\mylib\set.c	/^    iteratorHeaderT header;$/;"	m	struct:setCDT	file:
 header	.\mylib\symtab.c	/^  iteratorHeaderT header;$/;"	m	struct:symtabCDT	file:
 header	.\srcAbstract\chapter14\cvecset.c	/^    iteratorHeaderT header;$/;"	m	struct:setCDT	file:
 header	.\srcAbstract\chapter14\set.c	/^    iteratorHeaderT header;$/;"	m	struct:setCDT	file:
@@ -3472,7 +3489,7 @@ htab	.\C Interfaces and Implementations\src\memchk.c	/^} *htab[2048];$/;"	v	type
 i	.\C Interfaces and Implementations\misc\maxalign.c	/^	int i;$/;"	m	union:align	file:
 ibase	.\C Interfaces and Implementations\examples\mpcalc.c	/^int ibase = 10;$/;"	v
 id	.\mylib\exception.h	/^    exception *id;$/;"	m	struct:ctx_block
-idRep	.\srcAbstract\chapter14\exp.c	/^        string idRep;$/;"	m	union:expressionCDT::__anon63	file:
+idRep	.\srcAbstract\chapter14\exp.c	/^        string idRep;$/;"	m	union:expressionCDT::__anon64	file:
 idx	.\C Interfaces and Implementations\src\str.c	8;"	d	file:
 idx	.\C Interfaces and Implementations\src\text.c	9;"	d	file:
 in	.\mylib\foreach.h	27;"	d
@@ -3499,11 +3516,11 @@ insert_case3	.\abstract\chapter13\bstRB.c	/^void insert_case3(treeT n){$/;"	f
 insert_case4	.\abstract\chapter13\bstRB.c	/^void insert_case4(treeT n){$/;"	f
 insert_case5	.\abstract\chapter13\bstRB.c	/^void insert_case5(treeT n){$/;"	f
 insert_title	.\BeginnigLinuxProgramming\chapter06\app\curses_app.c	/^void insert_title(char *cdtitle)$/;"	f
-intRep	.\mylib\set.c	/^	int intRep;$/;"	m	union:__anon29	file:
-intRep	.\srcAbstract\chapter14\exp.c	/^        int intRep;$/;"	m	union:expressionCDT::__anon63	file:
-intRep	.\srcAbstract\chapter14\set.c	/^    int intRep;$/;"	m	union:__anon65	file:
-intRep	.\srcAbstract\chapter15\set.c	/^    int intRep;$/;"	m	union:__anon50	file:
-intRep	.\srcAbstract\chapter16\set.c	/^    int intRep;$/;"	m	union:__anon85	file:
+intRep	.\mylib\set.c	/^    int intRep;$/;"	m	union:__anon30	file:
+intRep	.\srcAbstract\chapter14\exp.c	/^        int intRep;$/;"	m	union:expressionCDT::__anon64	file:
+intRep	.\srcAbstract\chapter14\set.c	/^    int intRep;$/;"	m	union:__anon66	file:
+intRep	.\srcAbstract\chapter15\set.c	/^    int intRep;$/;"	m	union:__anon51	file:
+intRep	.\srcAbstract\chapter16\set.c	/^    int intRep;$/;"	m	union:__anon86	file:
 intcmp	.\C Interfaces and Implementations\examples\xref.c	/^int intcmp(const void *x, const void *y) {$/;"	f
 integer	.\BeginnigLinuxProgramming\chapter03\mmap.c	/^    int integer;$/;"	m	struct:__anon6	file:
 interrupt	.\C Interfaces and Implementations\src\thread.c	/^static int interrupt(int sig, int code,$/;"	f	file:
@@ -3544,10 +3561,11 @@ iteratorCDT	.\srcAbstract\chapter13\iterator.c	/^struct iteratorCDT {$/;"	s	file
 iteratorCDT	.\srcAbstract\chapter14\iterator.c	/^struct iteratorCDT {$/;"	s	file:
 iteratorCDT	.\srcAbstract\chapter15\iterator.c	/^struct iteratorCDT {$/;"	s	file:
 iteratorCDT	.\srcAbstract\chapter16\iterator.c	/^struct iteratorCDT {$/;"	s	file:
-iteratorHeaderT	.\mylib\itertype.h	/^}iteratorHeaderT;$/;"	t	typeref:struct:__anon36
-iteratorHeaderT	.\srcAbstract\chapter14\itertype.h	/^} iteratorHeaderT;$/;"	t	typeref:struct:__anon68
-iteratorHeaderT	.\srcAbstract\chapter15\itertype.h	/^} iteratorHeaderT;$/;"	t	typeref:struct:__anon53
-iteratorHeaderT	.\srcAbstract\chapter16\itertype.h	/^} iteratorHeaderT;$/;"	t	typeref:struct:__anon88
+iteratorElementT	.\mylib\iterator2.h	/^typedef void* iteratorElementT;$/;"	t
+iteratorHeaderT	.\mylib\itertype.h	/^}iteratorHeaderT;$/;"	t	typeref:struct:__anon37
+iteratorHeaderT	.\srcAbstract\chapter14\itertype.h	/^} iteratorHeaderT;$/;"	t	typeref:struct:__anon69
+iteratorHeaderT	.\srcAbstract\chapter15\itertype.h	/^} iteratorHeaderT;$/;"	t	typeref:struct:__anon54
+iteratorHeaderT	.\srcAbstract\chapter16\itertype.h	/^} iteratorHeaderT;$/;"	t	typeref:struct:__anon89
 iteratorList	.\mylib\foreach.c	/^static cellT *iteratorList = NULL;$/;"	v	file:
 iteratorList	.\srcAbstract\chapter14\foreach.c	/^static cellT *iteratorList = NULL;$/;"	v	file:
 iteratorList	.\srcAbstract\chapter15\foreach.c	/^static cellT *iteratorList = NULL;$/;"	v	file:
@@ -3573,7 +3591,7 @@ key	.\mylib\symtab.c	/^	string key;$/;"	m	struct:cellT	file:
 key	.\srcAbstract\chapter11\iterator.c	/^    string key;$/;"	m	struct:cellT	file:
 key	.\srcAbstract\chapter11\symtab.c	/^    string key;$/;"	m	struct:cellT	file:
 key	.\srcAbstract\chapter13\avltree.c	/^    string key;$/;"	m	struct:nodeT	file:
-key	.\srcAbstract\chapter13\bsttab.c	/^    string key;$/;"	m	struct:__anon101	file:
+key	.\srcAbstract\chapter13\bsttab.c	/^    string key;$/;"	m	struct:__anon102	file:
 key	.\srcAbstract\chapter13\introbst.c	/^    string key;$/;"	m	struct:nodeT	file:
 key	.\srcAbstract\chapter13\iterator.c	/^    string key;$/;"	m	struct:cellT	file:
 key	.\srcAbstract\chapter13\symtab.c	/^    string key;$/;"	m	struct:cellT	file:
@@ -3588,14 +3606,14 @@ ld	.\C Interfaces and Implementations\misc\maxalign.c	/^	long double ld;$/;"	m	u
 leadingDigits	.\srcAbstract\chapter12\bigint.c	/^    bigIntADT leadingDigits;$/;"	m	struct:bigIntCDT	file:
 left	.\abstract\bstAVL.c	/^  struct nodeT *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::nodeT	file:
 left	.\abstract\chapter13\bstRB.c	/^  struct nodeT *parent, *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::	file:
-left	.\mylib\bst.c	/^    treeT left, right;$/;"	m	struct:__anon30	file:
-left	.\mylib\bst_save.c	/^  treeT left, right;$/;"	m	struct:__anon28	file:
+left	.\mylib\bst.c	/^    treeT left, right;$/;"	m	struct:__anon31	file:
+left	.\mylib\bst_save.c	/^  treeT left, right;$/;"	m	struct:__anon29	file:
 left	.\srcAbstract\chapter13\avltree.c	/^    struct nodeT *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::nodeT	file:
-left	.\srcAbstract\chapter13\bst.c	/^    treeT left, right;$/;"	m	struct:__anon103	file:
+left	.\srcAbstract\chapter13\bst.c	/^    treeT left, right;$/;"	m	struct:__anon104	file:
 left	.\srcAbstract\chapter13\introbst.c	/^    struct nodeT *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::nodeT	file:
-left	.\srcAbstract\chapter14\bst.c	/^    treeT left, right;$/;"	m	struct:__anon66	file:
-left	.\srcAbstract\chapter15\bst.c	/^    treeT left, right;$/;"	m	struct:__anon51	file:
-left	.\srcAbstract\chapter16\bst.c	/^    treeT left, right;$/;"	m	struct:__anon86	file:
+left	.\srcAbstract\chapter14\bst.c	/^    treeT left, right;$/;"	m	struct:__anon67	file:
+left	.\srcAbstract\chapter15\bst.c	/^    treeT left, right;$/;"	m	struct:__anon52	file:
+left	.\srcAbstract\chapter16\bst.c	/^    treeT left, right;$/;"	m	struct:__anon87	file:
 len	.\C Interfaces and Implementations\include\text.h	/^	int len;$/;"	m	struct:T
 len	.\C Interfaces and Implementations\src\atom.c	/^	int len;$/;"	m	struct:atom	file:
 len	.\ProgrammingAbstracetionsInC\17-Looking-Ahead\queue.c	/^    int len;$/;"	m	struct:queueCDT	file:
@@ -3615,7 +3633,7 @@ length	.\C Interfaces and Implementations\src\set.c	/^	int length;$/;"	m	struct:
 length	.\C Interfaces and Implementations\src\table.c	/^	int length;$/;"	m	struct:T	file:
 length	.\abstract\chapter9\arraybuffer.c	/^	int length;$/;"	m	struct:bufferCDT	file:
 length	.\srcAbstract\chapter9\arraybuf.c	/^    int length;$/;"	m	struct:bufferCDT	file:
-lhs	.\srcAbstract\chapter14\exp.c	/^            expressionADT lhs;$/;"	m	struct:expressionCDT::__anon63::__anon64	file:
+lhs	.\srcAbstract\chapter14\exp.c	/^            expressionADT lhs;$/;"	m	struct:expressionCDT::__anon64::__anon65	file:
 limit	.\C Interfaces and Implementations\src\arena.c	/^	char *limit;$/;"	m	struct:T	file:
 limit	.\C Interfaces and Implementations\src\text.c	/^	char *limit;$/;"	m	struct:chunk	file:
 line	.\C Interfaces and Implementations\include\except.h	/^	int line;$/;"	m	struct:Except_Frame
@@ -3989,6 +4007,9 @@ main	.\abstract\chapter13\bst-stringT-test.c	/^main()$/;"	f
 main	.\abstract\chapter13\bstRB.c	/^main()$/;"	f
 main	.\abstract\chapter13\bstint2.c	/^main()$/;"	f
 main	.\abstract\chapter15\listPermutations.c	/^int main() {$/;"	f
+main	.\abstract\chapter15\settest.c	/^main()$/;"	f
+main	.\abstract\chapter15\stringTest.c	/^int main() {$/;"	f
+main	.\abstract\chapter15\strtest.c	/^main()$/;"	f
 main	.\abstract\chapter4\Cannonballp149.c	/^int main(void)$/;"	f
 main	.\abstract\chapter4\GCDp149.c	/^int main()$/;"	f
 main	.\abstract\chapter4\RaiseInntToPowerp149.c	/^int main()$/;"	f
@@ -4077,6 +4098,7 @@ main	.\srcAbstract\chapter8\rpncalc.c	/^main()$/;"	f
 main	.\srcAbstract\chapter8\testscan.c	/^main()$/;"	f
 main	.\srcAbstract\chapter9\editor.c	/^main()$/;"	f
 main	.\test\RandomReal.c	/^int main() {$/;"	f
+main	.\test\bool.c	/^int main() {$/;"	f
 main	.\test\const.c	/^int main() {$/;"	f
 main	.\test\function\fileno.c	/^int main() {$/;"	f
 main	.\test\main.c	/^int main(int argc, char *argv[]) {$/;"	f
@@ -4097,11 +4119,14 @@ main	.\understandingUnixLinuxProgram\chapter7\sigactdemo.c	/^main()$/;"	f
 main	.\understandingUnixLinuxProgram\chapter7\sigdemo3.c	/^main(int ac, char *av[])$/;"	f
 main	.\understandingUnixLinuxProgram\chapter7\sleep1.c	/^main()$/;"	f
 main	.\understandingUnixLinuxProgram\chapter7\ticker_demo.c	/^int main()$/;"	f
+main	.\understandingUnixLinuxProgram\chapter8\exec1.c	/^int main() {$/;"	f
 main	.\understandingUnixLinuxProgram\chapter8\forkdemo1.c	/^main()$/;"	f
 main	.\understandingUnixLinuxProgram\chapter8\forkdemo2.c	/^main()$/;"	f
 main	.\understandingUnixLinuxProgram\chapter8\forkdemo3.c	/^main()$/;"	f
 main	.\understandingUnixLinuxProgram\chapter8\psh1.c	/^int main()$/;"	f
 main	.\understandingUnixLinuxProgram\chapter8\psh2.c	/^int main()$/;"	f
+main	.\understandingUnixLinuxProgram\chapter8\waitdemo1.c	/^int main() {$/;"	f
+main	.\understandingUnixLinuxProgram\chapter8\waitdemo2.c	/^int main() {$/;"	f
 main	.\understandingUnixLinuxProgram\cp1.c	/^main(int ac, char *av[])$/;"	f
 main	.\understandingUnixLinuxProgram\ls1.c	/^main(int ac, char *av[])$/;"	f
 main	.\understandingUnixLinuxProgram\ls2.c	/^main(int ac, char *av[])$/;"	f
@@ -4120,7 +4145,7 @@ makestring	.\understandingUnixLinuxProgram\chapter8\psh2.c	/^char *makestring(ch
 manager	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^static employeeT manager = {$/;"	v	file:
 manager	.\srcAbstract\chapter2\employee.c	/^static employeeRecordT manager = {$/;"	v	file:
 map	.\C Interfaces and Implementations\src\xp.c	/^static char map[] = {$/;"	v	file:
-marked	.\srcAbstract\chapter6\mazelib.c	/^    bool marked;$/;"	m	struct:__anon78	file:
+marked	.\srcAbstract\chapter6\mazelib.c	/^    bool marked;$/;"	m	struct:__anon79	file:
 matrix	.\srcAbstract\chapter16\adjmat-graph.c	/^    bool matrix[MaxNodes][MaxNodes];$/;"	m	struct:graphCDT	file:
 maxdigits	.\C Interfaces and Implementations\src\ap.c	19;"	d	file:
 maze	.\srcAbstract\chapter6\mazelib.c	/^static squareT **maze;$/;"	v	file:
@@ -4182,8 +4207,10 @@ mo_invalid	.\BeginnigLinuxProgramming\chapter14\app\app_ui.c	/^    mo_invalid,$/
 mo_list_cat_tracks	.\BeginnigLinuxProgramming\chapter07\app\app_ui.c	/^    mo_list_cat_tracks,$/;"	e	enum:__anon15	file:
 mo_list_cat_tracks	.\BeginnigLinuxProgramming\chapter13\app\app_ui.c	/^    mo_list_cat_tracks,$/;"	e	enum:__anon20	file:
 mo_list_cat_tracks	.\BeginnigLinuxProgramming\chapter14\app\app_ui.c	/^    mo_list_cat_tracks,$/;"	e	enum:__anon9	file:
-mod	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*mod)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon105	file:
+mod	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*mod)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon106	file:
 mode_to_letters	.\understandingUnixLinuxProgram\ls2.c	/^  void mode_to_letters(int mode, char str[])$/;"	f
+monthNames	.\abstract\chapter15\stringTest.c	/^static string monthNames[] = {$/;"	v	file:
+monthNames	.\abstract\chapter15\strtest.c	/^static string monthNames[] = {$/;"	v	file:
 monthNames	.\srcAbstract\chapter14\strtest.c	/^static string monthNames[] = {$/;"	v	file:
 monthNames	.\srcAbstract\chapter15\strtest.c	/^static string monthNames[] = {$/;"	v	file:
 more_chars	.\BeginnigLinuxProgramming\chapter07\dbm1.c	/^    char more_chars[21];$/;"	m	struct:test_data	file:
@@ -4198,7 +4225,7 @@ msb	.\C Interfaces and Implementations\src\mp.c	/^static unsigned char msb = 0xF
 msbmask	.\C Interfaces and Implementations\src\bit.c	/^unsigned char msbmask[] = {$/;"	v
 msg_key	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^    long int msg_key; \/* used for client pid *\/$/;"	m	struct:msg_passed	file:
 msg_passed	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^struct msg_passed {$/;"	s	file:
-mul	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*mul)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon105	file:
+mul	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*mul)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon106	file:
 mulmod	.\C Interfaces and Implementations\src\ap.c	/^static T mulmod(T x, T y, T p) {$/;"	f	file:
 mutex	.\C Interfaces and Implementations\examples\spin.c	/^	Sem_T *mutex;$/;"	m	struct:args	file:
 my_connection	.\BeginnigLinuxProgramming\chapter08\app\app_mysql.c	/^static MYSQL my_connection;$/;"	v	file:
@@ -4218,36 +4245,36 @@ mypid	.\BeginnigLinuxProgramming\chapter13\app\pipe_imp.c	/^static pid_t mypid =
 mypid	.\BeginnigLinuxProgramming\chapter14\app\clientif.c	/^static pid_t mypid;$/;"	v	file:
 n	.\C Interfaces and Implementations\examples\sieve.c	/^	int n, last;$/;"	m	struct:args	file:
 n	.\C Interfaces and Implementations\examples\spin.c	/^int n;$/;"	v
-nAnswers	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    int nAnswers;$/;"	m	struct:__anon42	file:
+nAnswers	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    int nAnswers;$/;"	m	struct:__anon43	file:
 nCoins	.\ProgrammingAbstracetionsInC\12-Sorting\findcoin.c	/^static int nCoins = sizeof coinValues \/ sizeof coinValues[0];$/;"	v	file:
 nColors	.\mylib\graphics.c	/^static int nColors;$/;"	v	file:
-nElements	.\mylib\set.c	/^	int nElements;$/;"	m	struct:setCDT	file:
+nElements	.\mylib\set.c	/^    int nElements;$/;"	m	struct:setCDT	file:
 nElements	.\srcAbstract\chapter14\set.c	/^    int nElements;$/;"	m	struct:setCDT	file:
 nElements	.\srcAbstract\chapter15\set.c	/^    int nElements;$/;"	m	struct:setCDT	file:
 nElements	.\srcAbstract\chapter16\set.c	/^    int nElements;$/;"	m	struct:setCDT	file:
-nEmployees	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    int nEmployees;$/;"	m	struct:__anon45	file:
+nEmployees	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    int nEmployees;$/;"	m	struct:__anon46	file:
 nEmployees	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^static int nEmployees;$/;"	v	file:
-nEmployees	.\srcAbstract\chapter2\employee.c	/^    int nEmployees;$/;"	m	struct:__anon48	file:
+nEmployees	.\srcAbstract\chapter2\employee.c	/^    int nEmployees;$/;"	m	struct:__anon49	file:
 nEmployees	.\srcAbstract\chapter2\employee.c	/^static int nEmployees;$/;"	v	file:
 nNodes	.\srcAbstract\chapter16\adjmat-graph.c	/^    int nNodes;$/;"	m	struct:graphCDT	file:
 nPolygonPoints	.\mylib\xdisplay.c	/^static int nPolygonPoints;$/;"	v	file:
 nWinningLines	.\srcAbstract\chapter6\tictac.c	/^static int nWinningLines = sizeof winningLines$/;"	v	file:
-name	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    string name;$/;"	m	struct:__anon44	file:
-name	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    string name;$/;"	m	struct:__anon40	file:
+name	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    string name;$/;"	m	struct:__anon45	file:
+name	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    string name;$/;"	m	struct:__anon41	file:
 name	.\mylib\exception.h	/^    string name;$/;"	m	struct:ctx_block
-name	.\mylib\exception.h	/^typedef struct { string name; } exception;$/;"	m	struct:__anon27
-name	.\mylib\graphics.c	/^    string name;$/;"	m	struct:__anon32	file:
-name	.\srcAbstract\chapter2\employee.c	/^    string name;$/;"	m	struct:__anon46	file:
+name	.\mylib\exception.h	/^typedef struct { string name; } exception;$/;"	m	struct:__anon28
+name	.\mylib\graphics.c	/^    string name;$/;"	m	struct:__anon33	file:
 name	.\srcAbstract\chapter2\employee.c	/^    string name;$/;"	m	struct:__anon47	file:
+name	.\srcAbstract\chapter2\employee.c	/^    string name;$/;"	m	struct:__anon48	file:
 nbits	.\C Interfaces and Implementations\src\mp.c	/^static int nbits  =  32;$/;"	v	file:
 nbytes	.\C Interfaces and Implementations\src\bit.c	15;"	d	file:
 nbytes	.\C Interfaces and Implementations\src\mp.c	/^static int nbytes = (32-1)\/8 + 1;$/;"	v	file:
 ndigits	.\C Interfaces and Implementations\src\ap.c	/^	int ndigits;$/;"	m	struct:T	file:
 newFile	.\BeginnigLinuxProgramming\chapter17\kde\menus\KDEMenu.cpp	/^void KDEMenu::newFile()$/;"	f	class:KDEMenu
-newFn	.\mylib\itertype.h	/^	newIteratorFnT newFn;$/;"	m	struct:__anon36
-newFn	.\srcAbstract\chapter14\itertype.h	/^    newIteratorFnT newFn;$/;"	m	struct:__anon68
-newFn	.\srcAbstract\chapter15\itertype.h	/^    newIteratorFnT newFn;$/;"	m	struct:__anon53
-newFn	.\srcAbstract\chapter16\itertype.h	/^    newIteratorFnT newFn;$/;"	m	struct:__anon88
+newFn	.\mylib\itertype.h	/^	newIteratorFnT newFn;$/;"	m	struct:__anon37
+newFn	.\srcAbstract\chapter14\itertype.h	/^    newIteratorFnT newFn;$/;"	m	struct:__anon69
+newFn	.\srcAbstract\chapter15\itertype.h	/^    newIteratorFnT newFn;$/;"	m	struct:__anon54
+newFn	.\srcAbstract\chapter16\itertype.h	/^    newIteratorFnT newFn;$/;"	m	struct:__anon89
 newIteratorFnT	.\mylib\itertype.h	/^typedef iteratorADT (*newIteratorFnT) (void *collection);$/;"	t
 newIteratorFnT	.\srcAbstract\chapter14\itertype.h	/^typedef iteratorADT (*newIteratorFnT)(void *collection);$/;"	t
 newIteratorFnT	.\srcAbstract\chapter15\itertype.h	/^typedef iteratorADT (*newIteratorFnT)(void *collection);$/;"	t
@@ -4256,7 +4283,7 @@ new_settings	.\BeginnigLinuxProgramming\chapter05\kbhit.c	/^static struct termio
 next	.\C Interfaces and Implementations\src\thread-nt.c	/^	T next;			\/* next thread on this hash chain *\/$/;"	m	struct:T	file:
 next	.\C Interfaces and Implementations\src\thread.c	/^	T next;$/;"	m	struct:T	file:
 next	.\abstract\chapter9\doublelistbuffer.c	/^	struct cellT *next;$/;"	m	struct:cellT	typeref:struct:cellT::cellT	file:
-nextq	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    int nextq;$/;"	m	struct:__anon41	file:
+nextq	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    int nextq;$/;"	m	struct:__anon42	file:
 nfree	.\C Interfaces and Implementations\src\arena.c	/^static int nfree;$/;"	v	file:
 node	.\C Interfaces and Implementations\src\ring.c	/^	struct node {$/;"	s	struct:T	file:
 nodeADT	.\srcAbstract\chapter16\graph.h	/^typedef struct nodeCDT *nodeADT;$/;"	t	typeref:struct:nodeCDT
@@ -4295,20 +4322,20 @@ nodes	.\srcAbstract\chapter16\simple-graph.c	/^    listADT nodes;$/;"	m	struct:g
 normalize	.\C Interfaces and Implementations\src\ap.c	/^static T normalize(T z, int n) {$/;"	f	file:
 nthreads	.\C Interfaces and Implementations\src\thread-nt.c	/^static int nthreads;		\/* number of threads in allthreads *\/$/;"	v	file:
 nthreads	.\C Interfaces and Implementations\src\thread.c	/^static int nthreads;$/;"	v	file:
-numCustomers	.\srcAbstract\chapter10\checkout.c	/^    int numCustomers;$/;"	m	struct:__anon58	file:
-numServed	.\srcAbstract\chapter10\checkout.c	/^    int numServed;$/;"	m	struct:__anon58	file:
+numCustomers	.\srcAbstract\chapter10\checkout.c	/^    int numCustomers;$/;"	m	struct:__anon59	file:
+numServed	.\srcAbstract\chapter10\checkout.c	/^    int numServed;$/;"	m	struct:__anon59	file:
 numberOption	.\srcAbstract\chapter10\scanadt.c	/^    numberOptionT numberOption;$/;"	m	struct:scannerCDT	file:
 numberOption	.\srcAbstract\chapter11\scanadt.c	/^    numberOptionT numberOption;$/;"	m	struct:scannerCDT	file:
 numberOption	.\srcAbstract\chapter12\scanadt.c	/^    numberOptionT numberOption;$/;"	m	struct:scannerCDT	file:
 numberOption	.\srcAbstract\chapter13\scanadt.c	/^    numberOptionT numberOption;$/;"	m	struct:scannerCDT	file:
 numberOption	.\srcAbstract\chapter14\scanadt.c	/^    numberOptionT numberOption;$/;"	m	struct:scannerCDT	file:
 numberOption	.\srcAbstract\chapter16\scanadt.c	/^    numberOptionT numberOption;$/;"	m	struct:scannerCDT	file:
-numberOptionT	.\srcAbstract\chapter10\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon55
-numberOptionT	.\srcAbstract\chapter11\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon91
-numberOptionT	.\srcAbstract\chapter12\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon71
-numberOptionT	.\srcAbstract\chapter13\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon99
-numberOptionT	.\srcAbstract\chapter14\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon61
-numberOptionT	.\srcAbstract\chapter16\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon83
+numberOptionT	.\srcAbstract\chapter10\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon56
+numberOptionT	.\srcAbstract\chapter11\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon92
+numberOptionT	.\srcAbstract\chapter12\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon72
+numberOptionT	.\srcAbstract\chapter13\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon100
+numberOptionT	.\srcAbstract\chapter14\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon62
+numberOptionT	.\srcAbstract\chapter16\scanadt.h	/^} numberOptionT;$/;"	t	typeref:enum:__anon84
 nwords	.\C Interfaces and Implementations\src\bit.c	14;"	d	file:
 nx	.\mylib\exception.h	/^    int nx;$/;"	m	struct:ctx_block
 obase	.\C Interfaces and Implementations\examples\mpcalc.c	/^int obase = 10;$/;"	v
@@ -4319,7 +4346,7 @@ on_quit_activate	.\BeginnigLinuxProgramming\chapter16\app\callbacks.c	/^void on_
 on_search_button_clicked	.\BeginnigLinuxProgramming\chapter16\app\callbacks.c	/^void on_search_button_clicked  (GtkButton *button, gpointer userdata)$/;"	f
 ones	.\C Interfaces and Implementations\src\mp.c	14;"	d	file:
 oops	.\understandingUnixLinuxProgram\cp1.c	/^void oops(char *s1, char *s2)$/;"	f
-op	.\srcAbstract\chapter14\exp.c	/^            char op;$/;"	m	struct:expressionCDT::__anon63::__anon64	file:
+op	.\srcAbstract\chapter14\exp.c	/^            char op;$/;"	m	struct:expressionCDT::__anon64::__anon65	file:
 osWindow	.\mylib\xdisplay.c	/^static Pixmap osWindow;$/;"	v	file:
 ouch	.\BeginnigLinuxProgramming\chapter11\ctrlc1.c	/^void ouch(int sig)$/;"	f
 ouch	.\BeginnigLinuxProgramming\chapter11\ctrlc2.c	/^void ouch(int sig)$/;"	f
@@ -4332,27 +4359,29 @@ pad	.\C Interfaces and Implementations\src\arena.c	/^	char pad[MAXALIGN];$/;"	m	
 pad	.\C Interfaces and Implementations\src\fmt.c	20;"	d	file:
 pad	.\C Interfaces and Implementations\src\memchk.c	/^	char pad[MAXALIGN];$/;"	m	union:align	file:
 parent	.\abstract\chapter13\bstRB.c	/^  struct nodeT *parent, *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::nodeT	file:
+parent_code	.\understandingUnixLinuxProgram\chapter8\waitdemo1.c	/^void parent_code(int childpid){$/;"	f
+parent_code	.\understandingUnixLinuxProgram\chapter8\waitdemo2.c	/^void parent_code(int childpid){$/;"	f
 partition	.\C Interfaces and Implementations\examples\sort.c	/^int partition(int a[], int i, int j) {$/;"	f
 partition	.\abstract\chapter11\qsort-pointerfunction.c	/^int partition(void *array, int n, int elementSize, cmpFnT fn, exchFnT exchange)$/;"	f
 partition	.\abstract\chapter7\quicksort.cpp	/^int partition(int array[], int n )$/;"	f
 password	.\BeginnigLinuxProgramming\chapter16\entry.c	/^const char * password = "secret";$/;"	v
-password	.\mylib\itertype.h	/^	unsigned long password;$/;"	m	struct:__anon36
-password	.\srcAbstract\chapter14\itertype.h	/^    unsigned long password;$/;"	m	struct:__anon68
-password	.\srcAbstract\chapter15\itertype.h	/^    unsigned long password;$/;"	m	struct:__anon53
-password	.\srcAbstract\chapter16\itertype.h	/^    unsigned long password;$/;"	m	struct:__anon88
+password	.\mylib\itertype.h	/^	unsigned long password;$/;"	m	struct:__anon37
+password	.\srcAbstract\chapter14\itertype.h	/^    unsigned long password;$/;"	m	struct:__anon69
+password	.\srcAbstract\chapter15\itertype.h	/^    unsigned long password;$/;"	m	struct:__anon54
+password	.\srcAbstract\chapter16\itertype.h	/^    unsigned long password;$/;"	m	struct:__anon89
 password_entry	.\BeginnigLinuxProgramming\chapter16\app\interface.c	/^GtkWidget *password_entry;$/;"	v
 password_entry	.\BeginnigLinuxProgramming\chapter17\LineEdit.h	/^    QLineEdit *password_entry;$/;"	m	class:LineEdit
 password_entry	.\BeginnigLinuxProgramming\chapter17\kde\cdapp\LogonDialog.h	/^    QLineEdit *username_entry, *password_entry;$/;"	m	class:LogonDialog
-payrollT	.\srcAbstract\chapter2\employee.c	/^} *payrollT;$/;"	t	typeref:struct:__anon48	file:
+payrollT	.\srcAbstract\chapter2\employee.c	/^} *payrollT;$/;"	t	typeref:struct:__anon49	file:
 peek_character	.\BeginnigLinuxProgramming\chapter05\kbhit.c	/^static int peek_character = -1;$/;"	v	file:
 penColor	.\mylib\graphics.c	/^static int penColor;$/;"	v	file:
 pfile	.\abstract\chapter5\Movetower-saveinfile.c	/^FILE *pfile =NULL;$/;"	v
 pixelDepth	.\mylib\xdisplay.c	/^static int pixelDepth;$/;"	v	file:
-playerT	.\srcAbstract\chapter6\nim.c	/^typedef enum { Human, Computer } playerT;$/;"	t	typeref:enum:__anon75	file:
-playerT	.\srcAbstract\chapter6\tictac.c	/^typedef enum { Human, Computer } playerT;$/;"	t	typeref:enum:__anon76	file:
+playerT	.\srcAbstract\chapter6\nim.c	/^typedef enum { Human, Computer } playerT;$/;"	t	typeref:enum:__anon76	file:
+playerT	.\srcAbstract\chapter6\tictac.c	/^typedef enum { Human, Computer } playerT;$/;"	t	typeref:enum:__anon77	file:
 pointSize	.\mylib\graphics.c	/^static int pointSize;$/;"	v	file:
-pointT	.\ProgrammingAbstracetionsInC\16-Records\point.c	/^} pointT;$/;"	t	typeref:struct:__anon39	file:
-pointT	.\srcAbstract\chapter6\mazelib.h	/^} pointT;$/;"	t	typeref:struct:__anon79
+pointT	.\ProgrammingAbstracetionsInC\16-Records\point.c	/^} pointT;$/;"	t	typeref:struct:__anon40	file:
+pointT	.\srcAbstract\chapter6\mazelib.h	/^} pointT;$/;"	t	typeref:struct:__anon80
 polygonPoints	.\mylib\xdisplay.c	/^static XPoint *polygonPoints;$/;"	v	file:
 polygonSize	.\mylib\xdisplay.c	/^static int polygonSize;$/;"	v	file:
 pop	.\C Interfaces and Implementations\examples\calc.c	/^AP_T pop(void) {$/;"	f
@@ -4371,19 +4400,19 @@ printdir	.\BeginnigLinuxProgramming\chapter03\printdir2.c	/^void printdir(char *
 printpathto	.\understandingUnixLinuxProgram\pwd1.c	/^void printpathto(ino_t this_inode)$/;"	f
 process_command	.\BeginnigLinuxProgramming\chapter13\app\server.c	/^static void process_command(const message_db_t comm)$/;"	f	file:
 process_command	.\BeginnigLinuxProgramming\chapter14\app\server.c	/^static void process_command(const message_db_t comm)$/;"	f	file:
-protectMethod	.\mylib\gcalloc.h	/^    void (*protectMethod)(void *ptr, size_t nbytes);$/;"	m	struct:__anon34
+protectMethod	.\mylib\gcalloc.h	/^    void (*protectMethod)(void *ptr, size_t nbytes);$/;"	m	struct:__anon35
 ptr	.\C Interfaces and Implementations\src\chan.c	/^	const void *ptr;$/;"	m	struct:T	file:
 ptr	.\C Interfaces and Implementations\src\memchk.c	/^	const void *ptr;$/;"	m	struct:descriptor	file:
-ptrRep	.\mylib\set.c	/^	void *ptrRep;$/;"	m	union:__anon29	file:
-ptrRep	.\srcAbstract\chapter14\set.c	/^    void *ptrRep;$/;"	m	union:__anon65	file:
-ptrRep	.\srcAbstract\chapter15\set.c	/^    void *ptrRep;$/;"	m	union:__anon50	file:
-ptrRep	.\srcAbstract\chapter16\set.c	/^    void *ptrRep;$/;"	m	union:__anon85	file:
+ptrRep	.\mylib\set.c	/^    void *ptrRep;$/;"	m	union:__anon30	file:
+ptrRep	.\srcAbstract\chapter14\set.c	/^    void *ptrRep;$/;"	m	union:__anon66	file:
+ptrRep	.\srcAbstract\chapter15\set.c	/^    void *ptrRep;$/;"	m	union:__anon51	file:
+ptrRep	.\srcAbstract\chapter16\set.c	/^    void *ptrRep;$/;"	m	union:__anon86	file:
 put	.\C Interfaces and Implementations\src\thread.c	/^static void put(T t, T *q) {$/;"	f	file:
-qtext	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    string qtext[MaxLinesPerQuestion+1];$/;"	m	struct:__anon42	file:
-questionT	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^} *questionT;$/;"	t	typeref:struct:__anon42	file:
-questions	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    questionT questions[MaxQuestions+1];$/;"	m	struct:__anon43	file:
+qtext	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    string qtext[MaxLinesPerQuestion+1];$/;"	m	struct:__anon43	file:
+questionT	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^} *questionT;$/;"	t	typeref:struct:__anon43	file:
+questions	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    questionT questions[MaxQuestions+1];$/;"	m	struct:__anon44	file:
 queue	.\C Interfaces and Implementations\include\sem.h	/^	void *queue;$/;"	m	struct:T
-queue	.\srcAbstract\chapter10\checkout.c	/^    queueADT queue;$/;"	m	struct:__anon58	file:
+queue	.\srcAbstract\chapter10\checkout.c	/^    queueADT queue;$/;"	m	struct:__anon59	file:
 queueADT	.\ProgrammingAbstracetionsInC\17-Looking-Ahead\queue.h	/^typedef struct queueCDT *queueADT;$/;"	t	typeref:struct:queueCDT
 queueADT	.\mylib\queue.h	/^typedef struct queueCDT *queueADT;$/;"	t	typeref:struct:queueCDT
 queueADT	.\mylib\queuelist.h	/^typedef struct queueCDT *queueADT;$/;"	t	typeref:struct:queueCDT
@@ -4461,12 +4490,12 @@ ready	.\C Interfaces and Implementations\src\thread.c	/^static T ready = NULL;$/
 real_message	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^    message_db_t real_message;$/;"	m	struct:msg_passed	file:
 reason	.\C Interfaces and Implementations\include\except.h	/^	const char *reason;$/;"	m	struct:T
 recv	.\C Interfaces and Implementations\src\chan.c	/^	Sem_T send, recv, sync;$/;"	m	struct:T	file:
-red	.\mylib\graphics.c	/^    double red, green, blue;$/;"	m	struct:__anon32	file:
+red	.\mylib\graphics.c	/^    double red, green, blue;$/;"	m	struct:__anon33	file:
 redraw	.\mylib\xdisplay.c	/^static bool redraw = FALSE;$/;"	v	file:
 regionGrayScale	.\mylib\xdisplay.c	/^static double regionGrayScale;$/;"	v	file:
 regionStarted	.\mylib\xdisplay.c	/^static bool regionStarted;$/;"	v	file:
 regionState	.\mylib\graphics.c	/^static regionStateT regionState;$/;"	v	file:
-regionStateT	.\mylib\graphics.c	/^} regionStateT;$/;"	t	typeref:enum:__anon31	file:
+regionStateT	.\mylib\graphics.c	/^} regionStateT;$/;"	t	typeref:enum:__anon32	file:
 release	.\C Interfaces and Implementations\src\thread.c	/^static void release(void) {$/;"	f	file:
 removeThread	.\C Interfaces and Implementations\src\thread-nt.c	/^static void removeThread(T t) {$/;"	f	file:
 remove_cd	.\BeginnigLinuxProgramming\chapter06\app\curses_app.c	/^void remove_cd()$/;"	f
@@ -4487,17 +4516,17 @@ rest	.\C Interfaces and Implementations\examples\wf.c	/^int rest(int c) {$/;"	f
 rest	.\C Interfaces and Implementations\examples\xref.c	/^int rest(int c) {$/;"	f
 rest	.\C Interfaces and Implementations\include\list.h	/^	T rest;$/;"	m	struct:T
 reverse	.\abstract\chapter4\reversep151.c	/^char* reverse(char* str)$/;"	f
-rhs	.\srcAbstract\chapter14\exp.c	/^            expressionADT rhs;$/;"	m	struct:expressionCDT::__anon63::__anon64	file:
+rhs	.\srcAbstract\chapter14\exp.c	/^            expressionADT rhs;$/;"	m	struct:expressionCDT::__anon64::__anon65	file:
 right	.\abstract\bstAVL.c	/^  struct nodeT *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::	file:
 right	.\abstract\chapter13\bstRB.c	/^  struct nodeT *parent, *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::	file:
-right	.\mylib\bst.c	/^    treeT left, right;$/;"	m	struct:__anon30	file:
-right	.\mylib\bst_save.c	/^  treeT left, right;$/;"	m	struct:__anon28	file:
+right	.\mylib\bst.c	/^    treeT left, right;$/;"	m	struct:__anon31	file:
+right	.\mylib\bst_save.c	/^  treeT left, right;$/;"	m	struct:__anon29	file:
 right	.\srcAbstract\chapter13\avltree.c	/^    struct nodeT *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::	file:
-right	.\srcAbstract\chapter13\bst.c	/^    treeT left, right;$/;"	m	struct:__anon103	file:
+right	.\srcAbstract\chapter13\bst.c	/^    treeT left, right;$/;"	m	struct:__anon104	file:
 right	.\srcAbstract\chapter13\introbst.c	/^    struct nodeT *left, *right;$/;"	m	struct:nodeT	typeref:struct:nodeT::	file:
-right	.\srcAbstract\chapter14\bst.c	/^    treeT left, right;$/;"	m	struct:__anon66	file:
-right	.\srcAbstract\chapter15\bst.c	/^    treeT left, right;$/;"	m	struct:__anon51	file:
-right	.\srcAbstract\chapter16\bst.c	/^    treeT left, right;$/;"	m	struct:__anon86	file:
+right	.\srcAbstract\chapter14\bst.c	/^    treeT left, right;$/;"	m	struct:__anon67	file:
+right	.\srcAbstract\chapter15\bst.c	/^    treeT left, right;$/;"	m	struct:__anon52	file:
+right	.\srcAbstract\chapter16\bst.c	/^    treeT left, right;$/;"	m	struct:__anon87	file:
 rlink	.\C Interfaces and Implementations\src\ring.c	/^		struct node *llink, *rlink;$/;"	m	struct:T::node	typeref:struct:T::node::	file:
 root	.\C Interfaces and Implementations\src\thread-nt.c	/^static T root;$/;"	v	file:
 root	.\C Interfaces and Implementations\src\thread.c	/^static struct Thread_T root;$/;"	v	typeref:struct:Thread_T	file:
@@ -4510,7 +4539,7 @@ root	.\srcAbstract\chapter16\bst.c	/^    treeT root;$/;"	m	struct:bstCDT	file:
 row	.\understandingUnixLinuxProgram\chapter7\bounce\bounceld.c	/^int row;   \/* current row *\/$/;"	v
 run	.\C Interfaces and Implementations\src\thread.c	/^static void run(void) {$/;"	f	file:
 run_now	.\BeginnigLinuxProgramming\chapter12\thread2.c	/^int run_now = 1;$/;"	v
-s	.\C Interfaces and Implementations\examples\mpcalc.c	/^} s = { "%D\\n",$/;"	v	typeref:struct:__anon105
+s	.\C Interfaces and Implementations\examples\mpcalc.c	/^} s = { "%D\\n",$/;"	v	typeref:struct:__anon106
 s	.\abstract\chapter8\practice\movetower.c	/^  int s, f, t;$/;"	m	struct:moveT	file:
 s	.\abstract\chapter8\practice\stackMovetower.c	/^    int s, f, t;$/;"	m	struct:moveT	file:
 s	.\mylib\cmpfn.h	/^  string s;$/;"	m	struct:Str
@@ -4531,10 +4560,10 @@ s_get_cdc_entry	.\BeginnigLinuxProgramming\chapter14\app\cliserv.h	/^    s_get_c
 s_get_cdt_entry	.\BeginnigLinuxProgramming\chapter13\app\cliserv.h	/^    s_get_cdt_entry,$/;"	e	enum:__anon21
 s_get_cdt_entry	.\BeginnigLinuxProgramming\chapter14\app\cliserv.h	/^    s_get_cdt_entry,$/;"	e	enum:__anon10
 safe	.\C Interfaces and Implementations\examples\spin.c	/^int safe(void *cl) {$/;"	f
-salary	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    double salary;$/;"	m	struct:__anon44	file:
-salary	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    double salary;$/;"	m	struct:__anon40	file:
-salary	.\srcAbstract\chapter2\employee.c	/^    double salary;$/;"	m	struct:__anon46	file:
+salary	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    double salary;$/;"	m	struct:__anon45	file:
+salary	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    double salary;$/;"	m	struct:__anon41	file:
 salary	.\srcAbstract\chapter2\employee.c	/^    double salary;$/;"	m	struct:__anon47	file:
+salary	.\srcAbstract\chapter2\employee.c	/^    double salary;$/;"	m	struct:__anon48	file:
 save_errno	.\BeginnigLinuxProgramming\chapter13\app\server.c	/^int save_errno;$/;"	v
 save_errno	.\BeginnigLinuxProgramming\chapter14\app\server.c	/^int save_errno;$/;"	v
 savedToken	.\mylib\scanadt.c	/^	string savedToken;$/;"	m	struct:scannerCDT	file:
@@ -4546,7 +4575,7 @@ savedToken	.\srcAbstract\chapter14\scanadt.c	/^    string savedToken;$/;"	m	stru
 savedToken	.\srcAbstract\chapter16\scanadt.c	/^    string savedToken;$/;"	m	struct:scannerCDT	file:
 savedToken	.\srcAbstract\chapter8\scanadt.c	/^    string savedToken;$/;"	m	struct:scannerCDT	file:
 sc_pc	.\C Interfaces and Implementations\src\thread.c	115;"	d	file:
-scanner	.\srcAbstract\chapter12\listtest.c	/^    scannerADT scanner;$/;"	m	struct:__anon73	file:
+scanner	.\srcAbstract\chapter12\listtest.c	/^    scannerADT scanner;$/;"	m	struct:__anon74	file:
 scanner	.\srcAbstract\chapter13\cmdscan.c	/^    scannerADT scanner;$/;"	m	struct:cmdScannerCDT	file:
 scanner	.\srcAbstract\chapter16\cmdscan.c	/^    scannerADT scanner;$/;"	m	struct:cmdScannerCDT	file:
 scannerADT	.\mylib\scanadt.h	/^typedef struct scannerCDT *scannerADT;$/;"	t	typeref:struct:scannerCDT
@@ -4598,26 +4627,27 @@ server_running	.\BeginnigLinuxProgramming\chapter13\app\server.c	/^static int se
 server_running	.\BeginnigLinuxProgramming\chapter14\app\server.c	/^static int server_running = 1;$/;"	v	file:
 server_starting	.\BeginnigLinuxProgramming\chapter13\app\pipe_imp.c	/^int server_starting(void)$/;"	f
 server_starting	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^int server_starting()$/;"	f
-serviceTime	.\srcAbstract\chapter10\checkout.c	/^    int serviceTime;$/;"	m	struct:__anon57	file:
+serviceTime	.\srcAbstract\chapter10\checkout.c	/^    int serviceTime;$/;"	m	struct:__anon58	file:
 set	.\C Interfaces and Implementations\src\ap.c	/^static T set(T z, long int n) {$/;"	f	file:
 setADT	.\mylib\set.h	/^typedef struct setCDT *setADT;$/;"	t	typeref:struct:setCDT
 setADT	.\srcAbstract\chapter14\set.h	/^typedef struct setCDT *setADT;$/;"	t	typeref:struct:setCDT
 setADT	.\srcAbstract\chapter15\set.h	/^typedef struct setCDT *setADT;$/;"	t	typeref:struct:setCDT
 setADT	.\srcAbstract\chapter16\set.h	/^typedef struct setCDT *setADT;$/;"	t	typeref:struct:setCDT
-setCDT	.\mylib\set.c	/^struct setCDT{$/;"	s	file:
+setCDT	.\mylib\set.c	/^struct setCDT {$/;"	s	file:
 setCDT	.\srcAbstract\chapter14\cvecset.c	/^struct setCDT {$/;"	s	file:
 setCDT	.\srcAbstract\chapter14\set.c	/^struct setCDT {$/;"	s	file:
 setCDT	.\srcAbstract\chapter15\cvecset.c	/^struct setCDT {$/;"	s	file:
 setCDT	.\srcAbstract\chapter15\set.c	/^struct setCDT {$/;"	s	file:
 setCDT	.\srcAbstract\chapter16\set.c	/^struct setCDT {$/;"	s	file:
-setClassT	.\mylib\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon35
-setClassT	.\srcAbstract\chapter14\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon67
-setClassT	.\srcAbstract\chapter15\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon52
-setClassT	.\srcAbstract\chapter16\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon87
-setElementT	.\mylib\set.c	/^}setElementT;$/;"	t	typeref:union:__anon29	file:
-setElementT	.\srcAbstract\chapter14\set.c	/^} setElementT;$/;"	t	typeref:union:__anon65	file:
-setElementT	.\srcAbstract\chapter15\set.c	/^} setElementT;$/;"	t	typeref:union:__anon50	file:
-setElementT	.\srcAbstract\chapter16\set.c	/^} setElementT;$/;"	t	typeref:union:__anon85	file:
+setClassT	.\mylib\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon36
+setClassT	.\srcAbstract\chapter14\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon68
+setClassT	.\srcAbstract\chapter15\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon53
+setClassT	.\srcAbstract\chapter16\set.h	/^typedef enum { IntSet, PtrSet } setClassT;$/;"	t	typeref:enum:__anon88
+setElementSize	.\mylib\set.c	/^    int setElementSize;\/\/新增(setElementT内存空间大小)$/;"	m	struct:setCDT	file:
+setElementT	.\mylib\set.c	/^} setElementT;$/;"	t	typeref:union:__anon30	file:
+setElementT	.\srcAbstract\chapter14\set.c	/^} setElementT;$/;"	t	typeref:union:__anon66	file:
+setElementT	.\srcAbstract\chapter15\set.c	/^} setElementT;$/;"	t	typeref:union:__anon51	file:
+setElementT	.\srcAbstract\chapter16\set.c	/^} setElementT;$/;"	t	typeref:union:__anon86	file:
 set_cr_noecho_mode	.\understandingUnixLinuxProgram\chapter6\play_again2.c	/^set_cr_noecho_mode()$/;"	f
 set_cr_noecho_mode	.\understandingUnixLinuxProgram\chapter6\play_again3.c	/^set_cr_noecho_mode()$/;"	f
 set_cr_noecho_mode	.\understandingUnixLinuxProgram\chapter6\play_again4.c	/^set_cr_noecho_mode()$/;"	f
@@ -4633,6 +4663,7 @@ setop	.\C Interfaces and Implementations\src\bit.c	16;"	d	file:
 shared_use_st	.\BeginnigLinuxProgramming\chapter14\shm_com.h	/^struct shared_use_st {$/;"	s
 shft	.\C Interfaces and Implementations\src\mp.c	24;"	d	file:
 shift	.\C Interfaces and Implementations\src\mp.c	/^static int shift  = (32-1)%8;$/;"	v	file:
+shorterNames	.\abstract\chapter15\strtest.c	/^static string shorterNames[] = {$/;"	v	file:
 shorterNames	.\srcAbstract\chapter14\strtest.c	/^static string shorterNames[] = {$/;"	v	file:
 shorterNames	.\srcAbstract\chapter15\strtest.c	/^static string shorterNames[] = {$/;"	v	file:
 show_file_info	.\understandingUnixLinuxProgram\ls2.c	/^void show_file_info(char *filename, struct stat *info_p)$/;"	f
@@ -4645,7 +4676,7 @@ show_menu	.\BeginnigLinuxProgramming\chapter14\app\app_ui.c	/^static menu_option
 showtime	.\understandingUnixLinuxProgram\who2.c	/^void showtime( long timeval)$/;"	f
 sign	.\C Interfaces and Implementations\src\ap.c	/^	int sign;$/;"	m	struct:T	file:
 sign	.\C Interfaces and Implementations\src\mp.c	13;"	d	file:
-simDataT	.\srcAbstract\chapter10\checkout.c	/^} simDataT;$/;"	t	typeref:struct:__anon58	file:
+simDataT	.\srcAbstract\chapter10\checkout.c	/^} simDataT;$/;"	t	typeref:struct:__anon59	file:
 sink	.\C Interfaces and Implementations\examples\sieve.c	/^int sink(void *cl) {$/;"	f
 size	.\C Interfaces and Implementations\include\arrayrep.h	/^	int size;$/;"	m	struct:T
 size	.\C Interfaces and Implementations\src\ap.c	/^	int size;$/;"	m	struct:T	file:
@@ -4681,23 +4712,23 @@ spaceOption	.\srcAbstract\chapter13\scanadt.c	/^    spaceOptionT spaceOption;$/;
 spaceOption	.\srcAbstract\chapter14\scanadt.c	/^    spaceOptionT spaceOption;$/;"	m	struct:scannerCDT	file:
 spaceOption	.\srcAbstract\chapter16\scanadt.c	/^    spaceOptionT spaceOption;$/;"	m	struct:scannerCDT	file:
 spaceOption	.\srcAbstract\chapter8\scanadt.c	/^    spaceOptionT spaceOption;$/;"	m	struct:scannerCDT	file:
-spaceOptionT	.\mylib\scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	t	typeref:enum:__anon26
-spaceOptionT	.\srcAbstract\chapter10\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon54
-spaceOptionT	.\srcAbstract\chapter11\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon90
-spaceOptionT	.\srcAbstract\chapter12\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon70
-spaceOptionT	.\srcAbstract\chapter13\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon98
-spaceOptionT	.\srcAbstract\chapter14\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon60
-spaceOptionT	.\srcAbstract\chapter16\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon82
-spaceOptionT	.\srcAbstract\chapter8\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon74
+spaceOptionT	.\mylib\scanadt.h	/^typedef enum {PreserveSpaces, IgnoreSpaces} spaceOptionT;$/;"	t	typeref:enum:__anon27
+spaceOptionT	.\srcAbstract\chapter10\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon55
+spaceOptionT	.\srcAbstract\chapter11\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon91
+spaceOptionT	.\srcAbstract\chapter12\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon71
+spaceOptionT	.\srcAbstract\chapter13\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon99
+spaceOptionT	.\srcAbstract\chapter14\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon61
+spaceOptionT	.\srcAbstract\chapter16\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon83
+spaceOptionT	.\srcAbstract\chapter8\scanadt.h	/^typedef enum { PreserveSpaces, IgnoreSpaces } spaceOptionT;$/;"	t	typeref:enum:__anon75
 sqlrow	.\BeginnigLinuxProgramming\chapter08\select1.c	/^MYSQL_ROW sqlrow;$/;"	v
 sqlrow	.\BeginnigLinuxProgramming\chapter08\select2.c	/^MYSQL_ROW sqlrow;$/;"	v
 sqlrow	.\BeginnigLinuxProgramming\chapter08\select3.c	/^MYSQL_ROW sqlrow;$/;"	v
 sqlrow	.\BeginnigLinuxProgramming\chapter08\select4.c	/^MYSQL_ROW sqlrow;$/;"	v
-squareT	.\srcAbstract\chapter6\mazelib.c	/^} squareT;$/;"	t	typeref:struct:__anon78	file:
-ssnum	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    string ssnum;$/;"	m	struct:__anon44	file:
-ssnum	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    string ssnum;$/;"	m	struct:__anon40	file:
-ssnum	.\srcAbstract\chapter2\employee.c	/^    string ssnum;$/;"	m	struct:__anon46	file:
+squareT	.\srcAbstract\chapter6\mazelib.c	/^} squareT;$/;"	t	typeref:struct:__anon79	file:
+ssnum	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    string ssnum;$/;"	m	struct:__anon45	file:
+ssnum	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    string ssnum;$/;"	m	struct:__anon41	file:
 ssnum	.\srcAbstract\chapter2\employee.c	/^    string ssnum;$/;"	m	struct:__anon47	file:
+ssnum	.\srcAbstract\chapter2\employee.c	/^    string ssnum;$/;"	m	struct:__anon48	file:
 stackADT	.\mylib\stack.h	/^typedef struct stackCDT *stackADT;$/;"	t	typeref:struct:stackCDT
 stackADT	.\mylib\stacklist.h	/^typedef struct stackCDT *stackADT;$/;"	t	typeref:struct:stackCDT
 stackADT	.\srcAbstract\chapter10\stack.h	/^typedef struct stackCDT *stackADT;$/;"	t	typeref:struct:stackCDT
@@ -4713,7 +4744,7 @@ stackElementT	.\mylib\stacklist.h	/^typedef void* stackElementT;$/;"	t
 stackElementT	.\srcAbstract\chapter10\stack.h	/^typedef double stackElementT;$/;"	t
 stackElementT	.\srcAbstract\chapter8\stack.h	/^typedef double stackElementT;$/;"	t
 stackElementT	.\srcAbstract\chapter9\stack.h	/^typedef char stackElementT;$/;"	t
-staff	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    employeeT staff[MaxEmployees];$/;"	m	struct:__anon45	file:
+staff	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    employeeT staff[MaxEmployees];$/;"	m	struct:__anon46	file:
 staff	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^static employeeT staff[MaxEmployees];$/;"	v	file:
 staff	.\srcAbstract\chapter2\employee.c	/^static employeeRecordT staff[MaxEmployees];$/;"	v	file:
 start	.\C Interfaces and Implementations\src\thread-nt.c	/^static unsigned __stdcall start(void *p) {$/;"	f	file:
@@ -4733,7 +4764,7 @@ start_resp_from_server	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^int 
 start_resp_to_client	.\BeginnigLinuxProgramming\chapter13\app\pipe_imp.c	/^int start_resp_to_client(const message_db_t mess_to_send)$/;"	f
 start_resp_to_client	.\BeginnigLinuxProgramming\chapter14\app\ipc_imp.c	/^int start_resp_to_client(const message_db_t mess_to_send)$/;"	f
 stateStack	.\mylib\graphics.c	/^static graphicsStateT stateStack;$/;"	v	file:
-stateT	.\srcAbstract\chapter6\tictac.c	/^} *stateT;$/;"	t	typeref:struct:__anon77	file:
+stateT	.\srcAbstract\chapter6\tictac.c	/^} *stateT;$/;"	t	typeref:struct:__anon78	file:
 str	.\C Interfaces and Implementations\include\text.h	/^	const char *str;$/;"	m	struct:T
 str	.\C Interfaces and Implementations\src\atom.c	/^	char *str;$/;"	m	struct:atom	file:
 str	.\mylib\scanadt.c	/^	string str;$/;"	m	struct:scannerCDT	file:
@@ -4755,18 +4786,18 @@ stringOption	.\srcAbstract\chapter12\scanadt.c	/^    stringOptionT stringOption;
 stringOption	.\srcAbstract\chapter13\scanadt.c	/^    stringOptionT stringOption;$/;"	m	struct:scannerCDT	file:
 stringOption	.\srcAbstract\chapter14\scanadt.c	/^    stringOptionT stringOption;$/;"	m	struct:scannerCDT	file:
 stringOption	.\srcAbstract\chapter16\scanadt.c	/^    stringOptionT stringOption;$/;"	m	struct:scannerCDT	file:
-stringOptionT	.\srcAbstract\chapter10\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon56
-stringOptionT	.\srcAbstract\chapter11\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon92
-stringOptionT	.\srcAbstract\chapter12\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon72
-stringOptionT	.\srcAbstract\chapter13\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon100
-stringOptionT	.\srcAbstract\chapter14\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon62
-stringOptionT	.\srcAbstract\chapter16\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon84
+stringOptionT	.\srcAbstract\chapter10\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon57
+stringOptionT	.\srcAbstract\chapter11\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon93
+stringOptionT	.\srcAbstract\chapter12\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon73
+stringOptionT	.\srcAbstract\chapter13\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon101
+stringOptionT	.\srcAbstract\chapter14\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon63
+stringOptionT	.\srcAbstract\chapter16\scanadt.h	/^} stringOptionT;$/;"	t	typeref:enum:__anon85
 strip_return	.\BeginnigLinuxProgramming\chapter07\app\app_ui.c	/^static void strip_return(char *string_to_strip) {$/;"	f	file:
 strip_return	.\BeginnigLinuxProgramming\chapter13\app\app_ui.c	/^static void strip_return(char *string_to_strip)$/;"	f	file:
 strip_return	.\BeginnigLinuxProgramming\chapter14\app\app_ui.c	/^static void strip_return(char *string_to_strip)$/;"	f	file:
 strncmp	.\C Interfaces and Implementations\src\strncmp.c	/^int strncmp(const char *s1, const char *s2, size_t n) {$/;"	f
 style	.\mylib\graphics.c	/^    int style;$/;"	m	struct:graphicsStateT	file:
-sub	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*sub)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon105	file:
+sub	.\C Interfaces and Implementations\examples\mpcalc.c	/^	MP_T (*sub)(MP_T, MP_T, MP_T);$/;"	m	struct:__anon106	file:
 sub	.\C Interfaces and Implementations\src\ap.c	/^static T sub(T z, T x, T y) {$/;"	f	file:
 submenu	.\BeginnigLinuxProgramming\chapter16\menu1.c	/^static GnomeUIInfo submenu[] = {$/;"	v	file:
 symbol	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	/^       char symbol;$/;"	m	struct:ppball
@@ -4786,7 +4817,7 @@ symtabFnT	.\srcAbstract\chapter11\symtab.h	/^typedef void (*symtabFnT)(string ke
 symtabFnT	.\srcAbstract\chapter13\symtab.h	/^typedef void (*symtabFnT)(string key, void *value,$/;"	t
 symtabFnT	.\srcAbstract\chapter14\symtab.h	/^typedef void (*symtabFnT)(string key, void *value,$/;"	t
 symtabFnT	.\srcAbstract\chapter16\symtab.h	/^typedef void (*symtabFnT)(string key, void *value,$/;"	t
-symtabNodeT	.\srcAbstract\chapter13\bsttab.c	/^} symtabNodeT;$/;"	t	typeref:struct:__anon101	file:
+symtabNodeT	.\srcAbstract\chapter13\bsttab.c	/^} symtabNodeT;$/;"	t	typeref:struct:__anon102	file:
 sync	.\C Interfaces and Implementations\src\chan.c	/^	Sem_T send, recv, sync;$/;"	m	struct:T	file:
 t	.\abstract\chapter8\practice\movetower.c	/^  int s, f, t;$/;"	m	struct:moveT	file:
 t	.\abstract\chapter8\practice\stackMovetower.c	/^    int s, f, t;$/;"	m	struct:moveT	file:
@@ -4836,7 +4867,7 @@ thread_function	.\BeginnigLinuxProgramming\chapter12\thread6a.c	/^void *thread_f
 thread_function	.\BeginnigLinuxProgramming\chapter12\thread7.c	/^void *thread_function(void *arg) {$/;"	f
 thread_function	.\BeginnigLinuxProgramming\chapter12\thread8.c	/^void *thread_function(void *arg) {$/;"	f
 thread_function	.\BeginnigLinuxProgramming\chapter12\thread8a.c	/^void *thread_function(void *arg) {$/;"	f
-time	.\srcAbstract\chapter10\checkout.c	/^    int time;$/;"	m	struct:__anon58	file:
+time	.\srcAbstract\chapter10\checkout.c	/^    int time;$/;"	m	struct:__anon59	file:
 time_to_exit	.\BeginnigLinuxProgramming\chapter12\thread4.c	/^int time_to_exit = 0;$/;"	v
 timestamp	.\C Interfaces and Implementations\src\set.c	/^	unsigned timestamp;$/;"	m	struct:T	file:
 timestamp	.\C Interfaces and Implementations\src\table.c	/^	unsigned timestamp;$/;"	m	struct:T	file:
@@ -4846,25 +4877,25 @@ title	.\BeginnigLinuxProgramming\chapter13\app\cd_data.h	/^    char title[CAT_TI
 title	.\BeginnigLinuxProgramming\chapter14\app\cd_data.h	/^    char title[CAT_TITLE_LEN + 1];$/;"	m	struct:__anon7
 title	.\BeginnigLinuxProgramming\chapter16\app\app_mysql.h	/^  char title[100];$/;"	m	struct:current_cd_st
 title	.\BeginnigLinuxProgramming\chapter17\kde\cdapp\app_mysql.h	/^  char title[100];$/;"	m	struct:current_cd_st
-title	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    string title;$/;"	m	struct:__anon44	file:
-title	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    string title;$/;"	m	struct:__anon40	file:
-title	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    string title;$/;"	m	struct:__anon43	file:
-title	.\srcAbstract\chapter2\employee.c	/^    string title;$/;"	m	struct:__anon46	file:
+title	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    string title;$/;"	m	struct:__anon45	file:
+title	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    string title;$/;"	m	struct:__anon41	file:
+title	.\ProgrammingAbstracetionsInC\16-Records\teach.c	/^    string title;$/;"	m	struct:__anon44	file:
 title	.\srcAbstract\chapter2\employee.c	/^    string title;$/;"	m	struct:__anon47	file:
+title	.\srcAbstract\chapter2\employee.c	/^    string title;$/;"	m	struct:__anon48	file:
 title_entry	.\BeginnigLinuxProgramming\chapter16\app\interface.c	/^GtkWidget *title_entry;$/;"	v
 title_entry	.\BeginnigLinuxProgramming\chapter17\kde\cdapp\AddCdDialog.h	/^    QLineEdit *artist_entry, *title_entry, *catalogue_entry;$/;"	m	class:AddCdDialog
 title_file	.\BeginnigLinuxProgramming\chapter06\app\curses_app.c	/^const char *title_file = "title.cdb";$/;"	v
 tmp	.\C Interfaces and Implementations\src\mp.c	/^static T tmp[] = {temp, temp+1*16, temp+2*16, temp+3*16};$/;"	v	file:
 to	.\srcAbstract\chapter16\graph.c	/^    nodeADT from, to;$/;"	m	struct:arcCDT	file:
 togglebutton	.\BeginnigLinuxProgramming\chapter16\buttons.c	/^GtkWidget *togglebutton;$/;"	v
-totalLineLength	.\srcAbstract\chapter10\checkout.c	/^    long totalLineLength;$/;"	m	struct:__anon58	file:
+totalLineLength	.\srcAbstract\chapter10\checkout.c	/^    long totalLineLength;$/;"	m	struct:__anon59	file:
 totalSize	.\mylib\bst.c	/^    int userSize, totalSize;$/;"	m	struct:bstCDT	file:
 totalSize	.\mylib\bst_save.c	/^  int userSize, totalSize;$/;"	m	struct:bstCDT	file:
 totalSize	.\srcAbstract\chapter13\bst.c	/^    int userSize, totalSize;$/;"	m	struct:bstCDT	file:
 totalSize	.\srcAbstract\chapter14\bst.c	/^    int userSize, totalSize;$/;"	m	struct:bstCDT	file:
 totalSize	.\srcAbstract\chapter15\bst.c	/^    int userSize, totalSize;$/;"	m	struct:bstCDT	file:
 totalSize	.\srcAbstract\chapter16\bst.c	/^    int userSize, totalSize;$/;"	m	struct:bstCDT	file:
-totalWaitTime	.\srcAbstract\chapter10\checkout.c	/^    long totalWaitTime;$/;"	m	struct:__anon58	file:
+totalWaitTime	.\srcAbstract\chapter10\checkout.c	/^    long totalWaitTime;$/;"	m	struct:__anon59	file:
 traceFlag	.\srcAbstract\chapter10\checkout.c	/^static bool traceFlag = FALSE;$/;"	v	file:
 track	.\BeginnigLinuxProgramming\chapter08\app\app_mysql.h	/^  char track[20][100];$/;"	m	struct:current_tracks_st
 track	.\BeginnigLinuxProgramming\chapter08\app\create_tables.sql	/^create table track ($/;"	t
@@ -4880,10 +4911,10 @@ track_txt	.\BeginnigLinuxProgramming\chapter07\app\cd_data.h	/^    char track_tx
 track_txt	.\BeginnigLinuxProgramming\chapter13\app\cd_data.h	/^    char track_txt[TRACK_TTEXT_LEN + 1];$/;"	m	struct:__anon19
 track_txt	.\BeginnigLinuxProgramming\chapter14\app\cd_data.h	/^    char track_txt[TRACK_TTEXT_LEN + 1];$/;"	m	struct:__anon8
 tracks_file	.\BeginnigLinuxProgramming\chapter06\app\curses_app.c	/^const char *tracks_file = "tracks.cdb";$/;"	v
-traversalOrderT	.\srcAbstract\chapter13\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	t	typeref:enum:__anon97
-traversalOrderT	.\srcAbstract\chapter14\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	t	typeref:enum:__anon59
-traversalOrderT	.\srcAbstract\chapter15\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	t	typeref:enum:__anon49
-traversalOrderT	.\srcAbstract\chapter16\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	t	typeref:enum:__anon81
+traversalOrderT	.\srcAbstract\chapter13\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	t	typeref:enum:__anon98
+traversalOrderT	.\srcAbstract\chapter14\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	t	typeref:enum:__anon60
+traversalOrderT	.\srcAbstract\chapter15\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	t	typeref:enum:__anon50
+traversalOrderT	.\srcAbstract\chapter16\bst.h	/^typedef enum { InOrder, PreOrder, PostOrder } traversalOrderT;$/;"	t	typeref:enum:__anon82
 treeT	.\abstract\bstAVL.c	/^}nodeT, *treeT;$/;"	t	typeref:struct:nodeT	file:
 treeT	.\abstract\chapter13\bstRB.c	/^}nodeT, *treeT;$/;"	t	typeref:struct:nodeT	file:
 treeT	.\mylib\bst.c	/^typedef void *treeT;$/;"	t	file:
@@ -4902,12 +4933,12 @@ tty_mode	.\understandingUnixLinuxProgram\chapter6\play_again1.c	/^tty_mode(int h
 tty_mode	.\understandingUnixLinuxProgram\chapter6\play_again2.c	/^tty_mode(int how)$/;"	f
 tty_mode	.\understandingUnixLinuxProgram\chapter6\play_again3.c	/^tty_mode(int how)$/;"	f
 tty_mode	.\understandingUnixLinuxProgram\chapter6\play_again4.c	/^tty_mode(int how)$/;"	f
-turnsTaken	.\srcAbstract\chapter6\tictac.c	/^    int turnsTaken;$/;"	m	struct:__anon77	file:
+turnsTaken	.\srcAbstract\chapter6\tictac.c	/^    int turnsTaken;$/;"	m	struct:__anon78	file:
 type	.\BeginnigLinuxProgramming\chapter07\app\cd_data.h	/^    char type[CAT_TYPE_LEN + 1];$/;"	m	struct:__anon13
 type	.\BeginnigLinuxProgramming\chapter13\app\cd_data.h	/^    char type[CAT_TYPE_LEN + 1];$/;"	m	struct:__anon18
 type	.\BeginnigLinuxProgramming\chapter14\app\cd_data.h	/^    char type[CAT_TYPE_LEN + 1];$/;"	m	struct:__anon7
 type	.\srcAbstract\chapter14\exp.c	/^    exptypeT type;$/;"	m	struct:expressionCDT	file:
-u	.\C Interfaces and Implementations\examples\mpcalc.c	/^  u = { "%U\\n",$/;"	v	typeref:struct:__anon105
+u	.\C Interfaces and Implementations\examples\mpcalc.c	/^  u = { "%U\\n",$/;"	v	typeref:struct:__anon106
 ub	.\C Interfaces and Implementations\examples\sort.c	/^	int lb, ub;$/;"	m	struct:args	file:
 uid_to_name	.\understandingUnixLinuxProgram\ls2.c	/^char *uid_to_name(uid_t uid)$/;"	f
 uncle	.\abstract\chapter13\bstRB.c	/^treeT uncle(treeT n){$/;"	f
@@ -4933,31 +4964,31 @@ value	.\mylib\queuelist.c	/^	queueElementT value;$/;"	m	struct:cellT	file:
 value	.\mylib\symtab.c	/^	void *value;$/;"	m	struct:cellT	file:
 value	.\srcAbstract\chapter10\qlist.c	/^    queueElementT value;$/;"	m	struct:cellT	file:
 value	.\srcAbstract\chapter11\symtab.c	/^    void *value;$/;"	m	struct:cellT	file:
-value	.\srcAbstract\chapter13\bsttab.c	/^    void *value;$/;"	m	struct:__anon101	file:
+value	.\srcAbstract\chapter13\bsttab.c	/^    void *value;$/;"	m	struct:__anon102	file:
 value	.\srcAbstract\chapter13\symtab.c	/^    void *value;$/;"	m	struct:cellT	file:
-value	.\srcAbstract\chapter14\exp.c	/^    } value;$/;"	m	struct:expressionCDT	typeref:union:expressionCDT::__anon63	file:
+value	.\srcAbstract\chapter14\exp.c	/^    } value;$/;"	m	struct:expressionCDT	typeref:union:expressionCDT::__anon64	file:
 value	.\srcAbstract\chapter14\symtab.c	/^    void *value;$/;"	m	struct:cellT	file:
 value	.\srcAbstract\chapter16\symtab.c	/^    void *value;$/;"	m	struct:cellT	file:
 variableTable	.\srcAbstract\chapter14\eval.c	/^static symtabADT variableTable;$/;"	v	file:
-variables	.\srcAbstract\chapter12\listtest.c	/^    listADT variables[26];$/;"	m	struct:__anon73	file:
+variables	.\srcAbstract\chapter12\listtest.c	/^    listADT variables[26];$/;"	m	struct:__anon74	file:
 vfree	.\C Interfaces and Implementations\examples\wf.c	/^void vfree(const void *key, void **count, void *cl) {$/;"	f
 visited	.\srcAbstract\chapter16\graph.c	/^    bool visited;$/;"	m	struct:nodeCDT	file:
 waitState	.\mylib\xdisplay.c	/^static waitStateT waitState;$/;"	v	file:
-waitStateT	.\mylib\xdisplay.c	/^} waitStateT;$/;"	t	typeref:enum:__anon25	file:
+waitStateT	.\mylib\xdisplay.c	/^} waitStateT;$/;"	t	typeref:enum:__anon26	file:
 wakeup	.\understandingUnixLinuxProgram\chapter7\sleep1.c	/^void wakeup(int signum)$/;"	f
-walls	.\srcAbstract\chapter6\mazelib.c	/^    bool walls[4];$/;"	m	struct:__anon78	file:
+walls	.\srcAbstract\chapter6\mazelib.c	/^    bool walls[4];$/;"	m	struct:__anon79	file:
 wf	.\C Interfaces and Implementations\examples\wf.c	/^void wf(char *name, FILE *fp) {$/;"	f
-whoseTurn	.\srcAbstract\chapter6\tictac.c	/^    playerT whoseTurn;$/;"	m	struct:__anon77	file:
+whoseTurn	.\srcAbstract\chapter6\tictac.c	/^    playerT whoseTurn;$/;"	m	struct:__anon78	file:
 windowHeight	.\mylib\graphics.c	/^static double windowHeight = DesiredHeight;$/;"	v	file:
 windowHeight	.\mylib\xdisplay.c	/^static double windowWidth, windowHeight;$/;"	v	file:
 windowTitle	.\mylib\graphics.c	/^static string windowTitle = "Graphics Window";$/;"	v	file:
 windowWidth	.\mylib\graphics.c	/^static double windowWidth = DesiredWidth;$/;"	v	file:
 windowWidth	.\mylib\xdisplay.c	/^static double windowWidth, windowHeight;$/;"	v	file:
 winningLines	.\srcAbstract\chapter6\tictac.c	/^static int winningLines[][3] = {$/;"	v	file:
-withholding	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    int withholding;$/;"	m	struct:__anon44	file:
-withholding	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    int withholding;$/;"	m	struct:__anon40	file:
-withholding	.\srcAbstract\chapter2\employee.c	/^    int withholding;$/;"	m	struct:__anon46	file:
+withholding	.\ProgrammingAbstracetionsInC\16-Records\empdb.c	/^    int withholding;$/;"	m	struct:__anon45	file:
+withholding	.\ProgrammingAbstracetionsInC\16-Records\employee.c	/^    int withholding;$/;"	m	struct:__anon41	file:
 withholding	.\srcAbstract\chapter2\employee.c	/^    int withholding;$/;"	m	struct:__anon47	file:
+withholding	.\srcAbstract\chapter2\employee.c	/^    int withholding;$/;"	m	struct:__anon48	file:
 words	.\C Interfaces and Implementations\src\bit.c	/^	unsigned long *words;$/;"	m	struct:T	file:
 words	.\abstract\chapter9\chapter9 programPractise\editorQ5P331.c	/^string words;$/;"	v
 words	.\srcAbstract\chapter14\cvector.c	/^    unsigned long words[CVecWords];$/;"	m	struct:cVectorCDT	file:
@@ -5018,8 +5049,8 @@ written_by_you	.\BeginnigLinuxProgramming\chapter14\shm_com.h	/^    int written_
 x	.\C Interfaces and Implementations\src\mp.c	/^static int apply(T op(T, T, T), T z, T x, long v) {$/;"	v	file:
 x	.\C Interfaces and Implementations\src\mp.c	/^static int applyu(T op(T, T, T), T z, T x,$/;"	v	file:
 x	.\C Interfaces and Implementations\src\stack.c	/^		void *x;$/;"	m	struct:T::elem	file:
-x	.\ProgrammingAbstracetionsInC\16-Records\point.c	/^    double x, y;$/;"	m	struct:__anon39	file:
-x	.\srcAbstract\chapter6\mazelib.h	/^    int x, y;$/;"	m	struct:__anon79
+x	.\ProgrammingAbstracetionsInC\16-Records\point.c	/^    double x, y;$/;"	m	struct:__anon40	file:
+x	.\srcAbstract\chapter6\mazelib.h	/^    int x, y;$/;"	m	struct:__anon80
 x_dir	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	/^           y_dir, x_dir;$/;"	m	struct:ppball
 x_pos	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	/^       int y_pos, x_pos,$/;"	m	struct:ppball
 x_ttg	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	/^           y_ttg, x_ttg,$/;"	m	struct:ppball
@@ -5030,8 +5061,8 @@ xx	.\C Interfaces and Implementations\misc\maxalign.c	48;"	d	file:
 xx	.\C Interfaces and Implementations\misc\maxalign.c	50;"	d	file:
 xx	.\C Interfaces and Implementations\misc\maxalign.c	54;"	d	file:
 xx	.\C Interfaces and Implementations\misc\maxalign.c	56;"	d	file:
-y	.\ProgrammingAbstracetionsInC\16-Records\point.c	/^    double x, y;$/;"	m	struct:__anon39	file:
-y	.\srcAbstract\chapter6\mazelib.h	/^    int x, y;$/;"	m	struct:__anon79
+y	.\ProgrammingAbstracetionsInC\16-Records\point.c	/^    double x, y;$/;"	m	struct:__anon40	file:
+y	.\srcAbstract\chapter6\mazelib.h	/^    int x, y;$/;"	m	struct:__anon80
 y_dir	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	/^           y_dir, x_dir;$/;"	m	struct:ppball
 y_pos	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	/^       int y_pos, x_pos,$/;"	m	struct:ppball
 y_ttg	.\understandingUnixLinuxProgram\chapter7\bounce\bounce.h	/^           y_ttg, x_ttg,$/;"	m	struct:ppball
