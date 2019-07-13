@@ -1,11 +1,12 @@
 /* 
 * @Author: anchen
 * @Date:   2016-04-20 04:49:35
-* @Last Modified by:   anchen
-* @Last Modified time: 2016-04-28 00:37:32
+* @Last Modified by:   shishao
+* @Last Modified time: 2017-04-04 13:19:48
 */
 
 #include <stdio.h>
+#include <time.h>
 #include"genlib.h"
 #include"strlib.h"
 #include"simpio.h"
@@ -18,11 +19,18 @@ static void RecursivePermute (string str, int k,setADT set);
 static ExchangeCharacters(string str, int p1, int p2);
 
 int main() {
+    clock_t start, finish;
     string s;
+    double Total_time;
+    
+    start = clock();
     printf("Input a string:\n");
     s = GetLine();
     printf("List the permutation:\n");
     ListPermutations(s);
+    finish = clock(); 
+    Total_time = (double)(finish-start) / CLOCKS_PER_SEC; 
+    printf( "%f seconds\n", Total_time); 
     return 0;
 }
 

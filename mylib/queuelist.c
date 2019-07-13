@@ -55,7 +55,7 @@ void Enqueue(queueADT queue, queueElementT element){
 		queue->head = queue->tail = cp; 
 	else{
 		queue->tail->link = cp;
-		queue->tail=queue->tail->link;
+		queue->tail = queue->tail->link;
 	}
 }
 
@@ -64,9 +64,9 @@ queueElementT Dequeue(queueADT queue){
 	cellT *cp;
 
 	cp = queue->head;
-	if(cp==NULL) Error("Dequeue: queue is empty");
+	if(cp == NULL) Error("Dequeue: queue is empty");
 	result = cp->value;
-	queue->head=cp->link;
+	queue->head = cp->link;
 	FreeBlock(cp);
 	return result;
 }
