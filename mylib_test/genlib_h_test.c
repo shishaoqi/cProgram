@@ -12,20 +12,28 @@
 int main() {
 
 #ifdef THINK_C
+    typedef int bool;
     printf("Defined THINK_C, executed \"typedef int bool\"\n");
 #else
-#  ifdef TRUE
-#    ifndef bool
-#      printf("Defined TRUE, not defined bool, executed \"define bool int\"\n");
-#    endif
-#  else
-#    ifdef bool
-#      printf("Not defined TRUE, defined bool, executed \"define FALSE 0\n\"\ndefine TRUE 1");
-#    else
-        printf("Not defined TRUE, not defined bool, executed \"typedef enum {FALSE, TRUE} bool;\"\n");
-#    endif
+#   ifdef TRUE
+#       ifndef bool
+#           define bool int
+            printf("Defined TRUE, not defined bool, executed \"define bool int\"\n");
+#       endif
+#   else
+#       ifdef bool
+#           define FALSE 0
+#           define TRUE 1
+            printf("Not defined TRUE, defined bool, executed \"define FALSE 0\n\"\ndefine TRUE 1");
+#       else
+            typedef enum {FALSE, TRUE} bool;
+            printf("Not defined TRUE, not defined bool, executed \"typedef enum {FALSE, TRUE} bool;\"\n");
+#       endif
 #  endif
 #endif
-
+    bool t = TRUE;
+    bool f = FALSE;
+    printf("t is: %d\n", t);
+    printf("f is: %d\n", f);
     return 0;
 }
