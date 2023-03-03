@@ -1,4 +1,0 @@
-Most of the work of the package occurs in this function, which
-inserts the element addressed by ep into its correct position.
-If the list is unordered of if the element belongs at the end,
-the element is immediately inserted at the tail.

@@ -1,3 +1,0 @@
-Most of the work of the package occurs in this function, which
-inserts the element addressed by ep into its correct position.
-

@@ -1,11 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
+
 void quicksort(int array[], int n);
 int partition(int array[], int n );
 
-
 int main()
 {
-	int array[1000]={45,34,53,14,21,87,9,136,543,419,876,456,732,42,79,6,543,805,891,703,201,176};
+	int array[1000] = {45,34,53,14,21,87,9,136,543,419,876,456,732,42,79,6,543,805,891,703,201,176};
 	int i, count;
 	count=22;
 	//scanf("%d\n",&count);

@@ -1,6 +1,7 @@
-#include<stdio.h>
-#include"genlib.h"
-#include"cmpfn.h"
+#include <stdio.h>
+#include "genlib.h"
+#include "cmpfn.h"
+
 void quicksort(void *array, int n, int elementSize, cmpFnT fn, exchFnT fun);
 int partition(void *array, int n, int elementSize, cmpFnT fn, exchFnT fun);
 
@@ -30,12 +31,10 @@ void quicksort(void *array, int n, int elementSize, cmpFnT fn, exchFnT fun)
 {
   int boundary;
 
-  if(n<2)
-    return;
+  if(n<2) return;
   boundary=partition(array,  n, elementSize, fn, fun);
   quicksort((void*)((char*)array), boundary, elementSize, fn, fun);
-  quicksort((void*)((char*)array+(boundary+1)*elementSize), n-boundary-1,
-	    elementSize, fn, fun);
+  quicksort((void*)((char*)array+(boundary+1)*elementSize), n-boundary-1, elementSize, fn, fun);
 }
 
 int partition(void *array, int n, int elementSize, cmpFnT fn, exchFnT exchange)
@@ -46,29 +45,21 @@ int partition(void *array, int n, int elementSize, cmpFnT fn, exchFnT exchange)
   pivot=array;
   lh=1;
   rh=n-1;
-  while(TRUE)
-    {
-      while(lh<rh && fn(((char*)array+rh*elementSize),
-			 pivot) >=0 )
-	rh--;
-      while(lh<rh && fn((char*)array+(lh*elementSize),
-			pivot) <0 )
-	lh++;
+  while(TRUE){
+    while(lh<rh && fn(((char*)array+rh*elementSize), pivot) >=0 )
+      rh--;
+    while(lh<rh && fn((char*)array+(lh*elementSize), pivot) <0 )
+      lh++;
 
-      if(lh==rh)  break;
+    if(lh==rh)  break;
 
-      exchange( (void*)((char*)array+lh*elementSize),
-		(void*)((char*)array+rh*elementSize) );
-    }
+    exchange( (void*)((char*)array+lh*elementSize), (void*)((char*)array+rh*elementSize) );
+  }
 
   if( fn((void*)((char*)array+lh*elementSize), (void*)((char*)pivot))>=0 )
     return 0;
-      /* if( *((char*)array+(lh*elementSize)) >= *((char*)pivot))  return 0;
-	   * 错误的地方（前车之鉴）
-	   * 心得：尽量用接口
-	   */
-
-
-  exchange( (void*)((char*)array), (void*)((char*)array+lh*elementSize) );
+      /* if( *((char*)array+(lh*elementSize)) >= *((char*)pivot))  return 0; */
+    exchange( (void*)((char*)array), (void*)((char*)array+lh*elementSize) );
+  
   return lh;
 }

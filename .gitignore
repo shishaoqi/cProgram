@@ -1,7 +1,6 @@
 *.[oa]
-.tags
-.tags_sorted_by_file
 .idea/
 CMakeLists.txt
 /cmake-build-debug/
 /mylib/.idea/
+/abstract/*/*.o

@@ -16,7 +16,7 @@ int main( )
     /* 测量一个事件持续的时间*/ 
     printf( "Time to do %ld empty loops is ", i ); 
     start = clock(); 
-    while( i--) ; 
+    while(i--){}; 
     finish = clock(); 
     Total_time = (double)(finish-start) / CLOCKS_PER_SEC; 
     printf( "%f seconds\n", Total_time); 

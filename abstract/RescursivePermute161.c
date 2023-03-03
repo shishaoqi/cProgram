@@ -27,7 +27,7 @@ static void ListPermutations(string str){
     
   set = NewPtrSet(PtrSet, StringCmpFn2);
   length = (int)StringLength(str);
-[[B  RescursivePermute(str, 0, length, set);
+  RescursivePermute(str, 0, length, set);
   printf("\n");
 
   iterator = NewIterator(set);
